@@ -11,7 +11,7 @@ class PotatosController < ApplicationController
   def new
     @potato = Potato.new
   end
-
+  
   def edit
     @potato = Potato.find(params[:id])
   end
