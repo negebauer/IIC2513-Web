@@ -1,2 +1,2 @@
-# IIC2333SO
-Repositorio de IIC2333 Sistemas operativos y redes
+# IIC2513Web
+IIC2513 Tecnologias y aplicaciones web
