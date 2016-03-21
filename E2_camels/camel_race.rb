@@ -26,7 +26,6 @@ module Camels
 					create_cammels
 	      else
 	        @race_data << line
-					add_cammel_data(line)
 	      end
 	      count += 1
 	    end
@@ -43,34 +42,28 @@ module Camels
 				camel_name = camel_id_array[0].strip
 				camel_id = camel_id_array[1].strip
 				camel = Camels::Camel.new(camel_name, camel_id)
+		    add_camel_distance(camel)
 				@camels.push(camel)
 			}
 		end
 
-		def add_cammel_data(line)
-			# data = line.split(",")
-			# id = data[0].strip
-			# yards = data[1].strip.to_i
-			# puts "Data:"
-			# puts id
-			# puts yards
-		end
-
-	  def get_data()
-	    data = @race_data.scan(/\w+\s*,\s*[0-9\.]+/) # { |match|  }
-			data.each do  |datarace|
+		def add_camel_distance(camel)
+			#primero se debe ejecutar get_data!!!!
+			@data_race.each do  |datarace|
 				data_race1= datarace.split(",")
 				if data_race1[0].nil? || data_race1.nil?
 					return
 				end
-			 	name_camel=data_race1[0].strip
-				distance_camel=data_race1[1].strip.to_f
-				information = Race::Race_info.new(name_camel,distance_camel)
-				@data_race.push(information)
+				if data_race1[0]==camel.id
+						camel.distance.push(data_race1[1].strip.to_f)
+				end
 			end
-	    puts @data_race[0].name
+		end
 
-	  end
+	  def get_data()
+	    @data_race = @race_data.scan(/\w+\s*,\s*[0-9\.]+/) # { |match|  }
+		end
+	  #REVISA SI ESTO ESTA BIEN, SEGUN YO SI XD
 	end
 end
 
