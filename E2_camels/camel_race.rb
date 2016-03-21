@@ -1,15 +1,17 @@
 module Camels
 	require_relative 'camel'
+	require_relative 'race_info'
 
 	class Camel_Race
 
-	  attr_reader :camel_quantity, :camel_data, :race_data, :camels
+	  attr_reader :camel_quantity, :camel_data, :race_data, :camels, :data_race
 
 	  def initialize()
 	    @camel_quantity = ""
 	    @camel_data = ""
 	    @race_data = ""
 			@camels = []
+			@data_race=[]
 	  end
 
 	  def read_file(dir)
@@ -56,7 +58,18 @@ module Camels
 
 	  def get_data()
 	    data = @race_data.scan(/\w+\s*,\s*[0-9\.]+/) # { |match|  }
-	    puts data
+			data.each do  |datarace|
+				data_race1= datarace.split(",")
+				if data_race1[0].nil? || data_race1.nil?
+					return
+				end
+			 	name_camel=data_race1[0].strip
+				distance_camel=data_race1[1].strip.to_f
+				information = Race::Race_info.new(name_camel,distance_camel)
+				@data_race.push(information)
+			end
+	    puts @data_race[0].name
+
 	  end
 	end
 end
