@@ -1,13 +1,9 @@
-class Camel
-  @@cammels = {}
+module Camels
+	class Camel
 
-  def self.cammels
-    @@cammels
-  end
-
-  def initialize (name, id)
-    @name = name
-    @id = id
-    @@camels[@id] = self
-  end
+	  def initialize (name, id)
+	    @name = name
+	    @id = id
+	  end
+	end
 end
