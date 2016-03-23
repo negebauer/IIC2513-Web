@@ -26,9 +26,7 @@ module Camels
 
 		def inspect
 			str = "Carrera con #{@camels.count.to_s} camellos\n"
-			@camels.keys.each { |key|
-				str += "#{@camels[key].inspect}\n"
-			}
+			@camels.keys.each { |key| str += "#{@camels[key].inspect}\n" }
 			return str
 		end
 
