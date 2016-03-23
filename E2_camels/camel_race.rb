@@ -89,7 +89,12 @@ module Camels
 		def camel_win
 			camels = @camels.values
 			camels.sort_by! { |camel| camel.total_time }
-			return "Ganador: #{camels[0].name}"
+			camels.select! { |camel| camel.total_time == camels[0].total_time }
+			if camels.count == 1
+				return "Ganador: #{camels[0].name}"
+			else
+				return "Ganadores:\n#{camels.map { |camel| "#{camel.name}\n" }}"
+			end
 		end
 
 		def lap_places

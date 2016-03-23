@@ -2,7 +2,7 @@ module Camels
 	class Camel
 
 		attr_reader :name, :id, :distances, :times
-		attr_writer :distances
+		attr_writer :distances#, total_time
 
 	  def initialize(name, id)
 	    @name = name
