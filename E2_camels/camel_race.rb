@@ -115,26 +115,31 @@ module Camels
 			camels = @camels.values
 			str = ""
 			(1..5).each { |lap|
+				tontera = []
 				posicion = 1
 				camels.sort_by! { |camel| camel.times[lap] }
 				camels[0].position[lap]=1
+				tontera.push(camels[0])
 				camels.each {|camello|
+						posicion = 1
 						camels.each {|camello2|
-							if camello.times[lap] == camello2.times[lap]
-								camello2.position[lap] = camello.position[lap]
-								print "#{lap}: #{camello.name}, #{camello.position[lap]}, #{camello.times[lap]} -- #{camello.name}, #{camello.position[lap]}, #{camello.times[lap]}\n"
-							else
-								camello2.position[lap] = posicion
+							if !tontera.include?(camello2)
+								if camello.times[lap] == camello2.times[lap]
+									posicion += 1
+									camello2.position[lap] = camello.position[lap]
+								else
+									posicion += 1
+									camello2.position[lap] = posicion
+								end
+								tontera.push(camello)
 							end
 						}
-						posicion += 1
 				}
 				posicion += 1
 				str += "Vuelta #{lap}:\n"
 				str += "#{camels[0].position[lap].to_s}° lugar: #{!camels[0].nil? ? camels[0].name : "No hay"}\n"
 				str += "#{camels[1].position[lap].to_s}° lugar: #{!camels[1].nil? ? camels[1].name : "No hay"}\n"
 				str += "#{camels[2].position[lap].to_s}° lugar: #{!camels[2].nil? ? camels[2].name : "No hay"}\n"
-
 			}
 			return str
 		end
