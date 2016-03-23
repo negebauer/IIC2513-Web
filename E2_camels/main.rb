@@ -14,3 +14,4 @@ camel_race.process_data
 
 # camel_race.camels.each { |cammel| p cammel }
 p camel_race
+# camel_race.lap_places

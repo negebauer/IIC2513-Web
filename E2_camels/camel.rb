@@ -1,7 +1,7 @@
 module Camels
 	class Camel
 
-		attr_reader :name, :id, :distances
+		attr_reader :name, :id, :distances, :times
 		attr_writer :distances
 
 	  def initialize(name, id)
@@ -20,9 +20,12 @@ module Camels
 		end
 
 		def total_time
-			time = 0
-			@times.keys.each { |key| time += @times[key] }
-			return time
+			if !@total_time.nil?
+				return @total_time
+			end
+			@total_time = 0
+			@times.keys.each { |key| @total_time += @times[key] }
+			return total_time
 		end
 
 		def generate_laps_time

@@ -85,5 +85,14 @@ module Camels
 			@camels.keys.each { |key| camels[key].generate_laps_time }
 		end
 
+		def lap_places
+			camels = @camels.values
+			str = ""
+			# (1..5).each { |lap|
+			# 	camels.sort_by! { |camel| camel.@times[lap] }
+			# 	p camels
+			# }
+		end
+
 	end
 end
