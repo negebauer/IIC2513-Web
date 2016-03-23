@@ -2,16 +2,21 @@ module Camels
 	require_relative 'camel'
 
 	class Camel_Race
+
 		@@total_distance = 3210
 
-	  attr_reader :camel_quantity, :camel_data, :race_data, :camels, :data_race
+		def Camel_Race.total_distance
+			return @@total_distance
+		end
+
+		attr_reader :camel_quantity, :camel_data, :race_data, :camels, :data_race
 
 	  def initialize
 	    @camel_quantity = ""
 	    @camel_data = ""
 	    @race_data = ""
 			@camels = Hash.new
-			@data_race=[]
+			@data_race = []
 	  end
 
 		def inspect
