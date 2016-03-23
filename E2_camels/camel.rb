@@ -1,14 +1,15 @@
 module Camels
 	class Camel
 
-		attr_reader :name, :id, :distances, :times
-		attr_writer :distances#, total_time
+		attr_reader :name, :id, :distances, :times, :position
+		attr_writer :distances, :position#, total_time
 
 	  def initialize(name, id)
 	    @name = name
 	    @id = id
 			@distances = []
 			@times = Hash.new
+			@position = Hash.new
 	  end
 
 		def inspect

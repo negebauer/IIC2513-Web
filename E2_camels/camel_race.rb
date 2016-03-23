@@ -122,11 +122,12 @@ module Camels
 						camels.each {|camello2|
 							if camello.times[lap] == camello2.times[lap]
 								camello2.position[lap] = camello.position[lap]
+								print "#{lap}: #{camello.name}, #{camello.position[lap]}, #{camello.times[lap]} -- #{camello.name}, #{camello.position[lap]}, #{camello.times[lap]}\n"
 							else
 								camello2.position[lap] = posicion
 							end
 						}
-						#posicion += 1
+						posicion += 1
 				}
 				posicion += 1
 				str += "Vuelta #{lap}:\n"
