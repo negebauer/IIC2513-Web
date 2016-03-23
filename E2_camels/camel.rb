@@ -18,7 +18,7 @@ module Camels
 
 		def laps_time
 			# Devolvamos aqui un array (hash mejor?) con cuanto demoro en cada vuelta
-			p Camel_Race.total_distance
+			
 		end
 
 	end

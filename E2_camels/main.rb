@@ -14,5 +14,3 @@ camel_race.process_data
 
 # camel_race.camels.each { |cammel| p cammel }
 p camel_race
-p Camels::Camel_Race.total_distance
-camel_race.camels.keys.each { |e| p camel_race.camels[e].laps_time  }

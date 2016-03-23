@@ -9,6 +9,10 @@ module Camels
 			return @@total_distance
 		end
 
+		def Camel_Race.lap_distance
+			return @@total_distance / 5
+		end
+
 		attr_reader :camel_quantity, :camel_data, :race_data, :camels, :data_race
 
 	  def initialize
