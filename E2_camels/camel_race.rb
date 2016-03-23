@@ -91,9 +91,9 @@ module Camels
 			camels.sort_by! { |camel| camel.total_time }
 			camels.select! { |camel| camel.total_time == camels[0].total_time }
 			if camels.count == 1
-				return "Ganador: #{camels[0].name}"
+				return "Ganador del Derby del Gran Camejockey: #{camels[0].name}"
 			else
-				return "Ganadores:\n#{camels.map { |camel| "#{camel.name}\n" }}"
+				return "Ganadores del Derby del Gran Camejockey:\n#{camels.map { |camel| "#{camel.name}\n" }}"
 			end
 		end
 
