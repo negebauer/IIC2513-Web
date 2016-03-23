@@ -97,6 +97,10 @@ module Camels
 			end
 		end
 
+		def sort_camels_places
+
+		end
+
 		def lap_places
 			camels = @camels.values
 			str = ""
@@ -109,6 +113,8 @@ module Camels
 			}
 			return str
 		end
+
+
 
 	end
 end
