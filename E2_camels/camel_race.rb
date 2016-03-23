@@ -1,6 +1,5 @@
 module Camels
 	require_relative 'camel'
-	require_relative 'race_info'
 
 	class Camel_Race
 
@@ -13,6 +12,14 @@ module Camels
 			@camels = []
 			@data_race=[]
 	  end
+
+		def inspect()
+			str = "Carrera con " + @camels.count.to_s + " camellos\n"
+			@camels.each { |cammel|
+				str += cammel.inspect + "\n"
+			}
+			return str
+		end
 
 	  def read_file(dir)
 	    file = File.open(dir, "r")
@@ -66,12 +73,3 @@ module Camels
 	  #REVISA SI ESTO ESTA BIEN, SEGUN YO SI XD
 	end
 end
-
-
-# a = Camels::Camel_Race.new()
-# a.read_file
-# # puts a.instance_variable_get(:@camel_quantity)
-# puts a.camel_quantity
-# puts a.camel_data
-# # puts a.race_data
-# a.get_data

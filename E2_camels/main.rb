@@ -7,12 +7,9 @@ if dir.nil?
   dir = __dir__ + "/carreras ejemplo v1.3/carrera_2_camellos.txt"
 end
 
-a = Camels::Camel_Race.new()
-a.read_file(dir)
-# puts a.instance_variable_get(:@camel_quantity)
- puts a.camel_quantity
- puts a.camel_data
-# puts a.race_data
-a.get_data
-puts a.camels
-# puts a.camels
+camel_race = Camels::Camel_Race.new()
+camel_race.read_file(dir)
+camel_race.get_data
+
+# camel_race.camels.each { |cammel| p cammel }
+p camel_race
