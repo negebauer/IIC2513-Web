@@ -22,6 +22,7 @@ module Camels
 	    @race_data = ""
 			@camels = Hash.new
 			@data_race = []
+			@positions = Hash.new
 	  end
 
 		def inspect
@@ -98,7 +99,16 @@ module Camels
 		end
 
 		def sort_camels_places
-			
+			camels = @camels.values
+			(1..5).each { |lap|
+				position = 1
+				camels.sort_by! { |camel| camel.times[lap] }[0..2]
+				current_winners = [nil, camels[0]]
+				camels[1..2].each { |camel|
+					if camel.total_time == current_winners[position].total_time
+					end
+				}
+			}
 		end
 
 		def lap_places
@@ -129,11 +139,6 @@ module Camels
 			}
 			return str
 		end
-<<<<<<< HEAD
 
-
-
-=======
->>>>>>> 340c44d16a4167602cb53b751dd83b00506bd954
 	end
 end
