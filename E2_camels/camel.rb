@@ -20,12 +20,7 @@ module Camels
 		end
 
 		def total_time
-			if !@total_time.nil?
-				return @total_time
-			end
-			@total_time = 0
-			@times.keys.each { |key| @total_time += @times[key] }
-			return total_time
+			return @times[5]
 		end
 
 		def generate_laps_time
