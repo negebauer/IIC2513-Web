@@ -1,13 +1,23 @@
 module Camels
 	class Camel
-	  def initialize (name, id)
+
+		attr_reader :name, :id, :distances
+		attr_writer :distances
+
+	  def initialize(name, id)
 	    @name = name
 	    @id = id
-			@distance=[]
+			@distances = []
 	  end
 
-		def inspect()
-			return str = "Nombre: #{@name}, id: #{@id}"
+		def inspect
+			str = "Nombre: #{@name}, id: #{@id}"
+			# str += "\nDistances: #{@distances}"
+			return str
+		end
+
+		def laps_time
+			# Devolvamos aqui un array (hash mejor?) con cuanto demoro en cada vuelta
 		end
 
 	end

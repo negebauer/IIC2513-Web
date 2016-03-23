@@ -9,7 +9,8 @@ end
 
 camel_race = Camels::Camel_Race.new()
 camel_race.read_file(dir)
-camel_race.get_data
+camel_race.get_raw_data
+camel_race.process_data
 
 # camel_race.camels.each { |cammel| p cammel }
 p camel_race

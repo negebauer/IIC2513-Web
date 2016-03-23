@@ -2,28 +2,28 @@ module Camels
 	require_relative 'camel'
 
 	class Camel_Race
+		@@total_distance = 3210
 
 	  attr_reader :camel_quantity, :camel_data, :race_data, :camels, :data_race
 
-	  def initialize()
+	  def initialize
 	    @camel_quantity = ""
 	    @camel_data = ""
 	    @race_data = ""
-			@camels = []
+			@camels = Hash.new
 			@data_race=[]
 	  end
 
-		def inspect()
+		def inspect
 			str = "Carrera con " + @camels.count.to_s + " camellos\n"
-			@camels.each { |cammel|
-				str += cammel.inspect + "\n"
+			@camels.keys.each { |key|
+				str += @camels[key].inspect + "\n"
 			}
 			return str
 		end
 
 	  def read_file(dir)
 	    file = File.open(dir, "r")
-
 	    count = 0
 	    file.each_line do |line|
 	      if count == 0
@@ -48,28 +48,33 @@ module Camels
 				end
 				camel_name = camel_id_array[0].strip
 				camel_id = camel_id_array[1].strip
-				camel = Camels::Camel.new(camel_name, camel_id)
-		    add_camel_distance(camel)
-				@camels.push(camel)
+				if @camels[camel_id].nil?
+					camel = Camels::Camel.new(camel_name, camel_id)
+					@camels[camel_id] = camel
+				end
 			}
 		end
 
-		def add_camel_distance(camel)
-			#primero se debe ejecutar get_data!!!!
-			@data_race.each do  |datarace|
-				data_race1= datarace.split(",")
-				if data_race1[0].nil? || data_race1.nil?
+	  def get_raw_data
+	    @data_race = @race_data.scan(/\w+\s*,\s*[0-9\.]+/) # { |match|  }
+		end
+
+		def process_data
+			if @data_race.empty?
+				return
+			end
+			@data_race.each do |race|
+				race = race.split(",")
+				if race.empty?
 					return
 				end
-				if data_race1[0]==camel.id
-						camel.distance.push(data_race1[1].strip.to_f)
+				id = race[0].strip
+				distance = race[1].strip.to_f
+				if !@camels[id].nil?
+					@camels[id].distances.push(distance)
 				end
 			end
 		end
 
-	  def get_data()
-	    @data_race = @race_data.scan(/\w+\s*,\s*[0-9\.]+/) # { |match|  }
-		end
-	  #REVISA SI ESTO ESTA BIEN, SEGUN YO SI XD
 	end
 end
