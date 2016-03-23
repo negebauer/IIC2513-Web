@@ -88,10 +88,14 @@ module Camels
 		def lap_places
 			camels = @camels.values
 			str = ""
-			# (1..5).each { |lap|
-			# 	camels.sort_by! { |camel| camel.@times[lap] }
-			# 	p camels
-			# }
+			(1..5).each { |lap|
+				camels.sort_by! { |camel| camel.times[lap] }
+				str += "Vuelta #{lap}:\n"
+				str += "Primer lugar: #{!camels[0].nil? ? camels[0].name : "No hay"}\n"
+				str += "Segundo lugar: #{!camels[1].nil? ? camels[1].name : "No hay"}\n"
+				str += "Tercer lugar: #{!camels[2].nil? ? camels[2].name : "No hay"}\n"
+			}
+			return str
 		end
 
 	end
