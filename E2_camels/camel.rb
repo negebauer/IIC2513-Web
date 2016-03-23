@@ -12,7 +12,7 @@ module Camels
 	  end
 
 		def inspect
-			str = "- Nombre: #{@name}, id: #{@id} -"
+			str = "Nombre: #{@name}, id: #{@id}"
 			# str += "\nDistances: #{@distances}"
 			str += "\nTimes: #{@times}"
 			str += "\nTotal time: #{total_time}"
