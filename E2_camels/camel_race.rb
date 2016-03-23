@@ -4,13 +4,14 @@ module Camels
 	class Camel_Race
 
 		@@total_distance = 3210
+		@@lap_distance = @@total_distance / 5
 
 		def Camel_Race.total_distance
 			return @@total_distance
 		end
 
 		def Camel_Race.lap_distance
-			return @@total_distance / 5
+			return @@lap_distance
 		end
 
 		attr_reader :camel_quantity, :camel_data, :race_data, :camels, :data_race
@@ -83,6 +84,7 @@ module Camels
 					@camels[id].distances.push(distance)
 				end
 			end
+			@camels.keys.each { |key| camels[key].generate_laps_time }
 		end
 
 	end
