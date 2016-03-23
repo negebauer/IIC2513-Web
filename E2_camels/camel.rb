@@ -26,7 +26,6 @@ module Camels
 		end
 
 		def generate_laps_time
-			# Devolvamos aqui un array (hash mejor?) con cuanto demoro en cada vuelta
 			lap_distance = Camel_Race.lap_distance.to_f
 			lap = 1
 			current_distance = 0.0
