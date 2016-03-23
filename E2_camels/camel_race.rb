@@ -120,9 +120,9 @@ module Camels
 					}
 				}
 				str += "Vuelta #{lap}:\n"
-				str += "#{camels2[0].position[lap-1].to_s}° lugar: #{!camels[0].nil? ? camels[0].name : "No hay"}\n"
-				str += "#{camels2[1].position[lap-1].to_s}° lugar: #{!camels[1].nil? ? camels[1].name : "No hay"}\n"
-				str += "#{camels2[2].position[lap-1].to_s}° lugar: #{!camels[2].nil? ? camels[2].name : "No hay"}\n"
+				str += "#{camels2[0].position[lap].to_s}° lugar: #{!camels[0].nil? ? camels[0].name : "No hay"}\n"
+				str += "#{camels2[1].position[lap].to_s}° lugar: #{!camels[1].nil? ? camels[1].name : "No hay"}\n"
+				str += "#{camels2[2].position[lap].to_s}° lugar: #{!camels[2].nil? ? camels[2].name : "No hay"}\n"
 
 			}
 			return str
