@@ -98,32 +98,42 @@ module Camels
 			end
 		end
 
-		def sort_camels_places
+		def calculo_puntaje
 			camels = @camels.values
-			(1..5).each { |lap|
-				position = 1
-				camels.sort_by! { |camel| camel.times[lap] }[0..2]
-				current_winners = [nil, camels[0]]
-				camels[1..2].each { |camel|
-					if camel.total_time == current_winners[position].total_time
+			(1..3).each { |lap|
+				camels.each { |camel|
+					if camel.position[lap] == 1
+						camel.puntaje += 6
+					elsif camel.position[lap] == 2
+						camel.puntaje += 4
+					elsif camel.position[lap] == 3
+						camel.puntaje += 1
+					else camel.position[lap] > 3
+						camel.puntaje += 0
 					end
+
 				}
 			}
+			str = "Puntajes Finales:\n"
+			camels.each {|camello|
+				str += "#{camello.name}: #{camello.puntaje}\n"
+			}
+			return str
 		end
 
 		def lap_places
 			camels = @camels.values
 			str = ""
 			(1..5).each { |lap|
-				tontera = []
+				arreglo_camellos = []
 				posicion = 1
 				camels.sort_by! { |camel| camel.times[lap] }
 				camels[0].position[lap]=1
-				tontera.push(camels[0])
+				arreglo_camellos.push(camels[0])
 				camels.each {|camello|
 						posicion = 1
 						camels.each {|camello2|
-							if !tontera.include?(camello2)
+							if !arreglo_camellos.include?(camello2)
 								if camello.times[lap] == camello2.times[lap]
 									posicion += 1
 									camello2.position[lap] = camello.position[lap]
@@ -131,9 +141,11 @@ module Camels
 									posicion += 1
 									camello2.position[lap] = posicion
 								end
-								tontera.push(camello)
+								arreglo_camellos.push(camello)
 							end
+							print "#{lap}: #{camello.name}, #{camello.times[lap]}, #{camello.position[lap]} -- #{camello2.name}, #{camello2.times[lap]}, #{camello2.position[lap]}\n"
 						}
+
 				}
 				posicion += 1
 				str += "Vuelta #{lap}:\n"

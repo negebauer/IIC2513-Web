@@ -14,6 +14,7 @@ camel_race.process_data
 
 # camel_race.camels.each { |cammel| p cammel }
 p camel_race
-camel_race.sort_camels_places
+
 puts camel_race.lap_places
 puts camel_race.camel_win
+puts camel_race.calculo_puntaje
