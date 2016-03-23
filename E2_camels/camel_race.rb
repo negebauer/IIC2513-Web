@@ -105,24 +105,25 @@ module Camels
 			(1..5).each { |lap|
 				posicion = 1
 				camels.sort_by! { |camel| camel.times[lap] }
+			  camels[0].position[lap]= 1
 				camels2 = camels
-				camels[0].position.push(1)
 				camels.each { |camello|
 					posicion +=1
 					camels2.each { |camello2|
 						if camello2.id != camello.id
-							if camello2.times[lap] == camello.times[lap]
-								camello2.position.push(camello.position[lap-1])
+							if camello.times[lap] == camello2.times[lap]
+								camello2.position[lap]=camello2.position[lap]
 							else
-								camello2.position.push(posicion)
+								camello2.position[lap]= posicion
 							end
 						end
 					}
 				}
 				str += "Vuelta #{lap}:\n"
-				str += "#{camels[0].position[lap-1].to_s}° lugar: #{!camels[0].nil? ? camels[0].name : "No hay"}\n"
-				str += "#{camels[1].position[lap-1].to_s}° lugar: #{!camels[1].nil? ? camels[1].name : "No hay"}\n"
-				str += "#{camels[2].position[lap-1].to_s}° lugar: #{!camels[2].nil? ? camels[2].name : "No hay"}\n"
+				str += "#{camels2[0].position[lap-1].to_s}° lugar: #{!camels[0].nil? ? camels[0].name : "No hay"}\n"
+				str += "#{camels2[1].position[lap-1].to_s}° lugar: #{!camels[1].nil? ? camels[1].name : "No hay"}\n"
+				str += "#{camels2[2].position[lap-1].to_s}° lugar: #{!camels[2].nil? ? camels[2].name : "No hay"}\n"
+
 			}
 			return str
 		end
