@@ -63,6 +63,7 @@ module Camels
 			}
 		end
 
+
 	  def get_raw_data
 	    @data_race = @race_data.scan(/\w+\s*,\s*[0-9\.]+/) # { |match|  }
 		end
@@ -83,6 +84,12 @@ module Camels
 				end
 			end
 			@camels.keys.each { |key| camels[key].generate_laps_time }
+		end
+
+		def camel_win
+			camels = @camels.values
+			camels.sort_by! { |camel| camel.total_time }
+			return "Ganador: #{camels[0].name}"
 		end
 
 		def lap_places
