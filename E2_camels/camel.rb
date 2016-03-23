@@ -15,7 +15,14 @@ module Camels
 			str = "- Nombre: #{@name}, id: #{@id} -"
 			# str += "\nDistances: #{@distances}"
 			str += "\nTimes: #{@times}"
+			str += "\nTotal time: #{total_time}"
 			return str
+		end
+
+		def total_time
+			time = 0
+			@times.keys.each { |key| time += @times[key] }
+			return time
 		end
 
 		def generate_laps_time
@@ -28,7 +35,7 @@ module Camels
 				current_time += 1
 				current_distance += distance
 				if current_distance >= lap_distance
-					@times[lap.to_s] = current_time
+					@times[lap] = current_time
 					lap += 1
 					current_time = 0
 					current_distance -= lap_distance
