@@ -39,7 +39,6 @@ module Camels
 				if current_distance >= lap_distance
 					@times[lap] = current_time
 					lap += 1
-					current_time = 0
 					current_distance -= lap_distance
 				end
 			}

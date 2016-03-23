@@ -4,7 +4,7 @@ require_relative 'camel_race'
 dir = ARGV[0]
 if dir.nil?
   # Si corremos desde nuestro IDE ruby preferido (Atom <3)
-  dir = __dir__ + "/carreras ejemplo v1.3/carrera_6_camellos_corregida_2.txt"
+  dir = __dir__ + "/carreras ejemplo/carrera_6_camellos.txt"
 end
 
 camel_race = Camels::Camel_Race.new()
