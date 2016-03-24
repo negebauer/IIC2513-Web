@@ -1,3 +1,7 @@
+Entrega 2: Carrea de camellos
+
+Integrantes: David Ruz y Nicolás Gebauer
+
 Para correr el programa se puede correr directo desde main.rb, en cuyo caso se verifica la carrera_6_camellos. Tambien se puede llamar desde consola con 'ruby main.rb ruta_a_archivo_a_consultar'
 
 Se imprime todo en pantalla
