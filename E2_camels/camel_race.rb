@@ -142,7 +142,6 @@ module Camels
 		def process_points
 			camels = @camels.values
 			camels.each { |camel| @points[camel] = 0 }
-			p @points
 			(1..3).each { |lap|
 				@winners[lap].keys.each { |position|
 					camels = @winners[lap][position]
@@ -159,7 +158,6 @@ module Camels
 					}
 				}
 			}
-			puts @points
 		end
 
 		def camels_str
