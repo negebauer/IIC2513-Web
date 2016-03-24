@@ -14,7 +14,7 @@ module Camels
 			return @@lap_distance
 		end
 
-		attr_reader :camel_quantity, :camel_data, :race_data, :camels, :data_race
+		attr_reader :camel_quantity, :camel_data, :race_data, :camels, :data_race, :winners
 
 	  def initialize
 	    @camel_quantity = ""
@@ -23,6 +23,9 @@ module Camels
 			@camels = Hash.new
 			@data_race = []
 			@positions = Hash.new
+			@winners = Hash.new
+			@winner = []
+			@points = Hash.new
 	  end
 
 		def inspect
@@ -64,7 +67,6 @@ module Camels
 			}
 		end
 
-
 	  def get_raw_data
 	    @data_race = @race_data.scan(/\w+\s*,\s*[0-9\.]+/) # { |match|  }
 		end
@@ -87,72 +89,119 @@ module Camels
 			@camels.keys.each { |key| camels[key].generate_laps_time }
 		end
 
-		def camel_win
+		def process_winner
 			camels = @camels.values
 			camels.sort_by! { |camel| camel.total_time }
 			camels.select! { |camel| camel.total_time == camels[0].total_time }
-			if camels.count == 1
-				return "Ganador del Derby del Gran Camejockey: #{camels[0].name}"
-			else
-				return "Ganadores del Derby del Gran Camejockey:\n#{camels.map { |camel| "#{camel.name}\n" }}"
-			end
+			@winner = camels
 		end
 
-		def calculo_puntaje
-			camels = @camels.values
-			(1..3).each { |lap|
-				camels.each { |camel|
-					if camel.position[lap] == 1
-						camel.puntaje += 6
-					elsif camel.position[lap] == 2
-						camel.puntaje += 4
-					elsif camel.position[lap] == 3
-						camel.puntaje += 1
-					else camel.position[lap] > 3
-						camel.puntaje += 0
-					end
+		def empty_winners
+			@winners = Hash.new
+		end
 
+		def empty_winners_lap(lap)
+			@winners[lap] = {1 => [], 2 => [], 3 => []}
+		end
+
+		def number_of_winners(lap)
+			sum = 0
+			@winners[lap].keys.each { |key| sum += winners[lap][key].count }
+			return sum
+		end
+
+		def process_winners
+			camels = @camels.values
+			empty_winners
+			(1..5).each { |lap|
+				empty_winners_lap(lap)
+				position = 1
+				last_camel_time = 0
+				camels.sort_by! { |camel| camel.times[lap] }
+				camels.each { |camel|
+					if last_camel_time == 0 || camel.times[lap] <= last_camel_time
+						last_camel_time = camel.times[lap]
+						@winners[lap][position].push(camel)
+					elsif position < 3
+						if number_of_winners(lap) >= 3
+							next
+						end
+						if @winners[lap][position].count >= 2
+							position += 1
+						end
+						position += 1
+						last_camel_time = camel.times[lap]
+						@winners[lap][position].push(camel)
+					else
+						next
+					end
 				}
 			}
-			str = "Puntajes Finales:\n"
-			camels.each {|camello|
-				str += "#{camello.name}: #{camello.puntaje}\n"
+		end
+
+		def process_points
+			camels = @camels.values
+			camels.each { |camel| @points[camel] = 0 }
+			p @points
+			(1..3).each { |lap|
+				@winners[lap].keys.each { |position|
+					camels = @winners[lap][position]
+					points = 0
+					if position == 1
+						points = 6
+					elsif position == 2
+						points = 4
+					elsif position == 3
+						points = 1
+					end
+					camels.each { |camel|
+						@points[camel] += points
+					}
+				}
+			}
+			puts @points
+		end
+
+		def camels_str
+			str = "Camellos:\n"
+			@camels.values.each { |camel| str += "#{camel.name}, #{camel.id}\n" }
+			str += "\n"
+			return str
+		end
+
+		def laps_str
+			str = "Resultado vueltas:\n"
+			@winners.keys.each { |lap|
+				str += "Vuelta #{lap}\n"
+				@winners[lap].keys.each { |position|
+					if @winners[lap][position][0].nil?
+						next
+					end
+					str += "#{position}"
+					@winners[lap][position].each { |camel|
+						if camel != @winners[lap][position][0]
+							str += ","
+						end
+						str += " #{camel.name}"
+					}
+					str += " (#{@winners[lap][position][0].times[lap]} seg)\n"
+				}
+				str += "\n"
 			}
 			return str
 		end
 
-		def lap_places
-			camels = @camels.values
-			str = ""
-			(1..5).each { |lap|
-				arreglo_camellos = []
-				posicion = 1
-				camels.sort_by! { |camel| camel.times[lap] }
-				camels[0].position[lap]=1
-				arreglo_camellos.push(camels[0])
-				camels.each {|camello|
-						posicion = 1
-						camels.each {|camello2|
-							if !arreglo_camellos.include?(camello2)
-								if camello.times[lap] == camello2.times[lap]
-									posicion += 1
-									camello2.position[lap] = camello.position[lap]
-								else
-									posicion += 1
-									camello2.position[lap] = posicion
-								end
-								arreglo_camellos.push(camello)
-							end
-							print "#{lap}: #{camello.name}, #{camello.times[lap]}, #{camello.position[lap]} -- #{camello2.name}, #{camello2.times[lap]}, #{camello2.position[lap]}\n"
-						}
+		def winner_str
+			if @winner.count == 1
+				return "Ganador del Derby del Gran Camejockey: #{@winner[0].name}\n\n"
+			else
+				return "Ganadores del Derby del Gran Camejockey:\n#{@winner.map { |camel| "#{camel.name}\n" }}\n\n"
+			end
+		end
 
-				}
-				posicion += 1
-				str += "Vuelta #{lap}:\n"
-				str += "#{camels[0].position[lap].to_s}° lugar: #{!camels[0].nil? ? camels[0].name : "No hay"}\n"
-				str += "#{camels[1].position[lap].to_s}° lugar: #{!camels[1].nil? ? camels[1].name : "No hay"}\n"
-				str += "#{camels[2].position[lap].to_s}° lugar: #{!camels[2].nil? ? camels[2].name : "No hay"}\n"
-			}
+		def points_str
+			str = "Puntajes:\n"
+			@points.keys.each { |camel| str += "Puntaje #{camel.name}: #{@points[camel]}\n" }
 			return str
 		end
 

@@ -14,6 +14,7 @@ module Camels
 	  end
 
 		def inspect
+			return @name
 			str = "Nombre: #{@name}, id: #{@id}"
 			# str += "\nDistances: #{@distances}"
 			str += "\nTimes: #{@times}"
