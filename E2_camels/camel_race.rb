@@ -199,7 +199,7 @@ module Camels
 
 		def points_str
 			str = "Puntajes:\n"
-			@points.keys.each { |camel| str += "Puntaje #{camel.name}: #{@points[camel]}\n" }
+			@points.keys.each { |camel| str += "#{camel.name}: #{@points[camel]}\n" }
 			return str
 		end
 
