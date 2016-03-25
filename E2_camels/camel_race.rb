@@ -51,7 +51,7 @@ module Camels
     end
 
     def create_cammels
-      camels_with_id = @camel_data.split(';')
+      camels_with_id = @camel_data.encode('ASCII', :invalid => :replace).split(';')
       camels_with_id.each do |camel_id|
         camel_id_array = camel_id.split(',')
         return if camel_id_array[0].nil? || camel_id_array[1].nil?
@@ -65,7 +65,7 @@ module Camels
     end
 
 		def get_raw_data
-      @data_race = @race_data.scan(/\w+\s*,\s*[0-9\.]+/)
+      @data_race = @race_data.scan(/\w+\s*,\s*[0-9\.]+/) #
 		end
 
     def process_data
