@@ -1,3 +1,4 @@
+/*
 body {
   background-color: #14C7CC;
 }
@@ -12,19 +13,20 @@ nav {
   /*background-color: #14C7CC;*/
   /*padding-top: 10px;*/
   /*padding-bottom: 10px;*/
-  border: 5px solid black;
+  /*border: 5px solid black;
   height: 30px;
 }
 
 nav a {
   /*background-color: black;*/
-  color: #998B3D;
+  /*color: #998B3D;
   border-right: 5px solid black;
   text-decoration: none;
   padding: 5px;
   /*margin-right: -10px;*/
-}
+/*}
 
 nav a:hover {
   color: #FFA500;
 }
+*/
