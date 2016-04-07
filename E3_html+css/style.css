@@ -1,0 +1,19 @@
+nav {
+  display: block;
+  background-color: #14C7CC;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav a {
+  /*background-color: black;*/
+  color: #998B3D;
+  border: 5px solid black;
+  text-decoration: none;
+  padding: 5px;
+  margin-right: -10px;
+}
+
+nav a:hover {
+  color: #FFA500;
+}
