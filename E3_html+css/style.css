@@ -6,6 +6,7 @@
     top: 0;
     width: 100%;
     background: url(images/background_head.png) repeat-x;
+    display: block;
 }
 
 #header-inner {

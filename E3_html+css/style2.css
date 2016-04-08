@@ -1,16 +1,20 @@
+body {
+  background-color: #07DBDB;
+}
+
 .contenedor {
-    width: 960px;
+    width: 100%;
     margin: 0 auto;
 }
 
 header {
-    position: fixed;
     z-index: 10;
     left: 0;
     right: 0;
     top: 0;
     width: 100%;
     background: url(images/background_head.png) repeat-x;
+    display: block;
 }
 
 .header-inner {
@@ -93,7 +97,7 @@ header a {
 }
 
 .categoria {
-    width: 200px;
+    width: 16%;
     float: left;
 }
 
@@ -102,6 +106,28 @@ header a {
 }
 
 .informacion {
-    width: 560px;
+    width: 84%;
     float: left;
+}
+
+.nav_categorias a {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  background-color: #869399;
+  border: 1px solid black;
+}
+
+.nav_categorias a:hover {
+  background-color: #c6ffea;
+}
+
+.MenuCat a:hover {
+  background-color: #E8930C;
+}
+
+.titulo_cat {
+  padding: 5px;
+  border: 1px solid black;
 }
