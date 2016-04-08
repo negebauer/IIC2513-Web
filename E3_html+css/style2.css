@@ -1,4 +1,9 @@
-#header {
+.contenedor {
+    width: 960px;
+    margin: 0 auto;
+}
+
+header {
     position: fixed;
     z-index: 10;
     left: 0;
@@ -8,7 +13,7 @@
     background: url(images/background_head.png) repeat-x;
 }
 
-#header-inner {
+.header-inner {
     height: 90px;
     width: 980px;
     position: relative;
@@ -18,8 +23,8 @@
     margin-left: auto;
 }
 
-#header-inner .logo {
-    width: 199px;
+.logo {
+    width: 200px;
     height: 65px;
     left: 0px;
     top: 0px;
@@ -30,12 +35,17 @@ a img {
     border: none;
 }
 
-#header-inner .name_company {
+header a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.name_company {
     width: 212px;
     height: 45px;
     left: 359px;
     top: 10px;
-    position: relative;
+    position: absolute;
     font-family: fantasy;
     font-weight: normal;
     font-style: normal;
@@ -43,41 +53,30 @@ a img {
     color: #FFF;
 }
 
-.name_company span {
-    font-family: 'FuturaBT';
-    font-weight: normal;
-    font-style: normal;
-    color: #FFF;
-    font-size: 24px;
-}
-
-#header a {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-#CategoryMenu {
+.worklet {
     margin: 0;
+    text-align: center;
+
 }
 
 .worklet-content {
     clear: both;
+
 }
 
-#header-inner .MenuCat {
+.MenuCat {
     width: 980px;
-    height: 27px;
+    height: 24px;
     left: 0px;
     bottom: 1px;
     position: absolute;
 }
 
-#menu {
-  display: inline-block;
+.MenuCat a {
   margin: 0;
+  margin-right: 15px;
   height: 24px;
   width: 100%;
-  position: absolute;
   z-index: 1;
   top: 0px;
   font-family: 'futura_ltcn_btlight';
@@ -88,36 +87,21 @@ a img {
   list-style: none;
 }
 
-
-/*
-body {
-  background-color: #14C7CC;
+.columnas {
+    background-image: url(images/fondo.png) !important;
+    background-repeat: repeat-y !important;
 }
 
-img.logo{
-  width: 200px;
-  height: 200px;
+.categoria {
+    width: 200px;
+    float: left;
 }
 
-nav {
-  display: block;
-  /*background-color: #14C7CC;*/
-  /*padding-top: 10px;*/
-  /*padding-bottom: 10px;*/
-  /*border: 5px solid black;
-  height: 30px;
+.contenido_categoria{
+  padding: 8px;
 }
 
-nav a {
-  /*background-color: black;*/
-  /*color: #998B3D;
-  border-right: 5px solid black;
-  text-decoration: none;
-  padding: 5px;
-  /*margin-right: -10px;*/
-/*}
-
-nav a:hover {
-  color: #FFA500;
+.informacion {
+    width: 560px;
+    float: left;
 }
-*/
