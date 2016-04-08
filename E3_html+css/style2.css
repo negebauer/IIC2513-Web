@@ -4,11 +4,6 @@ body {
   margin: 0 auto;
 }
 header {
-  z-index: 10;
-  left: 0;
-  right: 0;
-  top: 0;
-  width: 100%;
   background: url(images/background_head.png) repeat-x;
   display: block;
 }
@@ -19,9 +14,9 @@ a img {
   border: none;
 }
 header {
-  height: 90px;
+  /*height: 90px;*/
   /*width: 980px;*/
-  width: 100%;
+  /*width: 100%;*/
   position: relative;
   margin-top: 0px;
   margin-right: auto;
@@ -32,57 +27,42 @@ header a {
   color: #FFFFFF;
   text-decoration: none;
 }
-header.logo {
-  width: 200px;
-  height: 65px;
-  left: 0px;
-  top: 0px;
-  position: absolute;
-}
-.name_company {
+header .name_company {
   width: 212px;
   height: 45px;
   left: 359px;
   top: 10px;
-  position: absolute;
+  position: fixed;
   font-family: fantasy;
   font-weight: normal;
   font-style: normal;
   font-size: 12px;
   color: #FFF;
-  vertical-align: middle;
-}
-.name_company a {
-  vertical-align: bottom;
-}
-.worklet {
-  margin: 0;
-  /*text-align: center;*/
-  text-indent: 10px;
-}
-.worklet-content {
-  clear: both;
+  background-color: red;
 }
 nav.MenuCat {
-  text-indent: 10px;
-  width: 980px;
-  height: 24px;
-  left: 0px;
-  bottom: 1px;
-  position: absolute;
+  /*text-indent: 10px;*/
+  text-align: center;
+  padding-bottom: 5px;
+  /*width: 980px;*/
+  height: 50px;
+  /*left: 0px;*/
+  /*bottom: 1px;*/
+  /*position: absolute;*/
 }
 nav.MenuCat a {
-  margin: 0;
+  /*margin: 0;*/
   margin-right: 15px;
-  height: 24px;
-  width: 100%;
+  /*padding-bottom: 5px;*/
+  /*height: 24px;*/
+  /*width: 100%;*/
   z-index: 1;
-  top: 0px;
+  /*top: 0px;*/
   font-family: 'futura_ltcn_btlight';
   font-weight: normal;
   font-style: normal;
   font-size: 20px;
-  padding: 0;
+  /*padding: 0;*/
   list-style: none;
 }
 nav.MenuCat a:hover {
@@ -133,6 +113,7 @@ nav.sub_menu::after {
   nav.sub_menu {
     width: auto;
     float: left;
+    height: auto;
     margin-right: 10px;
   }
   nav.sub_menu::after {
