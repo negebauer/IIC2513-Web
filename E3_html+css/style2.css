@@ -1,5 +1,5 @@
 body {
-  background-color: #07DBDB;
+  background-color: inherit;
 }
 
 .contenedor {
@@ -128,7 +128,7 @@ header a {
 }
 
 .celda_p {
-    background-color: rgba(255,255,255,.2);
+    background-color: #DBE0FF;
     border-radius: 8px;
     display: inline-block;
     width: 300px;
@@ -144,4 +144,4 @@ header a {
 
 .titulo {
   text-align: center;
-}
+}g
