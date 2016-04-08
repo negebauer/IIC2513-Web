@@ -91,11 +91,6 @@ header a {
   list-style: none;
 }
 
-.columnas {
-    background-image: url(images/fondo.png) !important;
-    background-repeat: repeat-y !important;
-}
-
 .categoria {
     width: 16%;
     float: left;
@@ -130,4 +125,26 @@ header a {
 .titulo_cat {
   padding: 5px;
   border: 1px solid black;
+}
+
+.celda_p {
+    background-color: rgba(255,255,255,.2);
+    border-radius: 8px;
+    display: inline-block;
+    width: 300px;
+    height: 100px;
+}
+
+
+.foto-ppal {
+    height: 60px;
+    width: 60px;
+}
+
+.celda_info_p {
+    border-radius: inherit;
+    box-shadow: 0 1px 3px #c1c1c1;
+    text-decoration: none;
+    transition-property: top, left, opacity, box-shadow, background-color;
+    height: 50%;
 }
