@@ -136,6 +136,12 @@ header a {
 }
 
 .img-prd {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 180px;
+  margin-left: 15%;
+  margin-top: 10%;
+}
+
+.titulo {
+  text-align: center;
 }
