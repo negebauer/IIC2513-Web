@@ -8,8 +8,11 @@ header {
   display: block;
   background-color: rgba(15, 12, 12, 0.89);
 }
-h2 {
+h2, h4 {
   text-align: center;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 6px;
 }
 a img {
   border: none;
@@ -68,7 +71,7 @@ nav.MenuCat a:hover {
   background-color: #E8930C;
 }
 nav.sub_menu {
-  
+
 }
 nav.sub_menu a {
   display: block;
@@ -85,8 +88,14 @@ nav.sub_menu .title_sub_menu {
   padding: 5px;
   border: 1px solid black;
 }
+nav.sub_menu_bloc {
+  background-color: red;
+}
 .titulo_cat {
-
+  text-align: center;
+}
+.columnas {
+  text-align: center;
 }
 .celda_p {
   background-color: #DBE0FF;
@@ -110,5 +119,9 @@ nav.sub_menu .title_sub_menu {
   }
   nav.sub_menu::after {
     clear: left;
+  }
+  .titulo_cat {
+    text-align: left;
+    margin-left: 25%;
   }
 }
