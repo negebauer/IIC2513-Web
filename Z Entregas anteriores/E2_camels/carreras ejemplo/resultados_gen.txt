@@ -1,0 +1,445 @@
+gen_2
+
+---------Distancias totales---------
+    ciidhd dxzwuf gxogym Llorqn: 3216.0 -- 414 seg
+    eszprj zvapfs: 3215.039999999986 -- 406 seg
+---------Lugares-----------
+Vuelta 1: 
+    Primer lugar: eszprj zvapfs (79 segs)
+    Segundo lugar: ciidhd dxzwuf gxogym Llorqn (82 segs)
+    Tercer lugar: -
+Vuelta 2: 
+    Primer lugar: eszprj zvapfs (157 segs)
+    Segundo lugar: ciidhd dxzwuf gxogym Llorqn (173 segs)
+    Tercer lugar: -
+Vuelta 3: 
+    Primer lugar: eszprj zvapfs (233 segs)
+    Segundo lugar: ciidhd dxzwuf gxogym Llorqn (250 segs)
+    Tercer lugar: -
+
+---------Puntos-----------
+eszprj zvapfs: 18
+ciidhd dxzwuf gxogym Llorqn: 12
+
+---------Ganador(es)-----------
+    eszprj zvapfs
+
+
+
+gen_200
+
+---------Distancias totales---------
+    cvfmnN MnqcHd: 3211.999999999972 -- 1475 seg
+    nhoqmh oWgcYh pjkdfu WdjNlm: 3211.0400000000905 -- 1683 seg
+    xVnAqw: 6423.290000000015 -- 3210 seg
+    zgRtys svkfam: 3212.8999999999737 -- 1698 seg
+    ndjrjQ ydxafl zoLDec DpcpsY: 3211.1399999999826 -- 1464 seg
+    lcsvtg: 3212.4400000000496 -- 1631 seg
+    vTogPC zfugNy cngkxb npqqMk: 3212.559999999925 -- 1552 seg
+    feizxf: 3212.1000000000367 -- 1786 seg
+    eoagoh qjbruo jkfrhZ: 3211.559999999935 -- 1631 seg
+    ygzjee: 3213.210000000017 -- 1767 seg
+    whoiHz: 3211.9799999999523 -- 1571 seg
+    Qvrlni mjzrmu joncPc urplSd: 3211.07000000003 -- 1498 seg
+    jsltPm: 3211.0 -- 1635 seg
+    mjDfjr vtaaso qocRtf gvyghy: 3212.229999999983 -- 1466 seg
+    trojzz xupcpB deaubH: 3211.0400000000946 -- 1682 seg
+    ZfHuvt Fbsuhr Eshjva: 3211.2899999999586 -- 1732 seg
+    fyqghj bubplT qhqegc Tsnfov: 3211.390000000018 -- 1770 seg
+    bkiGWr yzegEK: 3211.139999999984 -- 1465 seg
+    qljvyd zaEmyb hvrhib: 3211.5400000000186 -- 1589 seg
+    vzefec Ebpipt ufqIWQ: 3211.8000000000666 -- 1619 seg
+    dxqLmj: 3212.44000000005 -- 1654 seg
+    UhmUzF VlRwct pbfari fbfeda: 3212.300000000024 -- 1788 seg
+    rgjxLf Iwkbbq vaayet: 3211.800000000069 -- 1604 seg
+    cXhemh qonqjr: 3213.8200000000575 -- 1570 seg
+    hnucpz qlbgcM: 3213.5399999999377 -- 1608 seg
+    mdpbnz: 3213.9199999999173 -- 1518 seg
+    eoyoua oqnbqi iyoyJN jwnclh: 3213.1200000000817 -- 1683 seg
+    zomjks mgrszZ Gbxpww hrhpAV: 3211.2000000000344 -- 1794 seg
+    gxtzxj kcnvqa izywtf: 3211.7999999999183 -- 1510 seg
+    hmuikV bTsoHJ imlkmf: 3211.9800000000937 -- 1709 seg
+    qhfrmr xdujxv: 3212.9999999999523 -- 1570 seg
+    lpqsrt iekpzp: 3213.4200000000496 -- 1613 seg
+    lyysad: 3211.5199999999254 -- 1533 seg
+    xgZkju: 3211.040000000097 -- 1718 seg
+    vyLndp Qktipg HcbmOl xewsxc: 3211.7999999999165 -- 1501 seg
+    ukxyul: 3213.0000000000214 -- 1543 seg
+    kpqfgg rblpfd Vmabyi lxmhfv: 3211.949999999967 -- 1690 seg
+    khpaqx wdegke gcvsga: 3211.289999999964 -- 1736 seg
+    qBdwnt orygdc ouoOko: 3211.9500000000285 -- 1517 seg
+    vsjxll pjlAww yhylYg Iqrgiv: 3211.519999999925 -- 1557 seg
+    myixje moykuc: 3211.2899999999686 -- 1720 seg
+    brRqoe eFrynl tghrHi jzroLo: 3212.100000000035 -- 1800 seg
+    mpdijY jkyjli: 3212.219999999969 -- 1712 seg
+    lqioJu abmdqp cxjptr: 3212.9999999999523 -- 1606 seg
+    bbrntr xmsxZd: 3214.0199999999522 -- 1563 seg
+    axzDtu: 3212.899999999975 -- 1703 seg
+    AqeOZx cfrhpe: 3211.4600000000496 -- 1640 seg
+    adalfv ldNArt zoklfl: 3212.9999999999272 -- 1483 seg
+    atbvCG mogTuf: 3213.6099999999738 -- 1669 seg
+    azkiaQ hcpfVF: 3211.0400000000936 -- 1722 seg
+    Qktiit: 3213.319999999983 -- 1472 seg
+    tzoxBE grgqoq ysiUvq: 3214.0500000000247 -- 1554 seg
+    Tujuxh Fsxmvx: 3211.540000000025 -- 1560 seg
+    nvuqki Dxssom: 3211.8000000000575 -- 1564 seg
+    mqivbf phySvY Pqsnpj: 3211.0 -- 1592 seg
+    yxibkr: 3212.6399999999753 -- 1660 seg
+    ixljtU mbhfef RhfcRu: 3211.139999999982 -- 1466 seg
+    sfpuOe: 3211.9999999999786 -- 1445 seg
+    oucjpd stelmd voWegk: 3211.04000000009 -- 1702 seg
+    wvlHwe: 3212.1600000000813 -- 1653 seg
+    nomSvs fijefv Zvrrmn: 3211.519999999924 -- 1541 seg
+    zBuuwt dziVvd tkgwqc: 3211.070000000029 -- 1508 seg
+    vPlsHs zuxfpY RbPhLu: 3211.9199999999278 -- 1501 seg
+    mpIfwr: 3212.5499999999406 -- 1599 seg
+    mbNsgs herwqq eCTwlp: 3211.0 -- 1583 seg
+    bcpyja: 3213.53999999994 -- 1645 seg
+    zvodfv: 3211.9500000000257 -- 1552 seg
+    vjhrVr jnsgwo fnkpCf yvkyii: 3212.6400000000854 -- 1713 seg
+    dwGdrq uogxzi: 3211.139999999986 -- 1473 seg
+    dpkotm xocLdl: 3212.920000000096 -- 1725 seg
+    kaMDnn: 3212.6399999999753 -- 1654 seg
+    cefdIa htjODr: 3211.200000000081 -- 1679 seg
+    jevpqh iVczqd lznehv Pmrcir: 3213.099999999975 -- 1449 seg
+    caytwz yetnda Fjvfyk: 3211.2000000000808 -- 1672 seg
+    pfmlgJ lipiml: 3211.5400000000213 -- 1575 seg
+    lTtwUi Ioetfb xSpxyy: 3213.000000000029 -- 1784 seg
+    vzboAs dkfsgR: 3211.919999999928 -- 1505 seg
+    rjRiew tzjbZk vFjmwp: 3211.8000000000598 -- 1626 seg
+    ziAuhg: 3211.2899999999645 -- 1731 seg
+    ydJifk ufbjdf dRChFm qvzYmq: 3211.460000000049 -- 1645 seg
+    bjmxqr SnLtyo rllzij itwcjy: 3212.9200000000965 -- 1689 seg
+    osrnzy xdsDxA fcfpue: 3212.219999999963 -- 1719 seg
+    Kewrnh: 3213.4200000000496 -- 1622 seg
+    sdupca btkwxA vsDrgg lglvjc: 3211.9799999999523 -- 1559 seg
+    cmuhmx zcBdhx: 3212.440000000049 -- 1638 seg
+    oksacb woekwl hexeow: 3212.810000000058 -- 1598 seg
+    kcjqDu: 3212.140000000031 -- 1496 seg
+    ydhflO hvBvuv junreN encenq: 3211.200000000081 -- 1679 seg
+    vscazw sfnjnb: 3213.0000000000273 -- 1764 seg
+    khjaxz huvane ssfjdc ijHmxa: 3213.8200000000643 -- 1632 seg
+    zsiwxy wlLxtv yrdObA: 3211.919999999926 -- 1495 seg
+    uzujvq evuczx Sqrhca: 3211.139999999985 -- 1470 seg
+    pjhOyf eqrsAq: 3212.89999999998 -- 1680 seg
+    eiltek rfwpgl yicafM hbgybp: 3212.810000000058 -- 1578 seg
+    qcWcre coPkGb qhyDod opiqtg: 3212.44000000005 -- 1650 seg
+    issBvy: 3212.5599999999254 -- 1555 seg
+    ejnSqu wuwjOp mufnDe: 3211.559999999937 -- 1622 seg
+    hyekzi Czbzqk gXvcjw: 3212.8999999999705 -- 1683 seg
+    wwfpmv nyjafd snPexh: 3211.9999999999764 -- 1431 seg
+    ixrhne NAhkhz djxmqb: 3213.319999999989 -- 1503 seg
+    hKrsOe oXdvzx aVufhm ybhjkn: 3212.140000000035 -- 1507 seg
+    shorxV BljeJf: 3211.040000000091 -- 1688 seg
+    qxokob: 3212.999999999928 -- 1473 seg
+    Icbzyo: 3213.000000000025 -- 1546 seg
+    aJmqyT: 3214.1999999999734 -- 1481 seg
+    fvApoo lhtjyi kiibkD qoicck: 3212.4400000000496 -- 1637 seg
+    kfhkbp: 3212.6400000000876 -- 1756 seg
+    FEMvkw: 3211.669999999975 -- 1643 seg
+    rlmwPl khckky bpyrrc vfdhtv: 3211.200000000081 -- 1679 seg
+    xCzskt: 3211.2000000000817 -- 1658 seg
+    UxzaAm: 3212.0 -- 1595 seg
+    svqbbW Bmfoyy eGmqvr kvrgbb: 3211.4600000000496 -- 1630 seg
+    mgkczn: 3212.6400000000867 -- 1776 seg
+    jlxzdq: 3211.200000000035 -- 1761 seg
+    Bxdbtj ypwxhi: 3212.229999999984 -- 1470 seg
+    ydHbNv ceixmv: 3211.9799999999523 -- 1593 seg
+    Duqzwt ujcrhu tnZbik: 3211.9999999999695 -- 1468 seg
+    xdxnfs Dqwysi eStnti NvlhIe: 3212.999999999926 -- 1467 seg
+    kiaorv jjrdbw: 3211.4600000000496 -- 1627 seg
+    eumvrb: 3211.800000000064 -- 1608 seg
+    TozheU qepsuh nwqlsT mffQou: 3214.199999999972 -- 1462 seg
+    kPdcuu yxymkk eRwyqg: 3213.1499999999655 -- 1715 seg
+    qzkPct vhzwtw qkXbho Eylnox: 3211.9999999999695 -- 1477 seg
+    uOtrbf BBxycy yjgvcd: 3212.160000000081 -- 1653 seg
+    zqsvoo: 3212.8100000000586 -- 1567 seg
+    rmanru cZjluN: 3212.1000000000336 -- 1786 seg
+    wigpzG jqxzql afbfdc: 3211.800000000061 -- 1575 seg
+    hdmvqk: 3212.229999999981 -- 1457 seg
+    lrCcsp hosCcP HzScje cxttap: 3211.9999999999764 -- 1449 seg
+    bwVnql coHrpD pyaxfb hlckgx: 3212.2199999999693 -- 1749 seg
+    tiEdpU: 3213.4200000000496 -- 1671 seg
+    lqklfa: 3211.519999999924 -- 1527 seg
+    dociPv jaaeuk: 3213.1499999999633 -- 1721 seg
+    ZiwNib: 3214.1999999999753 -- 1458 seg
+    sgnglM ssvkfc clfqrv zDrrsr: 3212.3000000000184 -- 1763 seg
+    ihvwKl zoHdhu ovozas: 3213.0000000000196 -- 1531 seg
+    jeWelu lxqtdm: 6426.519999999851 -- 3259 seg
+    vKslxj: 3211.2000000000326 -- 1768 seg
+    oqscFe myrjdp: 3211.0 -- 1590 seg
+    grpuOo Ocwqiv eyrYdC epfxPp: 3212.549999999939 -- 1621 seg
+    kZpzwv trikug xoBtcl tyZytc: 3211.4600000000496 -- 1605 seg
+    afxnie: 3211.4600000000496 -- 1628 seg
+    jfyuxj lisfyD dluimm: 3211.1399999999867 -- 1485 seg
+    iBYtoo: 3211.07000000003 -- 1502 seg
+    sztnjl syUepp mGxcdc: 3211.9799999999523 -- 1580 seg
+    agneuN: 3212.859999999917 -- 1522 seg
+    fcmfvf: 3212.9200000000965 -- 1698 seg
+    jneoQj zxsgrC gbAmox xnaMym: 3211.200000000036 -- 1806 seg
+    bzblmv GtRcgK cukvio: 3213.099999999968 -- 1468 seg
+    xgfzvW vvzzss xyGdpT euOnjr: 3211.9199999999273 -- 1447 seg
+    ncnuqs: 3211.3900000000162 -- 1761 seg
+    smUxBv vvynhq dmioid: 3211.9500000000203 -- 1517 seg
+    bcjoti jrRaos: 3213.6099999999783 -- 1659 seg
+    DzsJcu vifdhy oraydw pyzYuS: 3212.219999999967 -- 1705 seg
+    jgBnwr rdkqnc: 3213.000000000034 -- 1778 seg
+    YSmamx pnlbme: 3212.9999999999527 -- 1584 seg
+    pnlXAr zyhugj ydhnun kqjcfd: 3212.2299999999823 -- 1473 seg
+    vjtffz Ibakvl klwgek: 3211.5199999999236 -- 1536 seg
+    hIptfw: 3211.200000000036 -- 1789 seg
+    dodftw wrasjs cejooi Ioijmj: 3212.639999999977 -- 1639 seg
+    aEtksq rcekng: 3211.390000000017 -- 1733 seg
+    HemZSa zPRwjf pzraek: 3212.140000000029 -- 1532 seg
+    hdYotw: 3213.3199999999842 -- 1469 seg
+    rwtxrb: 3211.4600000000496 -- 1620 seg
+    jgxued sKzlEy jmhtkf kzqemI: 3213.6000000000186 -- 1569 seg
+    seUlty: 3212.22999999998 -- 1483 seg
+    wssqxp: 3212.219999999969 -- 1705 seg
+    VcUqtp qiuKxa nFkhje: 3211.9500000000266 -- 1542 seg
+    snfpcx uoycxa vjsutd: 3211.4600000000496 -- 1634 seg
+    cvifjf zmxtDz: 3212.9999999999263 -- 1489 seg
+    tkfhrw: 3211.0400000000936 -- 1706 seg
+    axynoc gQhnot ionyff: 3211.5599999999354 -- 1618 seg
+    ckwrus yrCwtj qkqIfg: 3212.100000000031 -- 1772 seg
+    kNalnh whkand: 3213.0000000000337 -- 1796 seg
+    rUztoY qfwdaE: 3211.139999999984 -- 1475 seg
+    vxrttf: 3212.5700000000284 -- 1577 seg
+    iJplVd gdwxbc: 3211.9499999999694 -- 1670 seg
+    vqefvh gceRmk myxhya: 3211.95000000002 -- 1549 seg
+    titzpr ZUeuyX: 3212.1000000000386 -- 1796 seg
+    fuCimm: 3211.20000000003 -- 1765 seg
+    noRwtc zuliwy: 3212.1000000000345 -- 1776 seg
+    wsuZsf zwugxx: 3211.800000000058 -- 1599 seg
+    RsSekw Uftnot fwcBje: 3212.9999999999254 -- 1491 seg
+    uxtycZ knytXe: 3211.9500000000216 -- 1529 seg
+    ixQVqh eXXITa JwiJuq Kbyoeb: 3212.229999999979 -- 1472 seg
+    sqsdaw: 3211.669999999977 -- 1642 seg
+    Rvukhs xsffdr: 3213.319999999977 -- 1464 seg
+    Gpkrgg: 3211.0400000000936 -- 1730 seg
+    txbvKz: 3211.949999999972 -- 1717 seg
+    ycEcqn woPmqj: 3211.3900000000203 -- 1762 seg
+    jxkfuu Sqeuru: 3211.7999999999192 -- 1517 seg
+    ggUvdx qyrpyH: 3213.0000000000223 -- 1546 seg
+    wtszRb XxeCua ojgkxr qczwgg: 3211.9500000000216 -- 1542 seg
+    xonetu vvpsKp: 3211.1399999999853 -- 1481 seg
+    Gwvole qymVta gbuxrZ fzqqrq: 3212.5499999999374 -- 1630 seg
+    gVcsyt cmhume: 3212.549999999935 -- 1645 seg
+    Nbcvvc Rthtvd Vtxzkp GgrXgv: 3212.2299999999827 -- 1482 seg
+    yDsczd bPeurw: 3211.7200000000857 -- 1758 seg
+---------Lugares-----------
+Vuelta 1: 
+    Primer lugar: xonetu vvpsKp (281 segs)
+    Segundo lugar: wwfpmv nyjafd snPexh (282 segs)
+    Tercer lugar: TozheU qepsuh nwqlsT mffQou (284 segs)
+Vuelta 2: 
+    Primer lugar: wwfpmv nyjafd snPexh (562 segs)
+    Segundo lugar: xgfzvW vvzzss xyGdpT euOnjr (564 segs)
+    Tercer lugar: ZiwNib (573 segs)
+Vuelta 3: 
+    Primer lugar: wwfpmv nyjafd snPexh (855 segs)
+    Segundo lugar: jevpqh iVczqd lznehv Pmrcir (862 segs)
+    Tercer lugar: xgfzvW vvzzss xyGdpT euOnjr (864 segs)
+
+---------Puntos-----------
+wwfpmv nyjafd snPexh: 16
+xonetu vvpsKp: 6
+xgfzvW vvzzss xyGdpT euOnjr: 5
+jevpqh iVczqd lznehv Pmrcir: 4
+TozheU qepsuh nwqlsT mffQou: 1
+ZiwNib: 1
+bzblmv GtRcgK cukvio: 0
+feizxf: 0
+eoagoh qjbruo jkfrhZ: 0
+ygzjee: 0
+whoiHz: 0
+Qvrlni mjzrmu joncPc urplSd: 0
+jsltPm: 0
+mjDfjr vtaaso qocRtf gvyghy: 0
+trojzz xupcpB deaubH: 0
+ZfHuvt Fbsuhr Eshjva: 0
+fyqghj bubplT qhqegc Tsnfov: 0
+bkiGWr yzegEK: 0
+qljvyd zaEmyb hvrhib: 0
+vzefec Ebpipt ufqIWQ: 0
+dxqLmj: 0
+UhmUzF VlRwct pbfari fbfeda: 0
+rgjxLf Iwkbbq vaayet: 0
+cXhemh qonqjr: 0
+hnucpz qlbgcM: 0
+mdpbnz: 0
+eoyoua oqnbqi iyoyJN jwnclh: 0
+zomjks mgrszZ Gbxpww hrhpAV: 0
+gxtzxj kcnvqa izywtf: 0
+hmuikV bTsoHJ imlkmf: 0
+qhfrmr xdujxv: 0
+lpqsrt iekpzp: 0
+lyysad: 0
+xgZkju: 0
+vyLndp Qktipg HcbmOl xewsxc: 0
+ukxyul: 0
+kpqfgg rblpfd Vmabyi lxmhfv: 0
+khpaqx wdegke gcvsga: 0
+qBdwnt orygdc ouoOko: 0
+vsjxll pjlAww yhylYg Iqrgiv: 0
+myixje moykuc: 0
+brRqoe eFrynl tghrHi jzroLo: 0
+mpdijY jkyjli: 0
+lqioJu abmdqp cxjptr: 0
+bbrntr xmsxZd: 0
+axzDtu: 0
+AqeOZx cfrhpe: 0
+adalfv ldNArt zoklfl: 0
+atbvCG mogTuf: 0
+azkiaQ hcpfVF: 0
+Qktiit: 0
+tzoxBE grgqoq ysiUvq: 0
+Tujuxh Fsxmvx: 0
+nvuqki Dxssom: 0
+mqivbf phySvY Pqsnpj: 0
+yxibkr: 0
+ixljtU mbhfef RhfcRu: 0
+sfpuOe: 0
+oucjpd stelmd voWegk: 0
+wvlHwe: 0
+nomSvs fijefv Zvrrmn: 0
+zBuuwt dziVvd tkgwqc: 0
+vPlsHs zuxfpY RbPhLu: 0
+mpIfwr: 0
+mbNsgs herwqq eCTwlp: 0
+bcpyja: 0
+zvodfv: 0
+vjhrVr jnsgwo fnkpCf yvkyii: 0
+dwGdrq uogxzi: 0
+dpkotm xocLdl: 0
+kaMDnn: 0
+cefdIa htjODr: 0
+cvfmnN MnqcHd: 0
+caytwz yetnda Fjvfyk: 0
+pfmlgJ lipiml: 0
+lTtwUi Ioetfb xSpxyy: 0
+vzboAs dkfsgR: 0
+rjRiew tzjbZk vFjmwp: 0
+ziAuhg: 0
+ydJifk ufbjdf dRChFm qvzYmq: 0
+bjmxqr SnLtyo rllzij itwcjy: 0
+osrnzy xdsDxA fcfpue: 0
+Kewrnh: 0
+sdupca btkwxA vsDrgg lglvjc: 0
+cmuhmx zcBdhx: 0
+oksacb woekwl hexeow: 0
+kcjqDu: 0
+ydhflO hvBvuv junreN encenq: 0
+vscazw sfnjnb: 0
+khjaxz huvane ssfjdc ijHmxa: 0
+zsiwxy wlLxtv yrdObA: 0
+uzujvq evuczx Sqrhca: 0
+pjhOyf eqrsAq: 0
+eiltek rfwpgl yicafM hbgybp: 0
+qcWcre coPkGb qhyDod opiqtg: 0
+issBvy: 0
+ejnSqu wuwjOp mufnDe: 0
+hyekzi Czbzqk gXvcjw: 0
+lcsvtg: 0
+ixrhne NAhkhz djxmqb: 0
+hKrsOe oXdvzx aVufhm ybhjkn: 0
+shorxV BljeJf: 0
+qxokob: 0
+Icbzyo: 0
+aJmqyT: 0
+fvApoo lhtjyi kiibkD qoicck: 0
+kfhkbp: 0
+FEMvkw: 0
+rlmwPl khckky bpyrrc vfdhtv: 0
+xCzskt: 0
+UxzaAm: 0
+svqbbW Bmfoyy eGmqvr kvrgbb: 0
+mgkczn: 0
+jlxzdq: 0
+Bxdbtj ypwxhi: 0
+ydHbNv ceixmv: 0
+Duqzwt ujcrhu tnZbik: 0
+xdxnfs Dqwysi eStnti NvlhIe: 0
+kiaorv jjrdbw: 0
+eumvrb: 0
+ndjrjQ ydxafl zoLDec DpcpsY: 0
+kPdcuu yxymkk eRwyqg: 0
+qzkPct vhzwtw qkXbho Eylnox: 0
+uOtrbf BBxycy yjgvcd: 0
+zqsvoo: 0
+rmanru cZjluN: 0
+wigpzG jqxzql afbfdc: 0
+hdmvqk: 0
+lrCcsp hosCcP HzScje cxttap: 0
+bwVnql coHrpD pyaxfb hlckgx: 0
+tiEdpU: 0
+lqklfa: 0
+dociPv jaaeuk: 0
+zgRtys svkfam: 0
+sgnglM ssvkfc clfqrv zDrrsr: 0
+ihvwKl zoHdhu ovozas: 0
+jeWelu lxqtdm: 0
+vKslxj: 0
+oqscFe myrjdp: 0
+grpuOo Ocwqiv eyrYdC epfxPp: 0
+kZpzwv trikug xoBtcl tyZytc: 0
+afxnie: 0
+jfyuxj lisfyD dluimm: 0
+iBYtoo: 0
+sztnjl syUepp mGxcdc: 0
+agneuN: 0
+fcmfvf: 0
+jneoQj zxsgrC gbAmox xnaMym: 0
+vTogPC zfugNy cngkxb npqqMk: 0
+xVnAqw: 0
+ncnuqs: 0
+smUxBv vvynhq dmioid: 0
+bcjoti jrRaos: 0
+DzsJcu vifdhy oraydw pyzYuS: 0
+jgBnwr rdkqnc: 0
+YSmamx pnlbme: 0
+pnlXAr zyhugj ydhnun kqjcfd: 0
+vjtffz Ibakvl klwgek: 0
+hIptfw: 0
+dodftw wrasjs cejooi Ioijmj: 0
+aEtksq rcekng: 0
+HemZSa zPRwjf pzraek: 0
+hdYotw: 0
+rwtxrb: 0
+jgxued sKzlEy jmhtkf kzqemI: 0
+seUlty: 0
+wssqxp: 0
+VcUqtp qiuKxa nFkhje: 0
+snfpcx uoycxa vjsutd: 0
+cvifjf zmxtDz: 0
+tkfhrw: 0
+axynoc gQhnot ionyff: 0
+ckwrus yrCwtj qkqIfg: 0
+kNalnh whkand: 0
+rUztoY qfwdaE: 0
+vxrttf: 0
+iJplVd gdwxbc: 0
+vqefvh gceRmk myxhya: 0
+titzpr ZUeuyX: 0
+fuCimm: 0
+noRwtc zuliwy: 0
+wsuZsf zwugxx: 0
+RsSekw Uftnot fwcBje: 0
+uxtycZ knytXe: 0
+ixQVqh eXXITa JwiJuq Kbyoeb: 0
+sqsdaw: 0
+Rvukhs xsffdr: 0
+Gpkrgg: 0
+txbvKz: 0
+ycEcqn woPmqj: 0
+jxkfuu Sqeuru: 0
+ggUvdx qyrpyH: 0
+wtszRb XxeCua ojgkxr qczwgg: 0
+nhoqmh oWgcYh pjkdfu WdjNlm: 0
+Gwvole qymVta gbuxrZ fzqqrq: 0
+gVcsyt cmhume: 0
+Nbcvvc Rthtvd Vtxzkp GgrXgv: 0
+yDsczd bPeurw: 0
+
+---------Ganador(es)-----------
+    wwfpmv nyjafd snPexh
