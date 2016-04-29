@@ -20,11 +20,11 @@ default: &default
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
-  username: 'Nico'
 
 development:
   <<: *default
   database: IIC2513Web_development
+  username: 'Nico'
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -84,3 +84,4 @@ production:
   database: IIC2513Web_production
   username: IIC2513Web
   password: <%= ENV['IIC2513WEB_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
