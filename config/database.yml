@@ -79,7 +79,7 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  database: dckceut8r00qb5
-  username: eydcpxjklontoh
-  password: zhXnSHCob3Vy-w_iQuBqKi80-w
-  url: <%= ENV['DATABASE_URL'] %>
+  <<: *default
+  database: nidastore_production
+  username: nidastore
+  password: <%= ENV['NIDASTORE_DATABASE_PASSWORD'] %>
