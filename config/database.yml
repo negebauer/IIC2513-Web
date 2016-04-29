@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: nidastore_production
-  username: nidastore
-  password: <%= ENV['NIDASTORE_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
