@@ -1,0 +1,20 @@
+<div id="name_ask">
+  <h1>Bienvenido</h1>
+  <p>Para continuar por favor tu usuario y clave</p>
+  <% if @error.present? %>
+    <div class="error-message"><strong>Atención: </strong><%= @error %></div>
+  <% end %>
+  <%= form_tag user_userRemember_path do %>
+    <div class="form-control">
+      <%= label_tag(:username, 'Usuario') %>
+      <%= text_field_tag(:username, nil, placeholder: "Ask Ketchup") %>
+    </div>
+    <div class="form-control">
+      <%= label_tag(:pass, 'Clave') %>
+      <%= password_field_tag(:pass) %>
+    </div>
+    <div class="form-control">
+      <%= submit_tag("Ingresar") %>
+    </div>
+  <% end %>
+</div>

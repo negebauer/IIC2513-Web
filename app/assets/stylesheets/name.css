@@ -1,0 +1,39 @@
+#name_ask .form-control:after {
+  display: table;
+  content: ' ';
+  clear: both;
+}
+
+#name_ask .form-control label {
+  display: block;
+  float: left;
+  text-align: right;
+  width: 140px;
+  font-size: 14px;
+  line-height: 26px;
+  vertical-align: baseline;
+}
+
+#name_ask .form-control input[type=text], 
+#name_ask .form-control input[type=password]{
+  display: block;
+  width: 140px;
+  height: 20px;
+  margin-left: 160px;
+  font-size: 14px;
+  line-height: 20px;
+  vertical-align: baseline;
+  margin-bottom: 10px; 
+}
+
+#name_ask input[type=submit] {
+  display: block;
+  width: 240px;
+  height: 30px;
+  margin: 10px auto 0;
+  background: #eee;
+  border: 2px solid #000;
+  cursor: pointer;
+  font-size: 14px;
+}
+
