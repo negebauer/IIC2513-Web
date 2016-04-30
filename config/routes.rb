@@ -1,14 +1,14 @@
 Rails.application.routes.draw do
-  resources :users
+  get 'login', to: "login#loginask"
+  post 'login/loginvalidate'
 
-  get 'users/userAsk'
-  post 'users/userRemember'
+  resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'login#loginask'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

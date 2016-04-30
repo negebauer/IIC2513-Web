@@ -4,7 +4,7 @@
   <% if @error.present? %>
     <div class="error-message"><strong>Atención: </strong><%= @error %></div>
   <% end %>
-  <%= form_tag user_userRemember_path do %>
+  <%= form_tag login_loginvalidate_path do %>
     <div class="form-control">
       <%= label_tag(:username, 'Usuario') %>
       <%= text_field_tag(:username, nil, placeholder: "Ask Ketchup") %>

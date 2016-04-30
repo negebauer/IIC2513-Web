@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+if User.first.nil?
+  # no hay usuarios
+  names = ["david", "nico"]
+  names.uniq.map{|n| n.downcase }.each do |name|
+    User.create(username: name, password: '12345678', admin: false)
+  end
+end
