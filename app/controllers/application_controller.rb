@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-  before_action :set_name, except: ['loginask', 'loginvalidate']
+  before_action :set_name
 
   def set_name
     user_id = session[:user_id]

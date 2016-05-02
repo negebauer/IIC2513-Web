@@ -1,14 +1,14 @@
 class LoginController < ApplicationController
-  def loginask
+  skip_before_action :set_name, only: [:ask, :validate]
+
+  def ask
     user_id = session[:user_id]
     if !user_id.nil? && User.exists?(user_id)
       redirect_to user_path(user_id)
     end
   end
 
-  
-
-  def loginvalidate
+  def validate
     name = params[:username]
     password = params[:pass]
 
@@ -43,5 +43,10 @@ class LoginController < ApplicationController
       # y redirigimos al inicio del juego
       redirect_to user_path(user.id)
     end
+  end
+
+  def logout
+    session[:user_id] = nil
+    redirect_to root_path
   end
 end

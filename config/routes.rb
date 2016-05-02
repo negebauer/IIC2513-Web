@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   get 'store/index'
-  get 'login', to: "login#loginask"
-  post 'login/loginvalidate'
-  
+  get 'login', to: "login#ask"
+  post 'login/validate'
+  get 'login/logout'
+
   resources :users
 
   root 'store#index'
