@@ -34,7 +34,7 @@ class LoginController < ApplicationController
     if @error
       # ups, hay un error. Haremos render de
       # la accion que pide login: ask
-      render 'loginask'
+      render 'ask'
     else
       # todo bien.
       # guardamos en sesion
