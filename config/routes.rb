@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get 'store/index'
   get 'login', to: "login#loginask"
   post 'login/loginvalidate'
-
+  
   resources :users
 
   root 'store#index'

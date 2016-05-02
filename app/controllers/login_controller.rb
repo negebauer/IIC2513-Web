@@ -6,6 +6,8 @@ class LoginController < ApplicationController
     end
   end
 
+  
+
   def loginvalidate
     name = params[:username]
     password = params[:pass]
