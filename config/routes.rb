@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   post 'login/validate'
   get 'login/logout'
 
+  get 'profile', to: 'users#profile'
+
   resources :users
 
   root 'store#index'
