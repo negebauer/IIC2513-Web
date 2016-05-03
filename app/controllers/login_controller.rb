@@ -23,6 +23,8 @@ class LoginController < ApplicationController
       @error = "Debes ingresar un usuario"
     elsif user.nil?
       @error = "Usuario desconocido"
+    elsif !user.active
+      @error = "Cuenta desactivada, contacta al admin"
     elsif password != user.password
       @error = "La clave esta mal"
     end
