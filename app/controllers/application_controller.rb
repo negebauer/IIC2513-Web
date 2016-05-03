@@ -10,14 +10,23 @@ class ApplicationController < ActionController::Base
     if User.exists?(user_id)
       user = User.find(user_id)
       @current_user = user
+    else
+      @current_user = nil
     end
   end
 
   def user_session_required
     user_session_set
-    if user_id.nil? || !User.exists?(user_id)
+    if !@current_user
       redirect_to login_path
       return
     end
+  end
+end
+
+def user_admin_required
+  user_session_required
+  if @current_user && !@current_user.admin
+    redirect_to profile_path
   end
 end

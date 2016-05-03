@@ -43,7 +43,7 @@ class LoginController < ApplicationController
       session[:user_id] = user.id
 
       # y redirigimos al inicio del juego
-      redirect_to user_path(user.id)
+      redirect_to profile_path
     end
   end
 
