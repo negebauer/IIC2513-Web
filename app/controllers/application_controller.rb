@@ -7,10 +7,10 @@ class ApplicationController < ActionController::Base
 
   def user_session_set
     user_id = session[:user_id]
-    # if User.exists?(user_id)
+    if User.exists?(user_id)
       user = User.find(user_id)
       @current_user = user
-    # end
+    end
   end
 
   def user_session_required
