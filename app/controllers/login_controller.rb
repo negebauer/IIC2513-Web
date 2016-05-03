@@ -1,10 +1,10 @@
 class LoginController < ApplicationController
-  skip_before_action :set_name, only: [:ask, :validate]
+  skip_before_action :user_session_required, only: [:ask, :validate]
 
   def ask
     user_id = session[:user_id]
     if !user_id.nil? && User.exists?(user_id)
-      redirect_to user_path(user_id)
+      redirect_to profile_path
     end
   end
 

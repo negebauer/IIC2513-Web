@@ -10,7 +10,7 @@
 
 <%= link_to 'Pagina principal', root_path %>
 <%= link_to "Logout", login_logout_path %>
-<%= if @current_user.admin
+<%= if @current_user != nil && @current_user.admin
   link_to "Menu admin", users_path, method: :get
 end
 %>
