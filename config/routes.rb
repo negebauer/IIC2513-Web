@@ -10,8 +10,8 @@ Rails.application.routes.draw do
   post 'login/validate'
   get 'login/logout'
 
-# User profile
-  get 'profile', to: 'users#profile'
+# Profile routes
+  get 'profile/', to: 'profile#show'
 
 # Admin routes
   patch 'admin/active_toggle', to: 'users#active_toggle'
@@ -21,6 +21,7 @@ Rails.application.routes.draw do
 # Resources
   resources :users
   resources :password_reset, only: [:new, :create, :edit, :update]
+  resources :profile, only: [:show]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
