@@ -1,6 +1,6 @@
 <% provide(:title, "Forgot password") %>
 <h1>Forgot password</h1>
-<%= form_for(:password_reset, url: password_reset_path) do |f| %>
+<%= form_for(:password_reset, url: password_reset_index_path) do |f| %>
 <div class="field">
   <%= f.label :email %><br>
   <%= f.email_field :email %>
