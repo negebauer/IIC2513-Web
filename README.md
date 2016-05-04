@@ -6,6 +6,7 @@
 ***
 
 ### E4 [pdf](/A%20Docs%20tareas/E4.pdf)
+Heroku tiene deploy automático con cada commit a `master`
 Los usuarios para probar esta entrega son los siguientes (las claves son fáciles a proposito)
 
 | username  | password | admin | activa |
