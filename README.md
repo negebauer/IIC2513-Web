@@ -1,5 +1,7 @@
 # IIC2513Web - Tecnologías y aplicaciones web
 
+## Heroku
+Heroku esta configurado para hacer deploy automático del branch `master`
 ## Entregas
 - [E4](#e4)
 
