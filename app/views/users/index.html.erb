@@ -18,9 +18,14 @@
         <td><%= link_to 'Mostrar', user %></td>
         <td><%= link_to 'Editar', edit_user_path(user) %></td>
         <td><%= link_to 'Eliminar', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <td><%= if  @current_user.admin
-          link_to "Bloquear", user
+        <td><%=
+        text = ""
+        if user.active
+          text = "Bloquear"
+        else
+          text = "Desbloquear"
         end
+        link_to text, users_active_toggle_path({id: user.id, path: users_path}), method: :patch
         %></td>
       </tr>
     <% end %>

@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   get 'profile', to: 'users#profile'
 
+  patch 'users/active_toggle', to: 'users#active_toggle'
+
   resources :users
 
   root 'store#index'
