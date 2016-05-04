@@ -66,7 +66,7 @@ class UsersController < ApplicationController
   end
 
   def active_toggle
-    @user.update_attribute(:active, !@user.active)
+    @user.active_toggle
     redirect_to params[:path]
   end
 
