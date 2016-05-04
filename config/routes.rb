@@ -1,19 +1,24 @@
 Rails.application.routes.draw do
+# Root
+  root 'store#index'
+
+# Store
   get 'store/index'
 
-  # Login
+# Login
   get 'login', to: "login#ask"
   post 'login/validate'
   get 'login/logout'
-  get 'login/reset_password'
 
+# User profile
   get 'profile', to: 'users#profile'
 
+# Admin user active toggle
   patch 'users/active_toggle', to: 'users#active_toggle'
 
+# Resources
   resources :users
-
-  root 'store#index'
+  resources :password_reset, only: [:new, :create, :edit, :update]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
