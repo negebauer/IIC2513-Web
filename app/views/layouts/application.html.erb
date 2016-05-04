@@ -19,6 +19,8 @@ end
 %>
 <%= if @current_user != nil
   link_to "Logout", login_logout_path
+else
+  link_to "Login", login_path, method: :get
 end %>
 <%= yield %>
 
