@@ -9,41 +9,14 @@ class LoginController < ApplicationController
   end
 
   def validate
-    name = params[:username]
+    username = params[:username]
     password = params[:pass]
-
-    # ###########
-    # Esto no debería estar aqui:
-    # la "logica de negocios" (de login)
-    # pertenece al modelo
-    # ###########
-
-    user = User.where(username: name).first
-    if name.blank?
-      @error = "Debes ingresar un usuario"
-    elsif user.nil?
-      @error = "Usuario desconocido"
-    elsif !user.active
-      @error = "Cuenta desactivada, contacta al admin"
-    elsif password != user.password
-      @error = "La clave esta mal"
-    end
-
-    # ###########
-    # Fin de cosas que no van aqui
-    # ###########
-
+    user, @error = User.login(username, password)
     if @error
-      # ups, hay un error. Haremos render de
-      # la accion que pide login: ask
       render 'ask'
     else
-      # todo bien.
-      # guardamos en sesion
       session[:user_id] = user.id
-
-      # y redirigimos al inicio del juego
-      redirect_to profile_path
+      redirect_to root_path
     end
   end
 
