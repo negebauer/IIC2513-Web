@@ -22,7 +22,7 @@ if @user.active
 else
   text = "Desbloquear"
 end
-link_to text, users_active_toggle_path({id: @user.id, path: user_path}), method: :patch
+link_to text, admin_active_toggle_path({id: @user.id, path: admin_path}), method: :patch
 %> |
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

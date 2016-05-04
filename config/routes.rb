@@ -13,8 +13,10 @@ Rails.application.routes.draw do
 # User profile
   get 'profile', to: 'users#profile'
 
-# Admin user active toggle
-  patch 'users/active_toggle', to: 'users#active_toggle'
+# Admin routes
+  patch 'admin/active_toggle', to: 'users#active_toggle'
+  get 'admin/', to: 'users#index'
+  get 'admin/:id', to: 'users#show'
 
 # Resources
   resources :users
