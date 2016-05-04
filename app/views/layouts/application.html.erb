@@ -17,7 +17,9 @@ end
   link_to "Menu admin", users_path, method: :get
 end
 %>
-<%= link_to "Logout", login_logout_path %>
+<%= if @current_user != nil
+  link_to "Logout", login_logout_path
+end %>
 <%= yield %>
 
 </body>
