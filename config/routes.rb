@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
   get 'store/index'
+
+  # Login
   get 'login', to: "login#ask"
   post 'login/validate'
   get 'login/logout'
+  get 'login/reset_password'
 
   get 'profile', to: 'users#profile'
 

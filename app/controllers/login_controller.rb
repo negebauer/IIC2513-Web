@@ -1,5 +1,5 @@
 class LoginController < ApplicationController
-  skip_before_action :user_session_required, only: [:ask, :validate]
+  skip_before_action :user_session_required, only: [:ask, :validate, :reset_password]
 
   def ask
     user_id = session[:user_id]
@@ -23,5 +23,9 @@ class LoginController < ApplicationController
   def logout
     session[:user_id] = nil
     redirect_to root_path
+  end
+
+  def reset_password
+    
   end
 end
