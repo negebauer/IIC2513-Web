@@ -4,6 +4,7 @@
 Heroku esta configurado para hacer deploy automático del branch `master`
 ## Entregas
 - [E4](#e4)
+- [E5](#e5)
 
 ***
 
@@ -36,3 +37,7 @@ Los usuarios de prueba para esta entrega son los siguientes (las claves son fác
 - La recuperación de clave no se alcanzo a implementar
 - Manejo seguro de claves tampoco
 - Usuario regular no puede cambiar sus datos
+
+***
+
+### [E5](/A%20Docs%20tareas/E5.pdf)
