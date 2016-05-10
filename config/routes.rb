@@ -19,14 +19,11 @@ Rails.application.routes.draw do
   # get 'admin/:id', to: 'users#show'
 
 # Resources
-  # resources :admin, only: [:show] do
-
-  # end
-  # resources :users
+  get 'admin', to: 'admin#index'
   scope 'admin' do
     resources :users
   end
-  resources :password_reset, only: [:new, :create, :edit, :update]
+
   resources :profile, only: [:show]
 
   # The priority is based upon order of creation: first created -> highest priority.
