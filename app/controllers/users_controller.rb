@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-  before_action :user_admin_required, only: [:index, :show, :edit, :update, :destroy, :active_toggle]
-  before_action :set_user, only: [:show, :edit, :update, :destroy, :active_toggle]
+  before_action :user_admin_required
+  before_action :set_user, except: [:index]
 
   # GET /users
   # GET /users.json
