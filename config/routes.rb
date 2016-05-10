@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 # Login
   get 'login', to: "login#ask"
   post 'login/validate'
-  get 'login/logout'
+  delete 'login/logout'
 
 # Profile routes
   get 'profile/', to: 'profile#show'
