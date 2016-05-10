@@ -14,7 +14,7 @@
 end
 %>
 <%= if @current_user != nil && @current_user.admin
-  link_to "Menu admin", users_path, method: :get
+  link_to "Menu admin", admin_path, method: :get
 end
 %>
 <%= if @current_user != nil
