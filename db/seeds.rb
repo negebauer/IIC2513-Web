@@ -5,7 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-User.all.each { |e| User.delete(e)  }
+# User.all.each { |e| User.delete(e)  }
 if User.first.nil?
   User.create(username: "admin", password: "admin", admin: true, email: "admin@nidastore.com", active: true)
   User.create(username: "nico", password: "123456", admin: false, email: "negebauer@uc.cl", active: true)
@@ -13,7 +13,7 @@ if User.first.nil?
   User.create(username: "diego", password: "123456", admin: false, email: "dacasas@uc.cl", active: false)
 end
 
-Product.all.each { |e| Product.delete(e)  }
+# Product.all.each { |e| Product.delete(e)  }
 if Product.first.nil?
   # Product.create()
 end
