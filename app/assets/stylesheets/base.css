@@ -1,52 +1,52 @@
 body {
-  margin: 0;
-  color: #555;
-  background: #cef;
-  font-family: sans-serif;
-  font-size: 14px;
-  line-height: 20px;
+    margin: 0;
+    color: #555;
+    background: #cef;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 20px;
 }
 header.layout {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 25px;
-  background: #444;
-  color: #eee;
-  padding: 0 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 25px;
+    background: #444;
+    color: #eee;
+    padding: 0 20%;
 }
 header.layout a {
-  display: inline-block;
-  height: 25px;
-  line-height: 25px;
-  padding: 0 10px;
-  color: #eee;
-  background: #000;
-  text-decoration: none;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 10px;
+    color: #eee;
+    background: #000;
+    text-decoration: none;
 }
 header.layout a:hover {
-  color: #ff9;
-  text-decoration: underline;
+    color: #ff9;
+    text-decoration: underline;
 }
 main {
-  background: #fff;
-  padding: 40px 20px 30px;
-  width: 400px;
-  margin: 0 auto;
-  box-shadow: 0 0 2px rgba(0,0,0,0.4);
+    background: #fff;
+    padding: 40px 20px 30px;
+    width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
 }
 .error-message {
-  background: #fcc;
-  color: #c00;
-  font-size: 15px;
-  margin: 10px -60px;
-  padding: 9px 60px;
-  box-shadow: 0 0 3px 1px rgba(128,0,0,0.4);
+    background: #fcc;
+    color: #c00;
+    font-size: 15px;
+    margin: 10px -60px;
+    padding: 9px 60px;
+    box-shadow: 0 0 3px 1px rgba(128, 0, 0, 0.4);
 }
 .error-message strong {
-  font-weight: bold;
+    font-weight: bold;
 }
 #notice {
-  color: green
+    color: green
 }
