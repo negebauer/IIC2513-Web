@@ -9,11 +9,8 @@
 <body>
   <header>
       <nav class="principal_options">
-        <%= image_tag('images/computadorante_logo1.jpg', height: '65', width: '200') do %>
-          <%= content_tag(root_path, "Logo") %>
-        <% end %>
+        <%= link_to image_tag('logo', height: '100', width: '100'), root_path %>
         <%= link_to 'Nidastore', root_path %>
-        <%= link_to 'Pagina principal', root_path %>
         <%= if @current_user != nil
           link_to "Mi Perfil", profile_path
         end
