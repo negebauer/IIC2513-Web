@@ -1,0 +1,13 @@
+es:
+  activerecord:
+    models:
+      product: "Producto"
+    attributes:
+      product:
+        name: "Nombre"
+    errors:
+      models:
+        product:
+          attributes:
+            name:
+              blank: "El producto require un nombre"
