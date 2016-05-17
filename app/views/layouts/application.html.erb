@@ -7,22 +7,30 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header>
+      <nav class="principal_options">
+        <a href="index.html">
+          <img src="images/computadorante_logo1.jpg" alt="Logo" height="65" width="200">
+        </a>
+        <a href="index.html">Nidastore</a>
+        <%= link_to 'Pagina principal', root_path %>
+        <%= if @current_user != nil
+          link_to "Mi Perfil", profile_path
+        end
+        %>
+        <%= if @current_user != nil && @current_user.admin
+          link_to "Administrar sitio", admin_path
+        end
+        %>
+        <%= if @current_user != nil
+          link_to "Cerrar sesion", login_logout_path, method: :delete
+        else
+          link_to "Iniciar sesion", login_path
+        end %>
+        <%= yield %>
+      </nav>
+  </header>
 
-<%= link_to 'Pagina principal', root_path %>
-<%= if @current_user != nil
-  link_to "Mi Perfil", profile_path
-end
-%>
-<%= if @current_user != nil && @current_user.admin
-  link_to "Administrar sitio", admin_path
-end
-%>
-<%= if @current_user != nil
-  link_to "Cerrar sesion", login_logout_path, method: :delete
-else
-  link_to "Iniciar sesion", login_path
-end %>
-<%= yield %>
 
 </body>
 </html>
