@@ -1,4 +1,4 @@
-# IIC2513Web - Tecnologías y aplicaciones web
+# IIC2513 - Tecnologías y aplicaciones web
 
 ## Heroku
 Configurado para hacer deploy automático del branch `master` en la [aplicación principal](http://nidastore.herokuapp.com)  
