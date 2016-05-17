@@ -108,3 +108,20 @@ h1 {
     cursor: pointer;
     font-size: 14px;
 }
+
+/* Mensajes de edición de datos */
+
+.error-message {
+    background: #fcc;
+    color: #c00;
+    font-size: 15px;
+    margin: 10px -60px;
+    padding: 9px 60px;
+    box-shadow: 0 0 3px 1px rgba(128, 0, 0, 0.4);
+}
+.error-message strong {
+    font-weight: bold;
+}
+#notice {
+    color: green
+}

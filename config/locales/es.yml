@@ -1,7 +1,7 @@
 es:
   activerecord:
     models:
-      user: "User"
+      user: "Usuario"
       product: "Producto"
     attributes:
       user:
@@ -40,4 +40,4 @@ es:
   helpers:
     submit:
       create: "Crear un %{model}"
-      update: "Confirmar cambios al %{model} creado"
+      update: "Confirmar cambios al %{model}"

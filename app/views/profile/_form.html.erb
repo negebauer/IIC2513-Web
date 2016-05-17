@@ -1,0 +1,21 @@
+<%= form_for(@current_user, url: url) do |f| %>
+  <% if @current_user.errors.any? %>
+    <div class="error-message">
+      <h2><%= pluralize(@current_user.errors.count, "errores") %> impidieron guardar tu perfil:</h2>
+      <ul>
+      <% @current_user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :email %></br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+<% end %>
