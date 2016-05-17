@@ -20,11 +20,12 @@ es:
         user:
           attributes:
             username:
-              blank: "- Se require un nombre de usuario"
+              blank: "- Se requiere un nombre de usuario"
             password:
-              blank: "- Se require una contraseña"
+              blank: "- Se requiere una contraseña"
             email:
-              blank: "- Se require un email"
+              blank: "- Se requiere un email"
+              invalid: "- El email ingresado tiene un formato incorrecto"
         product:
           attributes:
             name:
