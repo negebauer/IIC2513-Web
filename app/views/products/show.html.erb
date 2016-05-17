@@ -1,12 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Nombre:</strong>
   <%= @product.name %>
 </p>
 
 <p>
-  <strong>Price:</strong>
+  <strong>Precio:</strong>
   <%= @product.price %>
 </p>
 
@@ -16,14 +16,19 @@
 </p>
 
 <p>
-  <strong>Description:</strong>
+  <strong>Descripcion:</strong>
   <%= @product.description %>
 </p>
 
 <p>
-  <strong>Family:</strong>
+  <strong>Familia:</strong>
   <%= @product.family %>
 </p>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+<p>
+  <strong>Promocion:</strong>
+  <%= @product.promotion ? "Si" : "No" %>
+</p>
+
+<%= link_to 'Editar', edit_product_path(@product) %> |
+<%= link_to 'Atrás', products_path %>
