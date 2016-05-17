@@ -3,7 +3,9 @@
 ## Links
 
 Web - [https://github.com/negebauer/nidastore](https://github.com/negebauer/nidastore)
+
 Server - [http://nidastore.herokuapp.com](http://nidastore.herokuapp.com)
+
 Dev server - [http://devnidastore.herokuapp.com](http://devnidastore.herokuapp.com)
 
 ## Heroku
