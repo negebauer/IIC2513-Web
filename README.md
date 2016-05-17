@@ -1,13 +1,9 @@
 # IIC2513Web - Tecnologías y aplicaciones web
 
-## Links
-
-Web - [https://github.com/negebauer/nidastore](https://github.com/negebauer/nidastore)  
-Server - [http://nidastore.herokuapp.com](http://nidastore.herokuapp.com)  
-Dev server - [http://devnidastore.herokuapp.com](http://devnidastore.herokuapp.com)  
-
 ## Heroku
-Heroku esta configurado para hacer deploy automático del branch `master`
+Configurado para hacer deploy automático del branch `master` en la [aplicación principal](http://nidastore.herokuapp.com)  
+También para hacer deploy automático del branch `dev` en la [aplicación de prueba](http://devnidastore.herokuapp.com)
+
 ## Entregas
 - [E5](#e5)
 - [E4](#e4)
@@ -15,7 +11,9 @@ Heroku esta configurado para hacer deploy automático del branch `master`
 ***
 
 ### [E5](/A%20Docs%20tareas/E5.pdf)
-Para "facilitar" la corrección de esta entrega se creó el usuario `admin` con clave `admin`, el cual, redoble de tambores, es un admin
+El commit que corre en heroku para esta entrega es [poner commit](https://github.com/negebauer/nidastore)
+
+Para la corrección de esta entrega se creó el usuario `admin` con clave `admin`, el cual, redoble de tambores, es un admin
 
 ##### Ayuda corrección - ¿Que tan cumplida fue la tarea?
 - Catálogos
