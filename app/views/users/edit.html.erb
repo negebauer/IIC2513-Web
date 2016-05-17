@@ -1,42 +1,6 @@
 <h1>Editando usuario</h1>
 
-<%= form_for(@user) do |f| %>
-  <% if @user.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@user.errors.count, "errores") %> impidieron grabar este usuario:</h2>
-      <ul>
-      <% @user.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :username %><br>
-    <%= f.text_field :username %>
-  </div>
-  <!-- <div class="field">
-    <%= f.label :password %><br>
-    <%= f.text_field :password %>
-  </div> -->
-  <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-  <%= f.check_box :admin %>
-  <%= f.label :admin %>
-  </div>
-  <div class="field">
-  <%= f.check_box :active %>
-  <%= f.label :active %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-
-<% end %>
+<%= render 'form', hide_password: true %>
 
 <%= link_to 'Ver', @user %> |
 <%= link_to 'Back', users_path %>
