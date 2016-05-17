@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
 # Store
   get 'store/index'
+  get 'store/computers'
+  get 'store/deodorants'
 
 # Login
   get 'login', to: "login#ask"
