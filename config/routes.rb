@@ -14,17 +14,14 @@ Rails.application.routes.draw do
   get 'profile/', to: 'profile#show'
 
 # Admin routes
-  patch 'admin/active_toggle', to: 'users#active_toggle'
-  # get 'admin/', to: 'users#index'
-  # get 'admin/:id', to: 'users#show'
-
-# Resources
   get 'admin', to: 'admin#index'
   scope 'admin' do
+    patch 'active_toggle', to: 'users#active_toggle'
     resources :users
     resources :products
   end
 
+# Resources
   resources :profile, only: [:show]
 
   # The priority is based upon order of creation: first created -> highest priority.
