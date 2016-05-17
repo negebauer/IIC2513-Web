@@ -1,8 +1,15 @@
 es:
   activerecord:
     models:
+      user: "User"
       product: "Producto"
     attributes:
+      user:
+        username: "Usuario"
+        password: "Contraseña"
+        email: "Email"
+        admin: "Admin"
+        active: "Activo"
       product:
         name: "Nombre"
         price: "Precio"
@@ -10,6 +17,14 @@ es:
         family: "Familia"
     errors:
       models:
+        user:
+          attributes:
+            username:
+              blank: "- Se require un nombre de usuario"
+            password:
+              blank: "- Se require una contraseña"
+            email:
+              blank: "- Se require un email"
         product:
           attributes:
             name:

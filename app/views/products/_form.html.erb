@@ -1,8 +1,7 @@
 <%= form_for(@product) do |f| %>
   <% if @product.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@product.errors.count, "errores") %> impidieron :</h2>
-
+      <h2><%= pluralize(@product.errors.count, "errores") %> impidieron guardar este producto:</h2>
       <ul>
       <% @product.errors.full_messages.each do |message| %>
         <li><%= message %></li>
