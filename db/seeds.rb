@@ -15,5 +15,7 @@ end
 
 # Product.all.each { |e| Product.delete(e)  }
 if Product.first.nil?
-  # Product.create()
+  Product.create(name: "MacBook Pro", price: 2000000, stock: 2, description: "Computador bonito y elegante que toda persona quiere tener", family: 1, promotion: false)
+  Product.create(name: "Desodorante Tommy Hilfiger", price: 8000, stock: 5, description: "Atrae a todas las mujeres como un galan", family: 2, promotion: false)
+  Product.create(name: "Notebook vaio + axe chocolate", price: 80000, stock: 3, description: "Computador básico para tareas sencillas al igual que este util desodorante", family: 3, promotion: true)
 end
