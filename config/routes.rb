@@ -14,6 +14,7 @@ Rails.application.routes.draw do
 
 # Profile routes
   get 'profile', to: "profile#show"
+  get 'profile/edit_password', to: "profile#edit_password"
   get 'profile/edit', to: "profile#edit"
   resources :profile, only: [:update]
 

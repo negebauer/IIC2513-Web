@@ -10,7 +10,7 @@ class LoginController < ApplicationController
 
   def validate
     username = params[:username]
-    password = params[:pass]
+    password = params[:password]
     user, @error = User.login(username, password)
     if @error
       render 'ask'
@@ -26,6 +26,6 @@ class LoginController < ApplicationController
   end
 
   def reset_password
-    
+
   end
 end

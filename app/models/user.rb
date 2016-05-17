@@ -11,7 +11,7 @@ class User < ActiveRecord::Base
     user = User.find_by_username(username).try(:authenticate, password)
     if username.blank?
       return nil, "Debes ingresar un usuario"
-    elsif user.nil?
+    elsif user.nil? || !user
       return nil, "Usuario o clave incorrecto"
     elsif !user.active
       return nil, "Cuenta desactivada, contacta al admin"

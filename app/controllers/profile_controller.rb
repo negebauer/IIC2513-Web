@@ -7,6 +7,9 @@ class ProfileController < ApplicationController
   def edit
   end
 
+  def edit_password
+  end
+
   def update
     respond_to do |format|
       if @current_user.update(user_params)
