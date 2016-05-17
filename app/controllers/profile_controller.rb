@@ -1,4 +1,4 @@
-class Admin::ProfileController < AdminController
+class ProfileController < AdminController
   before_action :user_session_required
 
   def show
