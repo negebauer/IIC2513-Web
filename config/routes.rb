@@ -15,7 +15,7 @@ Rails.application.routes.draw do
 
 # Admin routes
   get 'admin', to: 'admin#index'
-  scope 'admin' do
+  namespace :admin do
     patch 'active_toggle', to: 'users#active_toggle'
     resources :users
     resources :products
