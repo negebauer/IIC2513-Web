@@ -13,7 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
-a:hover {
-  text-decoration: none;
-}

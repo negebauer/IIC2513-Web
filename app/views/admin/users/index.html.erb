@@ -20,9 +20,9 @@
         <td><%= user.email %></td>
         <td><%= user.admin ? "Si" : "No" %></td>
         <td><%= user.active ? "Si" : "No "%></td>
-        <td><%= link_to 'Mostrar', user %></td>
-        <td><%= link_to 'Editar', edit_user_path(user) %></td>
-        <td><%= link_to 'Eliminar', user, method: :delete, data: { confirm: "Se require confirmación para eliminar al usuario\n\t#{user.username}\n¿Estás seguro?" } %></td>
+        <td><%= link_to 'Mostrar', admin_user_path(user) %></td>
+        <td><%= link_to 'Editar', edit_admin_user_path(user) %></td>
+        <td><%= link_to 'Eliminar', admin_user_path(user), method: :delete, data: { confirm: "Se require confirmación para eliminar al usuario\n\t#{user.username}\n¿Estás seguro?" } %></td>
         <td><%=
         text = ""
         if user.active
@@ -30,7 +30,7 @@
         else
           text = "Desbloquear"
         end
-        link_to text, admin_active_toggle_path({id: user.id, path: users_path}), method: :patch
+        link_to text, admin_active_toggle_path({id: user.id, path: admin_users_path}), method: :patch
         %></td>
       </tr>
     <% end %>
@@ -39,4 +39,4 @@
 
 <br>
 
-<%= link_to 'Nuevo usuario', new_user_path %>
+<%= link_to 'Nuevo usuario', new_admin_user_path %>

@@ -47,3 +47,6 @@ main {
 .error-message strong {
   font-weight: bold;
 }
+#notice {
+  color: green
+}

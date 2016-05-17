@@ -1,6 +1,6 @@
-<%= form_for(@product) do |f| %>
+<%= form_for(@product, url: url) do |f| %>
   <% if @product.errors.any? %>
-    <div id="error_explanation">
+    <div class="error-message">
       <h2><%= pluralize(@product.errors.count, "errores") %> impidieron guardar este producto:</h2>
       <ul>
       <% @product.errors.full_messages.each do |message| %>

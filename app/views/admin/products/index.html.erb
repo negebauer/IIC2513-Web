@@ -24,9 +24,9 @@
         <td><%= product.description %></td>
         <td><%= product.family %></td>
         <td><%= product.promotion ? "Si" : "No" %></td>
-        <td><%= link_to 'Mostrar', product %></td>
-        <td><%= link_to 'Editar', edit_product_path(product) %></td>
-        <td><%= link_to 'Eliminar', product, method: :delete, data: { confirm: '¿Estás seguro?' } %></td>
+        <td><%= link_to 'Mostrar', admin_product_path(product) %></td>
+        <td><%= link_to 'Editar', edit_admin_product_path(product) %></td>
+        <td><%= link_to 'Eliminar', admin_product_path(product), method: :delete, data: { confirm: "Se require confirmación para eliminar al producto\n\t#{product.name}\n¿Estás seguro?" } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -34,4 +34,4 @@
 
 <br>
 
-<%= link_to 'Nuevo producto', new_product_path %>
+<%= link_to 'Nuevo producto', new_admin_product_path %>
