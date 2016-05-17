@@ -2,11 +2,9 @@
 
 ## Links
 
-Web - [https://github.com/negebauer/nidastore](https://github.com/negebauer/nidastore)
-
-Server - [http://nidastore.herokuapp.com](http://nidastore.herokuapp.com)
-
-Dev server - [http://devnidastore.herokuapp.com](http://devnidastore.herokuapp.com)
+Web - [https://github.com/negebauer/nidastore](https://github.com/negebauer/nidastore)  
+Server - [http://nidastore.herokuapp.com](http://nidastore.herokuapp.com)  
+Dev server - [http://devnidastore.herokuapp.com](http://devnidastore.herokuapp.com)  
 
 ## Heroku
 Heroku esta configurado para hacer deploy automático del branch `master`
@@ -17,6 +15,16 @@ Heroku esta configurado para hacer deploy automático del branch `master`
 ***
 
 ### [E5](/A%20Docs%20tareas/E5.pdf)
+Para "facilitar" la corrección de esta entrega se creó el usuario `admin` con clave `admin`, el cual, redoble de tambores, es un admin
+
+##### Ayuda corrección - ¿Que tan cumplida fue la tarea?
+- Catálogos
+- Administración
+- Localización
+  - Localización por defecto `es`
+  - Creado archivo de localización `config/locales/es.yml`
+  - ¿Todas? las páginas tienen su texto en español
+- Restricciones
 
 ***
 
