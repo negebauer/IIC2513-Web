@@ -25,6 +25,10 @@
           link_to "Iniciar sesion", login_path
         end %>
             </nav>
+            <nav class="MenuCat">
+                <%= link_to "Administrar usuarios", users_path %>
+                <%= link_to "Administrar productos", products_path %>
+            </nav>
         </header>
         <%= yield %>
     </body>
