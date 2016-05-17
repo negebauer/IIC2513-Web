@@ -5,8 +5,8 @@
   <% Product.where(promotion: true).each do |product| %>
   <div class="celda_p">
       <div class="nombre"><%= product.name %></div>
-      <div class="precio"><%= product.price %></div>
-      <div class="descricion"><%= product.description %></div>
+      <div class="precio"> $<%= product.price %></div>
+      <div class="descripcion"><%= product.description %></div>
   </div>
   <% end %>
 

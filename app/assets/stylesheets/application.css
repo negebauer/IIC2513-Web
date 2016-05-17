@@ -60,3 +60,33 @@ nav.MenuCat a:hover{
 div.titulo_cat{
   text-align: center;
 }
+
+div.columnas{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+div.celda_p {
+  background-color: #DBE0FF;
+  border-radius: 8px;
+  display: inline-block;
+  width: 20%;
+  height: 400px;
+  text-align: center;
+}
+
+div.nombre{
+  font-size: 25px;
+  font-family: sans-serif;
+  color: #E8680C;
+}
+
+div.precio{
+  color: #FF0200;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+div.descripcion{
+  font-size: 18px;
+  font-family: fantasy;
+}
