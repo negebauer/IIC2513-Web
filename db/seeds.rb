@@ -5,13 +5,14 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+User.all.delete
 if User.first.nil?
-  # no hay usuarios
-  #names = ["david", "nico"]
-  #names.uniq.map{|n| n.downcase }.each do |name|
-  #  User.create(username: name, password: '12345678', admin: false)
-  #end
-  User.create(username: "nico", password: "123456", admin: true, email: "negebauer@uc.cl", active: true)
+  User.create(username: "admin", password: "admin", admin: true, email: "admin@nidastore.com", active: true)
+  User.create(username: "nico", password: "123456", admin: false, email: "negebauer@uc.cl", active: true)
   User.create(username: "david", password: "123456", admin: false, email: "daruz@uc.cl", active: true)
   User.create(username: "diego", password: "123456", admin: false, email: "dacasas@uc.cl", active: false)
+end
+
+if Product.first.nil?
+  # Product.create()
 end
