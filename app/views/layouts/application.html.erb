@@ -14,13 +14,13 @@
 end
 %>
 <%= if @current_user != nil && @current_user.admin
-  link_to "Menu admin", admin_path
+  link_to "Administrar sitio", admin_path
 end
 %>
 <%= if @current_user != nil
-  link_to "Logout", login_logout_path, method: :delete
+  link_to "Cerrar sesion", login_logout_path, method: :delete
 else
-  link_to "Login", login_path
+  link_to "Iniciar sesion", login_path
 end %>
 <%= yield %>
 

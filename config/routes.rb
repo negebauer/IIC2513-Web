@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   get 'admin', to: 'admin#index'
   scope 'admin' do
     resources :users
+    resources :products
   end
 
   resources :profile, only: [:show]
