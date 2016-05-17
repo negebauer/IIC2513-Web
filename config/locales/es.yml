@@ -5,9 +5,23 @@ es:
     attributes:
       product:
         name: "Nombre"
+        price: "Precio"
+        stock: "Stock"
+        family: "Familia"
     errors:
       models:
         product:
           attributes:
             name:
-              blank: "El producto require un nombre"
+              blank: "- El producto require un nombre"
+            price:
+              blank: "- El producto require un precio"
+            stock:
+              blank: "- El producto require un stock"
+            family:
+              blank: "- El producto require una familia"
+
+  helpers:
+    submit:
+      create: "Crear un %{model}"
+      update: "Confirmar cambios al %{model} creado"
