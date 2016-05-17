@@ -12,7 +12,7 @@
         <a href="index.html">
           <img src="images/computadorante_logo1.jpg" alt="Logo" height="65" width="200">
         </a>
-        <a href="index.html">Nidastore</a>
+        <%= link_to 'Nidastore', root_path %>
         <%= link_to 'Pagina principal', root_path %>
         <%= if @current_user != nil
           link_to "Mi Perfil", profile_path
