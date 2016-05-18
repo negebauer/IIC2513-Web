@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'store/product/:id', to: 'store#product', as: 'store_product'
   get 'store/computers'
   get 'store/deodorants'
+  get 'store/producto'
 
 # Login
   get 'login', to: "login#ask"
