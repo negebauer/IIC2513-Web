@@ -23,5 +23,10 @@ module Nidastore
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
     config.i18n.default_locale = :'es'
+
+    config.cache_classes = true
+    config.serve_static_files = true
+    config.assets.compile = true
+    config.assets.digest = true
   end
 end
