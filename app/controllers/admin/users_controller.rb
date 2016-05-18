@@ -23,6 +23,9 @@ class Admin::UsersController < AdminController
   def edit
   end
 
+  def edit_password
+  end
+
   # POST /users
   # POST /users.json
   def create

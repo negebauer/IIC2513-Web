@@ -21,8 +21,12 @@ Rails.application.routes.draw do
 # Admin routes
   get 'admin', to: 'admin#index'
   namespace :admin do
+    # User management
     patch 'active_toggle', to: 'users#active_toggle'
+    get 'users/:id/edit_password', to: 'users#edit_password', as: 'edit_user_password'
     resources :users
+
+    # Product management
     resources :products
   end
 
