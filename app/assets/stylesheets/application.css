@@ -131,3 +131,7 @@ h1 {
 #notice {
     color: green
 }
+
+div.info{
+  text-align: center;
+}
