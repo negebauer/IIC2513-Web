@@ -11,9 +11,10 @@ También para hacer deploy automático del branch `dev` en la [aplicación de pr
 ***
 
 ### [E5](/A%20Docs%20tareas/E5.pdf)
-El commit que corre en heroku para esta entrega es [a1b09eb](https://github.com/negebauer/nidastore/commit/a1b09eba625ad41df27d3db5de99c4158cd92c1f)
+El commit que corre en heroku para esta entrega es [a1b09eb](https://github.com/negebauer/nidastore/commit/a1b09eba625ad41df27d3db5de99c4158cd92c1f)  
+El más reciente al momento de terminar de escribir esto (y que corre en el servidor dev) es [04a871a](https://github.com/negebauer/nidastore/commit/04a871ab33244cc6f2718407d4a546f01cd28d33) que tiene un pequeño cambio en como se muestran los detalles del producto.  
 Para la corrección de esta entrega se creó el usuario `admin` con clave `admin`, el cual, redoble de tambores, es un admin  
-Los datos por defecto están en el archivo [seeds](/db/seeds.rb)
+Los datos por defecto están en el archivo [seeds](https://github.com/negebauer/nidastore/blob/0ac04c8fc81616ce8926be471222c2257c51a618/db/seeds.rb)
 
 También se completaron los requerimientos de la [E4](#e4) que no fueron cumplidos anteriormente, _excepto_ la recuperación de claves
 
