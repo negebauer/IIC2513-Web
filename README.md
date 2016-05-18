@@ -32,7 +32,7 @@ Nuestro modelo de productos tiene un atributo `family` el cual define la familia
   - Eliminar productos
 - Catálogos
   - Se pueden ver los 3 catálogos (compus, desodorantes y promociones)
-  - Ver detalles de un producto - TODO
+  - Ver detalles de un producto
 - Control de acceso
   - Las páginas de manejo de productos solo son accesibles por el admin. Si un no admin intenta abrir una se redirige a `/profile`
 - Localización (administrador, usuario y catalogo)
