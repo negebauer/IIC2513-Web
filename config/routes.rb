@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'store/index'
   get 'store/computers'
   get 'store/deodorants'
+  get 'store/producto'
 
 # Login
   get 'login', to: "login#ask"
