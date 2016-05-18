@@ -11,7 +11,7 @@ También para hacer deploy automático del branch `dev` en la [aplicación de pr
 ***
 
 ### [E5](/A%20Docs%20tareas/E5.pdf)
-El commit que corre en heroku para esta entrega es [poner commit](https://github.com/negebauer/nidastore)  
+El commit que corre en heroku para esta entrega es [a1b09eb](https://github.com/negebauer/nidastore/commit/a1b09eba625ad41df27d3db5de99c4158cd92c1f)
 Para la corrección de esta entrega se creó el usuario `admin` con clave `admin`, el cual, redoble de tambores, es un admin  
 Los datos por defecto están en el archivo [seeds](/db/seeds.rb)
 
