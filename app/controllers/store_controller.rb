@@ -15,7 +15,11 @@ class StoreController < ApplicationController
 
   private
     def set_product
-      @product = Product.find(params[:id])
+      if Product.exists?(params[:id])
+        @product = Product.find(params[:id])
+      else
+        redirect_to root_path
+      end
     end
 
     def product_params
