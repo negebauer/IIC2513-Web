@@ -12,16 +12,35 @@ También para hacer deploy automático del branch `dev` en la [aplicación de pr
 
 ### [E5](/A%20Docs%20tareas/E5.pdf)
 El commit que corre en heroku para esta entrega es [poner commit](https://github.com/negebauer/nidastore)  
-Para la corrección de esta entrega se creó el usuario `admin` con clave `admin`, el cual, redoble de tambores, es un admin  Los datos por defecto están en el archivo [seeds](/db/seeds.rb)
+Para la corrección de esta entrega se creó el usuario `admin` con clave `admin`, el cual, redoble de tambores, es un admin  
+Los datos por defecto están en el archivo [seeds](/db/seeds.rb)
+
+También se completaron los requerimientos de la [E4](#e4) que no fueron cumplidos anteriormente, _excepto_ la recuperación de claves
+
+Nuestro modelo de productos tiene un atributo `family` el cual define la familia del producto. Este se utiliza para filtrar los productos que se muestran en cada catálogo. Para esta entrega las familias son las siguientes
+
+| family  | Familia |
+|:--------|:--------|
+|0|promocion|
+|1|Computadores|
+|2|Desodorantes|
 
 ##### Ayuda corrección - ¿Que tan cumplida fue la tarea?
-- Catálogos
 - Administración
-- Localización
+  - Crear productos
+  - Editar productos
+  - Eliminar productos
+- Catálogos
+  - Se pueden ver los 3 catálogos (compus, desodorantes y promociones)
+  - Ver detalles de un producto - TODO
+- Control de acceso
+  - Las páginas de manejo de productos solo son accesibles por el admin. Si un no admin intenta abrir una se redirige a `/profile`
+- Localización (administrador, usuario y catalogo)
   - Localización por defecto `es`
-  - Creado archivo de localización `config/locales/es.yml`
-  - ¿Todas? las páginas tienen su texto en español
-- Restricciones
+  - Creado archivo de localización [`config/locales/es.yml`](/config/locales/es.yml)
+  - Todas las páginas tienen su texto en español
+- Layout
+  - No sabemos mucho de colores
 
 ***
 
