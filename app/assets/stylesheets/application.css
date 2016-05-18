@@ -37,13 +37,15 @@ nav.principal_options a:hover {
 }
 nav.MenuCat {
     text-align: center;
-    padding-left: 5px;
-    height: 40px;
     background-color: #BAFF3C;
+    float: left;
+    width: 100%;
+    padding: 4px;
 }
 nav.MenuCat a {
     font-size: 20px;
-    padding-left: 5px;
+    text-align: center;
+    padding: 4px;
 }
 nav.MenuCat a:hover {
     background-color: #E8B446;
