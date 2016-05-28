@@ -1,0 +1,66 @@
+// regex for email
+// form id="validate"
+// <%= f.input :name, data: {pattern: "^.+@.+\..+$"}, class:"required_fields" %>
+// label class: "algo"
+// $("form#validate").on("submit", function(){
+//  req_fields = $(".required_fields")
+//  req_fields.each (function(){
+//    var regex = new RegExp($(this).data("pattern")
+//    if ($(this).val() == "") // presencia
+//      $(this).siblings(".algo")
+//    if (!regex.test($(this).val()))
+//       ----
+//       ----
+//       "formato incorrecto"
+//    )
+//})
+//
+//});
+
+
+//if ($(this).val() == " "){                          <div>
+//  $label = $(this).siblings(".clase_label")           <input id="1" class="required_fields"> </input>
+//  $label.removeClass(".close_label")                  <label for="1" class="clase_label"> </label>
+//  $label.addClass(".mostrar")                       </div>
+//  $label.text("Campo obligatorio")                  $("#1").siblings() -> label
+//}
+
+// .modal {}
+//  display: none;
+//  z-index: 9999;
+//  position: fixed;
+// }
+
+//.show_modal {
+//  display: block;
+//}
+
+//<% @objects.each do |object| %>
+//  <div class="modal">
+//    <%= object.description %>
+//  </div>
+//<% end %>
+//controller
+//def set_pages
+//  @total_paginas = (Object.count / 8.to_f).ceil (redondear para arriba)
+//end
+//
+//_pagination.html.erb
+// <% for i in 1..@total_paginas %>
+//  <%= link_to "#{i}", object_path(page: i) %>
+// <% end %>
+//------ controller ------
+// def index
+//  @object = Object.paginate(page)
+// end
+//
+//---controller.rb----
+// # esto es un before_filter :page, only [:index]
+// def page
+//   @page = params[:page].present? params[:page].to_i - 1 : params[:page].to_i
+// end
+
+// Book (model)
+// def self.paginate(page)
+//  limit(8).offset(page * 8)
+// end
