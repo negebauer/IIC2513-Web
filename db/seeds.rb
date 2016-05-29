@@ -14,7 +14,7 @@ if User.first.nil?
     User.create(username: 'diego', password: '123456', admin: false, email: 'dacasas@uc.cl', active: false)
 end
 
-# Product.all.each { |e| Product.delete(e)  }
+Product.all.each { |e| Product.delete(e)  }
 if Product.first.nil?
     # Computadores
     Product.create(name: 'Macbook Pro', price: 2000000, stock: 2, description: 'Computador bonito y elegante que toda persona quiere tener', family: 1, promotion: false)
