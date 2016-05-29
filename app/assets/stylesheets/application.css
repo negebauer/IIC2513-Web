@@ -135,3 +135,28 @@ h1 {
 div.info{
   text-align: center;
 }
+
+#bgventana{
+  position: fixed;
+  z-index: 1;
+  left: 0px;
+  top: 0px;
+  background: #000;
+  opacity: 0.7;
+  width: 100%;
+  height:  100%;
+  visibility: hidden;
+}
+
+#ventana{
+  background-color: #E8950C;
+  border: solid #FFF 10px;
+  width: 300px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin-top: -120px;
+  margin-left: -200px;
+
+}
