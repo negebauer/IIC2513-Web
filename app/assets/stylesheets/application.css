@@ -136,7 +136,7 @@ div.info{
   text-align: center;
 }
 
-#bgventana{
+#bgwindow{
   position: fixed;
   z-index: 1;
   left: 0px;
@@ -148,7 +148,7 @@ div.info{
   visibility: hidden;
 }
 
-#ventana{
+#window{
   background-color: #E8950C;
   border: solid #FFF 10px;
   width: 300px;
