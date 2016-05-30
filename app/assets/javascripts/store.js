@@ -16,13 +16,13 @@ function toogle_hidden_cells_next(ev) {
 }
 
 function toogle_hidden_cells(next) {
-  var item_count_max = $(".columnas").attr("data_item_count_max")
+  var item_count_max = $(".columnas").attr("data_item_count_max");
   var $cells = $(".celda_p");
-  
+
   if (next == true) {
 
   } else {
-    if $cells
+    // if $cells
   }
 }
 
