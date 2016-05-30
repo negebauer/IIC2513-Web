@@ -10,7 +10,7 @@ $(function() {
 
 function use_informatin(){
 
-  
+  document.getElementById('titulosss').innerHTML = "asdsadsd";
   show_model();
 }
 
