@@ -1,4 +1,5 @@
 class StoreController < ApplicationController
+  before_action :page_count_set, only: [:index, :computers, :deodorants, :product]
 
   def index
   end
@@ -24,5 +25,10 @@ class StoreController < ApplicationController
 
     def product_params
       params.require(:id).permit()
+    end
+
+    def page_count_set
+        @page_count = 0
+        @page_count_max = 10
     end
 end
