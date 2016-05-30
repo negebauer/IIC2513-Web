@@ -19,15 +19,15 @@ function validate_form(ev, $form) {
     var value = $(this).find('input').val();
     var type = $(this).find('input').attr('type');
     console.log(type);
-    if (type == "text") {
-      if (value == "") {
-        var error = "Tienes que llenar el campo: " + label
+    if (type == "number") {
+      if (!validate_number(value)) {
+        var error = "El campo " + label + " debería ser un número entero"
         form_prepend_error($form, error)
         prevent = true
       }
-    } else if (type == "number") {
-      if (!validate_number(value)) {
-        var error = "El campo " + label + " debería ser un número entero"
+    } else {
+      if (value == "") {
+        var error = "Tienes que llenar el campo: " + label
         form_prepend_error($form, error)
         prevent = true
       }
