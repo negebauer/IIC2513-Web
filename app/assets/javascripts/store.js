@@ -3,15 +3,16 @@ $(function() {
   $("button[name=Next]").on('click', toogle_hidden_cells_next);
   //$('.celda_p').css('cursor', 'pointer').click(function(){ show_model("visible");});
   $('.cerrar').css('cursor', 'pointer').click(function(){ close_models();});
-  $('.nombre').css('cursor', 'pointer').click(function(){ use_informatin($(".nombre").attr("data_item_name"), $(".nombre").attr("data_item_description"));});
+  $('.nombre').css('cursor', 'pointer').click(function(){ use_informatin($(".nombre").attr("data_item_name"), $(".nombre").attr("data_item_description"), $(".nombre").attr("data_item_link"));});
   $('.imagen').css('cursor', 'pointer').click(function(){ show_model_image();});
   $('.mas_opciones').css('cursor', 'pointer').click(function(){ show_model_detalle();});
 })
 
-function use_informatin(nombre, info){
+function use_informatin(nombre, info, link){
 
   document.getElementById('titulosss').innerHTML = nombre;
   document.getElementById('informacion').innerHTML = info;
+  document.getElementById('go_product').href = link;
   show_model();
 }
 
