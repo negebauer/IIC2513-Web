@@ -152,7 +152,7 @@ div.hidden {
 div.info {
     text-align: center;
 }
-#bgwindow {
+#bgwindow, #bgwindow_image, #bgwindow_detalles {
     position: fixed;
     z-index: 1;
     left: 0px;
