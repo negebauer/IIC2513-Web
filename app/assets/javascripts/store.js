@@ -25,3 +25,9 @@ function toogle_hidden_cells(next) {
     if $cells
   }
 }
+
+function show_model(_valor){
+  document.getElementById('bgwindow').style.visibility = _valor;
+  //var window = ('bgwindow');
+  //window.style.visibility = _valor;
+}
