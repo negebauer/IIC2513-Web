@@ -18,5 +18,5 @@ function toogle_hidden_cells_next(ev) {
 }
 
 function toogle_hidden_cells(next) {
-  console.log("Next: " + next ? "Trqweqeqweue" : "asdasd");
+  console.log("Next: " + next ? "true" : "false");
 }
