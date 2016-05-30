@@ -2,7 +2,7 @@
     <h1>Catálogo de computadores</h1>
 </div>
 
-<%= render 'page_cycling' %>
+<%= render 'layouts/page_cycling' %>
 
 <div class="columnas">
     <% Product.where(family: 1).each do |product| %>
