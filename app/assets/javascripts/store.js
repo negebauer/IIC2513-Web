@@ -1,10 +1,8 @@
 $(function() {
   $("button[name=Previous]").on('click', toogle_hidden_cells_previous);
   $("button[name=Next]").on('click', toogle_hidden_cells_next);
-  $('.celda_p').css('cursor', 'pointer').click(function(){
-     show_model("visible");
-    }
-  )
+  $('.celda_p').css('cursor', 'pointer').click(function(){ show_model("visible");});
+  $('.cerrar').css('cursor', 'pointer').click(function(){ show_model("hidden");});
 })
 
 function toogle_hidden_cells_previous(ev) {
