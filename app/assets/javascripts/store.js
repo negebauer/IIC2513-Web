@@ -1,5 +1,4 @@
 $(function() {
-  var $cells = $(".celda_p");
   $("button[name=Previous]").on('click', toogle_hidden_cells_previous);
   $("button[name=Next]").on('click', toogle_hidden_cells_next);
   // console.log($cells);
@@ -17,9 +16,12 @@ function toogle_hidden_cells_next(ev) {
 }
 
 function toogle_hidden_cells(next) {
+  var item_count_max = $(".columnas").attr("data_item_count_max")
+  var $cells = $(".celda_p");
+  
   if (next == true) {
-    console.log('next');
+
   } else {
-    console.log('previous');
+    if $cells
   }
 }

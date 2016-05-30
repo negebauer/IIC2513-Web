@@ -4,15 +4,16 @@
 
 <%= render 'layouts/page_cycling' %>
 
-<div class="columnas">
+<div class="columnas" data_item_count_max="<%= @item_count_max %>">
     <% Product.where(family: 1).each do |product| %>
-    <div class="celda_p<%= @page_count < @page_count_max ? " " : " hidden" %>">
+    <div class="celda_p<%= @item_count < @item_count_max ? " " : " hidden" %>">
         <div class="nombre"><%= product.name %></div>
         <div class="precio">$<%= product.price %></div>
         <div class="descripcion"><%= product.description %></div>
         <div class="info_prod"><%= link_to 'Detalle..', store_product_path(product) %></div>
     </div>
-    <% @page_count += 1 %>
+    <% @item_count += 1 %>
     <% end %>
 
 </div>
+<!-- <%= content_tag :div, class: 'columnas', data: {item_count_max: @item_count_max}%> -->

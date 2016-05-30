@@ -30,3 +30,8 @@ def user_admin_required
     redirect_to profile_path
   end
 end
+
+def item_count_set
+    @item_count = 0
+    @item_count_max = 10
+end
