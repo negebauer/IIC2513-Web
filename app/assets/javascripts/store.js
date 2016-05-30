@@ -1,9 +1,18 @@
 $(function() {
   $("button[name=Previous]").on('click', toogle_hidden_cells_previous);
   $("button[name=Next]").on('click', toogle_hidden_cells_next);
-  $('.celda_p').css('cursor', 'pointer').click(function(){ show_model("visible");});
-  $('.cerrar').css('cursor', 'pointer').click(function(){ show_model("hidden");});
+  //$('.celda_p').css('cursor', 'pointer').click(function(){ show_model("visible");});
+  $('.cerrar').css('cursor', 'pointer').click(function(){ close_models();});
+  $('.nombre').css('cursor', 'pointer').click(function(){ use_informatin();});
+  $('.imagen').css('cursor', 'pointer').click(function(){ show_model_image();});
+  $('.mas_opciones').css('cursor', 'pointer').click(function(){ show_model_detalle();});
 })
+
+function use_informatin(){
+
+  
+  show_model();
+}
 
 function toogle_hidden_cells_previous(ev) {
   ev.preventDefault();
@@ -38,6 +47,25 @@ function toogle_hidden_cells(next) {
   }
 }
 
-function show_model(_valor) {
-  document.getElementById('bgwindow').style.visibility = _valor;
+function close_models(){
+  document.getElementById('bgwindow_image').style.visibility = "hidden";
+  document.getElementById('bgwindow').style.visibility = "hidden";
+  document.getElementById('bgwindow_detalles').style.visibility = "hidden";
+}
+
+function show_model(){
+
+  document.getElementById('bgwindow').style.visibility = "visible";
+
+}
+
+function show_model_image(){
+
+  document.getElementById('bgwindow_image').style.visibility = "visible";
+
+}
+function show_model_detalle(){
+
+  document.getElementById('bgwindow_detalles').style.visibility = "visible";
+
 }
