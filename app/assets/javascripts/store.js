@@ -5,7 +5,7 @@ $(function() {
   $('.cerrar').css('cursor', 'pointer').click(function(){ close_models();});
   $('.nombre').css('cursor', 'pointer').click(function(){ use_informatin($(".nombre").attr("data_item_name"), $(".nombre").attr("data_item_description"), $(".nombre").attr("data_item_link"));});
   $('.imagen').css('cursor', 'pointer').click(function(){ show_model_image();});
-  $('.mas_opciones').css('cursor', 'pointer').click(function(){ show_model_detalle();});
+  $('.mas_opciones').css('cursor', 'pointer').click(function(){ show_model_detalle(  $('.mas_opciones').attr("data_item_family"));});
 })
 
 function use_informatin(nombre, info, link){
@@ -66,9 +66,22 @@ function show_model_image(){
 
   document.getElementById('bgwindow_image').style.display = "inline-block";
 
-}
-function show_model_detalle(){
 
+}
+function show_model_detalle(familia){
+  if (familia=="0") {
+    document.getElementById('more_options').innerHTML = "Estas son las distintas opciones de esta promocion";
+
+  }
+  else if (familia == "1") {
+    document.getElementById('more_options').innerHTML = "Estas son las distintas opciones de este computador";
+    document.getElementById('more_options_des').style.display = "none";
+  }
+  else {
+    document.getElementById('more_options').innerHTML = "Estas son las distintas opciones de este desodorante";
+    document.getElementById('more_options_pc').style.display = "none";
+  }
   document.getElementById('bgwindow_detalles').style.display = "inline-block";
+
 
 }
