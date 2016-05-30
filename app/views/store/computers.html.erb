@@ -7,7 +7,7 @@
 <div class="columnas" data_item_count_max="<%= @item_count_max %>">
     <% Product.where(family: 1).each do |product| %>
     <div class="celda_p<%= @item_count < @item_count_max ? "" : " hidden" %>">
-        <div class="nombre" data_item_name= "<%= product.name %>"><%= product.name %></div>
+        <div  class="nombre" data_item_name= "<%= product.name %>" data_item_description= "<%= product.description %>"><%= product.name %></div>
         <div class="precio">$<%= product.price %></div>
         <div class="imagen"> Acá va la imagen </div>
         <div class="mas_opciones"> Acá va las opciones</div>
