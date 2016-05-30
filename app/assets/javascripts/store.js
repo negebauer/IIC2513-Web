@@ -3,14 +3,15 @@ $(function() {
   $("button[name=Next]").on('click', toogle_hidden_cells_next);
   //$('.celda_p').css('cursor', 'pointer').click(function(){ show_model("visible");});
   $('.cerrar').css('cursor', 'pointer').click(function(){ close_models();});
-  $('.nombre').css('cursor', 'pointer').click(function(){ use_informatin($(".nombre").attr("data_item_name"));});
+  $('.nombre').css('cursor', 'pointer').click(function(){ use_informatin($(".nombre").attr("data_item_name"), $(".nombre").attr("data_item_description"));});
   $('.imagen').css('cursor', 'pointer').click(function(){ show_model_image();});
   $('.mas_opciones').css('cursor', 'pointer').click(function(){ show_model_detalle();});
 })
 
-function use_informatin(info){
+function use_informatin(nombre, info){
 
-  document.getElementById('titulosss').innerHTML = info;
+  document.getElementById('titulosss').innerHTML = nombre;
+  document.getElementById('informacion').innerHTML = info;
   show_model();
 }
 
