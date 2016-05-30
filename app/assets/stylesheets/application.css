@@ -123,6 +123,16 @@ h1 {
     font-size: 14px;
 }
 
+/* Hidding fields */
+
+.hidden {
+    width: 0px;
+    height: 0px;
+    display: none;
+    /*visibility: hidden;*/
+    /*background-color: red;*/
+}
+
 /* Mensajes de edición de datos */
 
 .error-message {
@@ -139,32 +149,28 @@ h1 {
 #notice {
     color: green
 }
-
-div.info{
-  text-align: center;
+div.info {
+    text-align: center;
 }
-
-#bgwindow{
-  position: fixed;
-  z-index: 1;
-  left: 0px;
-  top: 0px;
-  background: #000;
-  opacity: 0.7;
-  width: 100%;
-  height:  100%;
-  visibility: hidden;
+#bgwindow {
+    position: fixed;
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+    background: #000;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
 }
-
-#window{
-  background-color: #E8950C;
-  border: solid #FFF 10px;
-  width: 300px;
-  height: 300px;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  margin-top: -120px;
-  margin-left: -200px;
-
+#window {
+    background-color: #E8950C;
+    border: solid #FFF 10px;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    margin-top: -120px;
+    margin-left: -200px;
 }
