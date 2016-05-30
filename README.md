@@ -12,7 +12,7 @@ También para hacer deploy automático del branch `dev` en la [aplicación de pr
 ***
 
 ### [E6](/A%20Docs%20tareas/E6.pdf)
-
+En construccion...
 
 ##### Ayuda corrección - ¿Que tan cumplida fue la tarea?
 -
