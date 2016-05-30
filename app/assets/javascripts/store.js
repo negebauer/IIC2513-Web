@@ -16,7 +16,7 @@ function toogle_hidden_cells_next(ev) {
 }
 
 function toogle_hidden_cells(next) {
-  if next {
+  if (next) {
     console.log('next');
   } else {
     console.log('back');
