@@ -125,9 +125,9 @@ h1 {
 
 /* Hidding fields */
 
-.hidden {
-    width: 0px;
-    height: 0px;
+div.hidden {
+    /*width: 0px;*/
+    /*height: 0px;*/
     display: none;
     /*visibility: hidden;*/
     /*background-color: red;*/

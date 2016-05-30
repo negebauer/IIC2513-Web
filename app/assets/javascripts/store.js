@@ -1,12 +1,10 @@
 $(function() {
   $("button[name=Previous]").on('click', toogle_hidden_cells_previous);
   $("button[name=Next]").on('click', toogle_hidden_cells_next);
-  // console.log($cells);
 })
 
 function toogle_hidden_cells_previous(ev) {
   ev.preventDefault();
-  console.log('toggle previous');
   toogle_hidden_cells(false);
 }
 
@@ -18,15 +16,27 @@ function toogle_hidden_cells_next(ev) {
 function toogle_hidden_cells(next) {
   var item_count_max = $(".columnas").attr("data_item_count_max");
   var $cells = $(".celda_p");
-
-  if (next == true) {
-
-  } else {
-    // if $cells
+  var toggled = 0
+  var foundvisible = false;
+  if (!next) {
+    $cells = $($cells.get().reverse()).each(function() { /* ... */ });
+  }
+  for (index = 0; index < $cells.size(); index++) {
+    var $cell = $cells.eq(index);
+    if (!foundvisible && !$cell.hasClass('hidden') && $cells.length - index > 10) {
+      foundvisible = true;
+    }
+    if (foundvisible && !$cell.hasClass('hidden')) {
+      $cell.addClass('hidden');
+    } else if (foundvisible && toggled < item_count_max) {
+      toggled += 1;
+      $cell.removeClass('hidden');
+    } else {
+    }
   }
 }
 
-function show_model(_valor){
+function show_model(_valor) {
   document.getElementById('bgwindow').style.visibility = _valor;
   //var window = ('bgwindow');
   //window.style.visibility = _valor;
