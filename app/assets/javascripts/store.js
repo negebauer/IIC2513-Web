@@ -1,6 +1,6 @@
 $(function() {
   var $cells = $(".celda_p")
-  console.log($cells);
+  // console.log($cells);
 })
 
 // $(function() {

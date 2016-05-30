@@ -1,0 +1,162 @@
+body {
+    background-color: #D2CEE8;
+    width: 100%;
+    margin: 0 auto;
+}
+header {
+    display: inline-block;
+    height: 100px;
+    width: 100%;
+    border: 0px;
+    background: #5599E8;
+}
+a {
+    text-decoration: none;
+}
+nav.company {
+    font-size: 20px;
+    height: 100px;
+    padding-bottom: 0px;
+}
+nav.principal_options {
+    height: 100px;
+    padding-left: 5px;
+    float: right;
+}
+nav.principal_options a {
+    float: left;
+    font-size: 20px;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 36px;
+    margin: 0;
+}
+nav.principal_options a:hover {
+    background-color: #c6ffea;
+}
+nav.MenuCat {
+    text-align: center;
+    background-color: #BAFF3C;
+    float: left;
+    width: 100%;
+    padding: 4px;
+}
+nav.MenuCat a {
+    font-size: 20px;
+    text-align: center;
+    padding: 4px;
+}
+nav.MenuCat a:hover {
+    background-color: #E8B446;
+}
+div.titulo_cat {
+    text-align: center;
+}
+div.columnas {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+div.celda_p {
+    background-color: #DBE0FF;
+    border-radius: 8px;
+    display: inline-block;
+    width: 20%;
+    height: 400px;
+    text-align: center;
+}
+div.nombre {
+    font-size: 25px;
+    font-family: sans-serif;
+    color: #E8680C;
+}
+div.precio {
+    color: #FF0200;
+    font-size: 20px;
+    font-family: cursive;
+}
+div.descripcion {
+    font-size: 18px;
+    font-family: fantasy;
+}
+h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Formulario login */
+
+#name_ask {
+    text-align: center;
+}
+#name_ask .form-control label {
+    width: 200px;
+    font-size: 14px;
+    line-height: 26px;
+    vertical-align: baseline;
+}
+#name_ask .form-control input[type=text], #name_ask .form-control input[type=password] {
+    width: 140px;
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    vertical-align: baseline;
+    margin-bottom: 10px;
+    text-align: left;
+}
+#name_ask input[type=submit] {
+    display: block;
+    width: 240px;
+    height: 30px;
+    margin: 10px auto 0;
+    background: #eee;
+    border: 2px solid #000;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Mensajes de edición de datos */
+
+.error-message {
+    background: #fcc;
+    color: #c00;
+    font-size: 15px;
+    margin: 10px -60px;
+    padding: 9px 60px;
+    box-shadow: 0 0 3px 1px rgba(128, 0, 0, 0.4);
+}
+.error-message strong {
+    font-weight: bold;
+}
+#notice {
+    color: green
+}
+
+div.info{
+  text-align: center;
+}
+
+#bgwindow{
+  position: fixed;
+  z-index: 1;
+  left: 0px;
+  top: 0px;
+  background: #000;
+  opacity: 0.7;
+  width: 100%;
+  height:  100%;
+  visibility: hidden;
+}
+
+#window{
+  background-color: #E8950C;
+  border: solid #FFF 10px;
+  width: 300px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin-top: -120px;
+  margin-left: -200px;
+
+}
