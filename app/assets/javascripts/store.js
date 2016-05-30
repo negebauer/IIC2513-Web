@@ -4,7 +4,7 @@ $(function() {
   //$('.celda_p').css('cursor', 'pointer').click(function(){ show_model("visible");});
   $('.cerrar').css('cursor', 'pointer').click(function(){ close_models();});
   $('.nombre').css('cursor', 'pointer').click(function(){ use_informatin($(".nombre").attr("data_item_name"), $(".nombre").attr("data_item_description"), $(".nombre").attr("data_item_link"));});
-  $('.imagen').css('cursor', 'pointer').click(function(){ show_model_image();});
+  $('.imagen').css('cursor', 'pointer').click(function(){ show_model_image($('.imagen').attr("data_image_zoom"));});
   $('.mas_opciones').css('cursor', 'pointer').click(function(){ show_model_detalle(  $('.mas_opciones').attr("data_item_family"));});
 })
 
@@ -62,10 +62,10 @@ function show_model(){
 
 }
 
-function show_model_image(){
+function show_model_image(valor){
 
+  document.getElementById('imagen_zoom').src = valor;
   document.getElementById('bgwindow_image').style.display = "inline-block";
-
 
 }
 function show_model_detalle(familia){
