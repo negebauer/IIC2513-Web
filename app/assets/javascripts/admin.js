@@ -17,7 +17,8 @@ function validate_form(ev, $form) {
     var value = $(this).find('input').val();
     if (value == "") {
       var error_message = "Tienes que llenar el campo: " + label
-      
+      var error_html = '<div class="error-message">' + error_message + "</div>"
+      $form.prepend(error_html)
     }
   })
 }
