@@ -1,15 +1,19 @@
 <div class="titulo_cat">
     <h1>Catálogo de computadores</h1>
 </div>
+<nav class="page_cycling">
+    <button type="button" name="Back">Back</button>
+    <button type="button" name="Next">Next</button>
+</nav>
 <div class="columnas">
-  <% Product.where(family: 1).each do |product| %>
-  <div class="celda_p<%= @page_count < @page_count_max ? "" : " hidden" %>">
-      <div class="nombre"><%= product.name %></div>
-      <div class="precio">$<%= product.price %></div>
-      <div class="descripcion"><%= product.description %></div>
-      <div class="info_prod"><%= link_to 'Detalle..', store_product_path(product) %></div>
-  </div>
-  <% @page_count += 1 %>
-  <% end %>
+    <% Product.where(family: 1).each do |product| %>
+    <div class="celda_p<%= @page_count < @page_count_max ? " " : " hidden" %>">
+        <div class="nombre"><%= product.name %></div>
+        <div class="precio">$<%= product.price %></div>
+        <div class="descripcion"><%= product.description %></div>
+        <div class="info_prod"><%= link_to 'Detalle..', store_product_path(product) %></div>
+    </div>
+    <% @page_count += 1 %>
+    <% end %>
 
 </div>
