@@ -1,34 +1,45 @@
 class StoreController < ApplicationController
-  before_action :item_count_set, only: [:index, :computers, :deodorants, :product]
 
-  def index
-  end
+    @@page_item_max = 8
 
-  def computers
-  end
+    def index
+        @products = Product.where(promotion: true)
+    end
 
-  def deodorants
-  end
+    def computers
+        @products = Product.where(family: 1)
+        # respond_to do |format|
+        #     format.js
+        # end
+    end
 
-  def product
-    set_product
-  end
+    def deodorants
+        @products = Product.where(family: 2)
+    end
 
-  private
+    def product
+        set_product
+    end
+
+    def products
+        @family = product_params[:family]
+        @page = product_params[:page]
+        respond_to do |format|
+            format.js
+        end
+    end
+
+    private
+
     def set_product
-      if Product.exists?(params[:id])
-        @product = Product.find(params[:id])
-      else
-        redirect_to root_path
-      end
+        if Product.exists?(params[:id])
+            @product = Product.find(params[:id])
+        else
+            redirect_to root_path
+        end
     end
 
     def product_params
-      params.require(:id).permit()
-    end
-
-    def item_count_set
-        @item_count = 0
-        @item_count_max = 8
+        params.permit(:family, :id, :page)
     end
 end

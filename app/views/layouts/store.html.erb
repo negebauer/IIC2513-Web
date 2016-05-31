@@ -2,9 +2,9 @@
 <%= render 'layouts/main_nav_bar' %>
 
 <nav class="MenuCat">
-    <%= link_to 'Inicio', root_path %>
-    <%= link_to 'Computadores', store_computers_path %>
-    <%= link_to 'Desodorantes', store_deodorants_path %>
+    <%= link_to 'Inicio', store_products_path(family: 0), remote: true %>
+    <%= link_to 'Computadores', store_products_path(family: 1), remote: true %>
+    <%= link_to 'Desodorantes', store_products_path(family: 2), remote: true %>
 </nav>
 
 </header>

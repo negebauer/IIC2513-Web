@@ -3,10 +3,11 @@ Rails.application.routes.draw do
   root 'store#index'
 
 # Store
-  get 'store/index'
+  # get 'store/index'
   get 'store/product/:id', to: 'store#product', as: 'store_product'
-  get 'store/computers'
-  get 'store/deodorants'
+  # get 'store/computers'
+  # get 'store/deodorants'
+  get 'store/products'
 
 # Login
   get 'login', to: "login#ask"
