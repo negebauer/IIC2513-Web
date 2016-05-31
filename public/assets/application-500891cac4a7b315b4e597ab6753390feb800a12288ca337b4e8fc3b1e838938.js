@@ -11590,23 +11590,61 @@ $(function() {
 })
 
 function validate_form(ev, $form) {
-  // NOTE: DEBUG ONLY!!!
-  ev.preventDefault()
+  // Delete older error messages
+  $('.error-message').remove();
+
+  var prevent = false
 
   // Validate required
-  var $required = $form.find('.required').each(function(index) {
+  $form.find('.required').each(function(index) {
     var label = $(this).find('label').text();
     var value = $(this).find('input').val();
-    if (value == "") {
-      var error_message = "Tienes que llenar el campo: " + label
-      
+    var type = $(this).find('input').attr('type');
+    console.log(type);
+    if (type == "number") {
+      if (!validate_number(value)) {
+        var error = "El campo " + label + " debería ser un número entero"
+        form_prepend_error($form, error)
+        prevent = true
+      }
+    } else {
+      if (value == "") {
+        var error = "Tienes que llenar el campo: " + label
+        form_prepend_error($form, error)
+        prevent = true
+      }
     }
   })
+
+  // Validate email
+  $form.find('.email').each(function(index) {
+    var label = $(this).find('label').text();
+    var value = $(this).find('input').val();
+    if (!validate_email(value)) {
+      var error = "El email en el campo " + label + " esta en un formato incorrecto"
+      form_prepend_error($form, error)
+      prevent = true
+    }
+  })
+
+  if (prevent) {
+    ev.preventDefault()
+  }
+}
+
+function form_prepend_error($form, error) {
+  var error_html = '<div class="error-message">' + error + "</div>"
+  $form.prepend(error_html)
 }
 
 function validate_email(email) {
   var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(email);
+}
+
+function validate_number(number) {
+  var re = /^\d+$/;
+  return re.test(number);
 }
 
 
@@ -11631,9 +11669,20 @@ function validate_email(email) {
 $(function() {
   $("button[name=Previous]").on('click', toogle_hidden_cells_previous);
   $("button[name=Next]").on('click', toogle_hidden_cells_next);
-  $('.celda_p').css('cursor', 'pointer').click(function(){ show_model("visible");});
-  $('.cerrar').css('cursor', 'pointer').click(function(){ show_model("hidden");});
+  //$('.celda_p').css('cursor', 'pointer').click(function(){ show_model("visible");});
+  $('.cerrar').css('cursor', 'pointer').click(function(){ close_models();});
+  $('.nombre').css('cursor', 'pointer').click(function(){ use_informatin($(".nombre").attr("data_item_name"), $(".nombre").attr("data_item_description"), $(".nombre").attr("data_item_link"));});
+  $('.imagen').css('cursor', 'pointer').click(function(){ show_model_image($('.imagen').attr("data_image_zoom"));});
+  $('.mas_opciones').css('cursor', 'pointer').click(function(){ show_model_detalle(  $('.mas_opciones').attr("data_item_family"));});
 })
+
+function use_informatin(nombre, info, link){
+
+  document.getElementById('titulosss').innerHTML = nombre;
+  document.getElementById('informacion').innerHTML = info;
+  document.getElementById('go_product').href = link;
+  show_model();
+}
 
 function toogle_hidden_cells_previous(ev) {
   ev.preventDefault();
@@ -11668,8 +11717,41 @@ function toogle_hidden_cells(next) {
   }
 }
 
-function show_model(_valor) {
-  document.getElementById('bgwindow').style.visibility = _valor;
+
+function close_models(){
+  document.getElementById('bgwindow_image').style.display = "none";
+  document.getElementById('bgwindow').style.display = "none";
+  document.getElementById('bgwindow_detalles').style.display = "none";
+}
+
+function show_model(){
+
+  document.getElementById('bgwindow').style.display = "inline-block";
+
+}
+
+function show_model_image(valor){
+
+  document.getElementById('imagen_zoom').src = valor;
+  document.getElementById('bgwindow_image').style.display = "inline-block";
+
+}
+function show_model_detalle(familia){
+  if (familia=="0") {
+    document.getElementById('more_options').innerHTML = "Estas son las distintas opciones de esta promocion";
+
+  }
+  else if (familia == "1") {
+    document.getElementById('more_options').innerHTML = "Estas son las distintas opciones de este computador";
+    document.getElementById('more_options_des').style.display = "none";
+  }
+  else {
+    document.getElementById('more_options').innerHTML = "Estas son las distintas opciones de este desodorante";
+    document.getElementById('more_options_pc').style.display = "none";
+  }
+  document.getElementById('bgwindow_detalles').style.display = "inline-block";
+
+
 }
 ;
 (function() {
