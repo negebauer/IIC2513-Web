@@ -66,12 +66,15 @@ div.columnas {
     padding-right: 10px;
 }
 div.celda_p {
+    border: 1px solid blue;
     background-color: #DBE0FF;
     border-radius: 8px;
-    display: inline-block;
+    display:inline-table;
     width: 20%;
     height: 400px;
     text-align: center;
+
+
 }
 div.nombre {
     font-size: 25px;
@@ -158,7 +161,7 @@ div.info {
     left: 0px;
     top: 0px;
     background: #000;
-    opacity: 0.7;
+    opacity: 0.9;
     width: 100%;
     height: 100%;
     display: none;
@@ -173,4 +176,26 @@ div.info {
     position: absolute;
     margin-top: -120px;
     margin-left: -200px;
+}
+
+#window_img {
+    background-color: #E8950C;
+    border: solid #FFF 10px;
+    width: 600px;
+    height: 80%;
+    left: 25%;
+    position: absolute;
+
+
+
+}
+
+#imagen_zoom{
+  width: 100%;
+  height: 80%;
+}
+
+img.pequeña{
+  width: 200px;
+  height: 200px;
 }
