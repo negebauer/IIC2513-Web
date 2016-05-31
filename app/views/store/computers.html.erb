@@ -5,16 +5,6 @@
 <%= render 'layouts/page_cycling' %>
 
 <div class="columnas">
-    <% @products.each do |product| %>
-    <div class="celda_p">
-        <div  class="nombre" data_item_name= "<%= product.name %>" data_item_description= "<%= product.description %>" data_item_link= "<%= store_product_path(product) %>"><%= product.name %></div>
-        <div class="precio">$<%= product.price %></div>
-        <div class="imagen"> Acá va la imagen </div>
-        <div class="mas_opciones" data_item_family="<%= product.family %>"> Acá va las opciones</div>
-        <!-- <div class="descripcion"><%= product.description %></div> -->
-        <!-- <div class="info_prod"><%= link_to 'Detalle..', store_product_path(product) %></div> -->
-    </div>
-    <% end %>
-
+    <%= render partial: 'products' %>
 </div>
 <!-- <%= content_tag :div, class: 'columnas', data: {item_count_max: @item_count_max}%> -->
