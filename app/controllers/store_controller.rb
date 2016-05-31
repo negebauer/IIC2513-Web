@@ -26,4 +26,9 @@ class StoreController < ApplicationController
     def product_params
       params.require(:id).permit()
     end
+
+    def item_count_set
+        @item_count = 0
+        @item_count_max = 8
+    end
 end
