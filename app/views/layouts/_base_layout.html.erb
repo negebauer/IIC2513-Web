@@ -6,42 +6,7 @@
         <%= stylesheet_link_tag 'store', media: 'all' %>
         <%= javascript_include_tag 'application' %>
         <%= csrf_meta_tags %>
-    <body>
     </head>
-      <div id="bgwindow">
-        <div id="window">
-          <p class="cerrar">Cerrar</p>
-          <p id="titulosss">
-            Producto
-          </p>
-          <p id="informacion">
-            Descripcion
-          </p>
-          <nav>
-            <a id="go_product" href="#">Ir al producto</a>
-            <a href="#">Agregar al carro</a>
-          </nav>
-        </div>
-      </div>
-      <div id="bgwindow_image">
-        <div id="window_img">
-          <p class="cerrar">Cerrar</p>
-          <img id="imagen_zoom"  src="" alt="" />
-        </div>
-      </div>
-      <div id="bgwindow_detalles">
-        <div id="window">
-          <p class="cerrar">Cerrar</p>
-          <div id="more_options">
-            Acá va las opciones
-          </div>
-          <br>
-          <div id="more_options_pc">
-              Colores: <br> -Rojo <br> -Azul <br> -Blanco
-          </div>
-          <br>
-          <div id="more_options_des">
-            Olores: <br> -Amargo <br> -Ácido <br> -Cítrico
-          </div>
-        </div>
-      </div>
+    <body>
+
+    <%= render "layouts/modal_view" %>
