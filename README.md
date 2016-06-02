@@ -12,10 +12,25 @@ También para hacer deploy automático del branch `dev` en la [aplicación de pr
 ***
 
 ### [E6](/A%20Docs%20tareas/E6.pdf)
-En construccion...
+Todos los productos tienen una misma imagen
+Ahora hay más productos en la familia de computadores para poder probar la paginación
 
 ##### Ayuda corrección - ¿Que tan cumplida fue la tarea?
--
+- Funcionalidad
+  - Paginación vía AJAX:
+    - La hay en todas las secciones, se puede probar en la sección de computadores
+    - Se cargan un máximo de 8 productos por página
+    - La lógica está ordenada
+  - Vista previa:
+    - Hay vista previa de la información de un producto construida con atributos data-X
+    - Hay 3 vistas previas: Image, información y más opciones
+  - Validación formularios:
+    - Todos los formularios (admin y usuario) tienen validación por javascript
+    - Usuario:
+      - [cambiar mail](https://nidastore.herokuapp.com/profile/edit)
+      - [cambiar clave](https://nidastore.herokuapp.com/profile/edit_password)
+    - Admin:
+      - [
 
 ***
 
