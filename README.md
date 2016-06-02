@@ -12,9 +12,9 @@ También para hacer deploy automático del branch `dev` en la [aplicación de pr
 ***
 
 ### [E6](/A%20Docs%20tareas/E6.pdf)
-El commit corriendo en heroku es [37488d5](https://github.com/negebauer/nidastore/commit/37488d5a0c90ff5ed38ca028010b5f753de4ac15)
-Todos los productos tienen una misma imagen
-Ahora hay más productos en la familia de computadores para poder probar la paginación
+El commit corriendo en heroku es [37488d5](https://github.com/negebauer/nidastore/commit/37488d5a0c90ff5ed38ca028010b5f753de4ac15)  
+Todos los productos tienen una misma imagen  
+Ahora hay más productos en la familia de computadores para poder probar la paginación  
 
 ##### Ayuda corrección - ¿Que tan cumplida fue la tarea?
 - Funcionalidad
