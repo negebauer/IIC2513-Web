@@ -10,17 +10,17 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field required">
     <%= f.label :username %></br>
     <%= f.text_field :username %>
   </div>
   <% unless hide_password %>
-    <div class="field">
+    <div class="field required">
       <%= f.label :password %></br>
       <%= f.text_field :password %>
     </div>
   <% end %>
-  <div class="field">
+  <div class="field required email">
     <%= f.label :email %></br>
     <%= f.text_field :email %>
   </div>

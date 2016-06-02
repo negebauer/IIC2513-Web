@@ -6,6 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+# Si descomentas la linea siguiente puedes resetear la base de datos de usuarios en heroku
 # User.all.each { |e| User.delete(e)  }
 if User.first.nil?
     User.create(username: 'admin', password: 'admin', admin: true, email: 'admin@nidastore.com', active: true)
@@ -14,6 +15,7 @@ if User.first.nil?
     User.create(username: 'diego', password: '123456', admin: false, email: 'dacasas@uc.cl', active: false)
 end
 
+# Si descomentas la linea siguiente puedes resetear la base de datos de productos en heroku
 # Product.all.each { |e| Product.delete(e)  }
 if Product.first.nil?
     # Computadores

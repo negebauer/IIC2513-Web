@@ -64,6 +64,8 @@ div.titulo_cat {
 div.columnas {
     padding-left: 10px;
     padding-right: 10px;
+
+
 }
 div.celda_p {
     border: 1px solid blue;
@@ -195,7 +197,7 @@ div.info {
   height: 80%;
 }
 
-img.little{
+img.pequeña{
   width: 200px;
   height: 200px;
 }

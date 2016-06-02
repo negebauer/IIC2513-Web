@@ -5,8 +5,9 @@ Rails.application.routes.draw do
 # Store
   get 'store/index'
   get 'store/product/:id', to: 'store#product', as: 'store_product'
-  get 'store/computers'
-  get 'store/deodorants'
+  # get 'store/computers'
+  # get 'store/deodorants'
+  get 'store/products'
 
 # Login
   get 'login', to: "login#ask"

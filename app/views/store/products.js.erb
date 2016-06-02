@@ -1,0 +1,5 @@
+$('.columnas').html("<%= escape_javascript render partial: 'products', locals: { products: @products, family: @family, pages: @pages } %>")
+
+$(function(){
+  set_modals_actions();
+})
