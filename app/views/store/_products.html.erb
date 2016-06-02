@@ -1,3 +1,9 @@
+<nav class="page_cycling">
+<% for i in 1..@pages %>
+    <%= link_to i, store_products_path(family: @family, page: i-1), remote: true %>
+    <%= "," if i < @pages %>
+<% end %>
+</nav>
 <% @products.each do |product| %>
 <div class="celda_p">
     <div class="nombre" data_item_name="<%= product.name %>" data_item_description="<%= product.description %>" data_item_link="<%= store_product_path(product) %>">
@@ -16,3 +22,5 @@
     <!-- <div class="info_prod"><%= link_to 'Detalle..', store_product_path(product) %></div> -->
 </div>
 <% end %>
+
+<%=  %>

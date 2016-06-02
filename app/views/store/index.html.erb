@@ -7,12 +7,6 @@
     </div>
 </div>
 
-<!--<div class="titulo_cat">
-    <h1>Catálogo de desodorantes</h1>
-</div>-->
-
-<%= render 'page_cycling' %>
-
 <div class="columnas">
-    <%= render partial: 'products', locals: { products: @products } %>
+    <%= render partial: 'products', locals: { products: @products, family: @family, pages: @pages } %>
 </div>

@@ -14,7 +14,6 @@ class StoreController < ApplicationController
     def products
         @family = product_params[:family].to_i
         @page = product_params[:page].to_i
-
         set_products(@family, @page)
 
         respond_to do |format|
@@ -39,6 +38,8 @@ class StoreController < ApplicationController
     def set_products(family, page)
         first = page * @@page_item_max
         last = (page + 1) * @@page_item_max - 1
-        @products = Product.where(family: family)[first..last]
+        products = Product.where(family: family)
+        @products = products[first..last]
+        @pages = (products.count / @@page_item_max.to_f).ceil
     end
 end
