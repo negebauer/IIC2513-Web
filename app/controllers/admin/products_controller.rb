@@ -1,6 +1,5 @@
 class Admin::ProductsController < AdminController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
-  before_action :user_admin_required
 
   # GET /products
   # GET /products.json

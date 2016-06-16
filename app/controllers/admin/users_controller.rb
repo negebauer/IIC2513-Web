@@ -1,5 +1,4 @@
 class Admin::UsersController < AdminController
-  before_action :user_admin_required
   before_action :set_user, except: [:index, :new, :create]
 
   # GET /users
