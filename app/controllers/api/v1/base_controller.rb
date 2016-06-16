@@ -3,9 +3,11 @@ class Api::V1::BaseController < ApplicationController
     respond_to :json
 
     def index
-        render json: {'gola': 'test'}
+        render json: {'mensaje': 'Hola mundo'}
     end
 
     private
+
+
 
 end
