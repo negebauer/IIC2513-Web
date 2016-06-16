@@ -1,7 +1,7 @@
 class Api::V1::ProductsController < Api::V1::BaseController
 
     def index
-        render json: Product.all, status: 200
+        render json: Product.all.as_json(only: [:id]), status: 200
     end
 
     def create
