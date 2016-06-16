@@ -10,9 +10,14 @@ class Api::V1::ProductsController < Api::V1::BaseController
         puts params
         product = Product.where(uuid: @uuid).first
         if product.nil?
-            Product.create(params)
+            product = Product.create(product_params)
+            if !product.nil?
+                render json: product.to_json, status: 201
+            else
+                render json: {'message': 'failure'}, status: 500
+            end
         else
-            if product.update(params)
+            if product.update(product_params)
                 render json: product.to_json, status: 201
             else
                 render json: {'message': 'failure'}, status: 500
@@ -29,6 +34,9 @@ class Api::V1::ProductsController < Api::V1::BaseController
         params.delete(:controller)
         params.delete(:id)
         params.delete(:action)
+    end
+
+    def product_params
         params.permit(:name, :price, :stock, :description, :family, :promotion, :image)
     end
 end
