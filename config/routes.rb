@@ -32,4 +32,11 @@ Rails.application.routes.draw do
     resources :products
   end
 
+# API
+namespace :api do
+    namespace :v1 do
+        get '/', to: 'base#index'
+    end
+end
+
 end
