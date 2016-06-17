@@ -19,4 +19,10 @@ class Api::V1::BaseController < ApplicationController
         end
     end
 
+    def admin_required
+        if @user.nil? || !@user.admin
+            render html: 'HTTP Basic: Access denied.', status: 401
+        end
+    end
+
 end
