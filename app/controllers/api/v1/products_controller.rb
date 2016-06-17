@@ -42,4 +42,5 @@ class Api::V1::ProductsController < Api::V1::BaseController
     def product_params
         params.permit(:name, :price, :stock, :description, :family, :promotion, :image, :uuid)
     end
+
 end
