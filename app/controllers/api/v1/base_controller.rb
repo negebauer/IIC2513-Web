@@ -11,9 +11,11 @@ class Api::V1::BaseController < ApplicationController
     private
 
     def check_auth
-        authenticate_or_request_with_http_basic do |username, password|
+        authenticate_with_http_basic do |username, password|
             @user, @error = User.login(username, password)
-            return !@user.nil?
+            if @user.nil?
+                request_http_basic_authentication
+            end
         end
     end
 
