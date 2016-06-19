@@ -5,9 +5,21 @@ Configurado para hacer deploy automático del branch `master` en la [aplicación
 También para hacer deploy automático del branch `dev` en la [aplicación de prueba](http://devnidastore.herokuapp.com)
 
 ## Entregas
+- [E7](#e7)
 - [E6](#e6)
 - [E5](#e5)
 - [E4](#e4)
+
+***
+
+### [E7](/A%20Docs%20tareas/E7.pdf)
+En construcción...
+
+##### Ayuda corrección - ¿Que tan cumplida fue la tarea?
+En construcción...
+
+##### Requests
+En construcción...
 
 ***
 
