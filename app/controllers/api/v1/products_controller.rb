@@ -8,7 +8,7 @@ class Api::V1::ProductsController < Api::V1::BaseController
 
     def show
         if product = Product.where(uuid: @uuid).first
-            render json: product, status: 200
+            render json: product, status: 200 if stale?(product)
         else
             render json: { message: 'Producto no existe' }, status: 404
         end
