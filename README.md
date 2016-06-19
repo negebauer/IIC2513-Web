@@ -12,8 +12,9 @@ También para hacer deploy automático del branch `dev` en la [aplicación de pr
 ***
 
 ### [E6](/A%20Docs%20tareas/E6.pdf)
-Todos los productos tienen una misma imagen
-Ahora hay más productos en la familia de computadores para poder probar la paginación
+El commit corriendo en heroku es [37488d5](https://github.com/negebauer/nidastore/commit/37488d5a0c90ff5ed38ca028010b5f753de4ac15)  
+Todos los productos tienen una misma imagen  
+Ahora hay más productos en la familia de computadores para poder probar la paginación  
 
 ##### Ayuda corrección - ¿Que tan cumplida fue la tarea?
 - Funcionalidad
@@ -30,7 +31,17 @@ Ahora hay más productos en la familia de computadores para poder probar la pagi
       - [cambiar mail](https://nidastore.herokuapp.com/profile/edit)
       - [cambiar clave](https://nidastore.herokuapp.com/profile/edit_password)
     - Admin:
-      - [
+      - [editar usuario](https://nidastore.herokuapp.com/admin/users/7/edit)
+      - [editar contraseña usuario](https://nidastore.herokuapp.com/admin/users/7/edit_password)
+      - [crear usuario](https://nidastore.herokuapp.com/admin/users/new)
+      - [crear producto](https://nidastore.herokuapp.com/admin/products/new)
+      - [editar producto](https://nidastore.herokuapp.com/admin/products/6/edit)
+- Calidad del código
+  - No hay javascript en el html
+  - Los js son cargados en el head en el [base_layout](https://github.com/negebauer/nidastore/blob/37488d5a0c90ff5ed38ca028010b5f753de4ac15/app/views/layouts/_base_layout.html.erb)
+- Layout y diseño
+  - Layout mejorado (arreglos)
+  - Colores para llamar la atención
 
 ***
 
