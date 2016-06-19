@@ -1,6 +1,6 @@
 class Api::V1::ProductsController < Api::V1::BaseController
-    before_action :admin_required, ony: [:update]
-    before_action :set_uuid, only: [:update]
+    before_action :admin_required, ony: [:update, :destroy]
+    before_action :set_uuid, only: [:update, :destroy]
 
     def index
         render json: Product.all.as_json(only: [:uuid]), status: 200
@@ -38,6 +38,13 @@ class Api::V1::ProductsController < Api::V1::BaseController
         params.delete(:controller)
         params.delete(:id)
         params.delete(:action)
+    end
+
+    def destroy
+      if product = Product.where(uuid: @uuid).first
+        product.destroy
+        render json: {message: "Producto eliminado"}, status: 200
+      end
     end
 
     def product_params
