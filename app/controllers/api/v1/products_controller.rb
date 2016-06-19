@@ -26,10 +26,12 @@ class Api::V1::ProductsController < Api::V1::BaseController
     end
 
     def destroy
-      if product = Product.where(uuid: @uuid).first
-        product.destroy
-        render json: {message: "Producto eliminado"}, status: 200
-      end
+        if product = Product.where(uuid: @uuid).first
+            product.destroy
+            render json: { message: 'Producto eliminado' }, status: 200
+        else
+            render json: { message: 'Producto no existe' }, status: 404
+        end
     end
 
     private
@@ -47,5 +49,4 @@ class Api::V1::ProductsController < Api::V1::BaseController
     def product_params
         params.permit(:name, :price, :stock, :description, :family, :promotion, :image, :uuid)
     end
-
 end
