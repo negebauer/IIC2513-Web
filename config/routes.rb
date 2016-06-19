@@ -36,7 +36,7 @@ Rails.application.routes.draw do
 namespace :api do
     namespace :v1 do
         get '/', to: 'base#index'
-        resources :products, only: [:index, :update, :destroy]
+        resources :products, only: [:index, :show, :update, :destroy]
     end
 end
 

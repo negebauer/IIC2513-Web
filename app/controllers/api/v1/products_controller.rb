@@ -1,9 +1,17 @@
 class Api::V1::ProductsController < Api::V1::BaseController
     before_action :admin_required, only: [:update, :destroy]
-    before_action :set_uuid, only: [:update, :destroy]
+    before_action :set_uuid, only: [:show, :update, :destroy]
 
     def index
         render json: Product.all.as_json(only: [:uuid]), status: 200
+    end
+
+    def show
+        if product = Product.where(uuid: @uuid).first
+            render json: product, status: 200
+        else
+            render json: { message: 'Producto no existe' }, status: 404
+        end
     end
 
     def update
