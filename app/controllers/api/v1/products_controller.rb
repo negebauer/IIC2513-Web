@@ -3,7 +3,7 @@ class Api::V1::ProductsController < Api::V1::BaseController
     before_action :set_uuid, only: [:show, :update, :destroy]
 
     def index
-        render json: Product.all.as_json(only: [:uuid]), status: 200
+        render json: Product.uuids, status: 200
     end
 
     def show
@@ -18,7 +18,7 @@ class Api::V1::ProductsController < Api::V1::BaseController
         if product = Product.where(uuid: @uuid).first
             # We have a product with this uuid
             if product.update(product_params)
-                render json: product.to_json, status: 200
+                render json: product, status: 200
             else
                 render json: { message: 'Falló actualización', params: product_params }, status: 500
             end
@@ -29,7 +29,7 @@ class Api::V1::ProductsController < Api::V1::BaseController
             end
             product = Product.new(product_params)
             if product.save
-                render json: product.to_json, status: 201
+                render json: product, status: 201
             else
                 render json: { message: 'Falló creacion', product: product, params: product_params }, status: 500
             end
