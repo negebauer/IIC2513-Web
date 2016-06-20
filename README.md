@@ -1,13 +1,25 @@
 # IIC2513 - Tecnologías y aplicaciones web
 
 ## Heroku
-Configurado para hacer deploy automático del branch `master` en la [aplicación principal](http://nidastore.herokuapp.com)  
-También para hacer deploy automático del branch `dev` en la [aplicación de prueba](http://devnidastore.herokuapp.com)
+Configurado para hacer deploy automático del branch [`master`](https://github.com/negebauer/nidastore/tree/master) en la [aplicación principal](http://nidastore.herokuapp.com)  
+También para hacer deploy automático del branch [`dev`](https://github.com/negebauer/nidastore/tree/dev) en la [aplicación de prueba](http://devnidastore.herokuapp.com)
 
 ## Entregas
+- [E7](#e7)
 - [E6](#e6)
 - [E5](#e5)
 - [E4](#e4)
+
+***
+
+### [E7](/A%20Docs%20tareas/E7.pdf)
+El commit corriendo en heroku es [37488d5](https://github.com/negebauer/nidastore/commit/37488d5a0c90ff5ed38ca028010b5f753de4ac15)
+
+##### Ayuda corrección - ¿Que tan cumplida fue la tarea?
+En construcción...
+
+##### Requests
+En construcción...
 
 ***
 
