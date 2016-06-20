@@ -31,8 +31,8 @@ Los usuarios normales solo pueden obtener datos (`GET`)
 Para facilitar lectura se omiten llamados repetidos  
 Todo debería funcionar bien
 
-- Prueba 1: Obtención
-    - Listado de productos. Retorna la lista de los `uuids` de los productos. Solo uno tiene uuid actualmente
+- [Prueba 1: Obtención](../../issues/44)
+    - [Listado de productos](../../issues/42). Retorna la lista de los `uuids` de los productos. Solo uno tiene uuid actualmente
     ```
     GET
     http://nidastore.herokuapp.com/api/v1/products
@@ -44,7 +44,7 @@ Todo debería funcionar bien
     ```
     - Obtención del encabezado (HEAD)
 
-- Prueba 2: Creación
+- [Prueba 2: Creación](../../issues/43)
     - Creación de un nuevo producto
     ```
     PUT
@@ -62,7 +62,7 @@ Todo debería funcionar bien
     - Actualización (PUT) sin cambios (es decir, mismo request de creación)
     Obtención del encabezado (HEAD) – se espera que no haya cambiado
 
-- Prueba 3: Actualizacion 1
+- [Prueba 3: Actualizacion 1](../../issues/45)
     - Actualización (PATCH) de un campo del producto
     ```
     PATCH
@@ -78,7 +78,7 @@ Todo debería funcionar bien
     http://nidastore.herokuapp.com/api/v1/products/e13f2f5fca2b61a446d3354df14962d6
     ```
 
-- Prueba 4: Actualizacion 2
+- [Prueba 4: Actualizacion 2](../../issues/43)
     - Actualización (PUT) de uno o más campos del producto
     ```
     PUT
