@@ -61,7 +61,7 @@ Todo debería funcionar bien
     ```
     - Actualización (PUT) sin cambios (es decir, mismo request de creación)
     Obtención del encabezado (HEAD) – se espera que no haya cambiado
- - Prueba 3: Actualizacion 1
+- Prueba 3: Actualizacion 1
     - En construcción...
 
 ***
