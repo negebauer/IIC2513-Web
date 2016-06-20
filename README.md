@@ -13,7 +13,7 @@ También para hacer deploy automático del branch [`dev`](https://github.com/neg
 ***
 
 ### [E7](/A%20Docs%20tareas/E7.pdf)
-El commit corriendo en heroku es [7e7ab75](https://github.com/negebauer/nidastore/commit/7e7ab75981c6bb3ac4b00eeb3ebc678a61de89f6)
+El commit corriendo en heroku es [0930a46](https://github.com/negebauer/nidastore/commit/0930a46c7bb3b61f8bace47820d283b5f9efe2aa)
 
 Para poder hacer requests se tiene que estar autentificado  
 Unas cuentas para utilizar son las siguientes
@@ -63,7 +63,7 @@ Todo debería funcionar bien
     Obtención del encabezado (HEAD) – se espera que no haya cambiado
 
 - [Prueba 3: Actualizacion 1](../../issues/45)
-    - Actualización (PATCH) de un campo del producto
+    - Actualización (PATCH) de un campo del producto
     ```
     PATCH
     http://nidastore.herokuapp.com/api/v1/products/e13f2f5fca2b61a446d3354df14962d6
@@ -71,15 +71,15 @@ Todo debería funcionar bien
     "description": "un patch desde postman"
     }
     ```
-    - Obtención del encabezado (HEAD) – se espera que haya cambiado
-    - Obtención del producto y comprobación del cambio efectuado
+    - Obtención del encabezado (HEAD) – se espera que haya cambiado
+    - Obtención del producto y comprobación del cambio efectuado
     ```
     GET
     http://nidastore.herokuapp.com/api/v1/products/e13f2f5fca2b61a446d3354df14962d6
     ```
 
 - [Prueba 4: Actualizacion 2](../../issues/43)
-    - Actualización (PUT) de uno o más campos del producto
+    - Actualización (PUT) de uno o más campos del producto
     ```
     PUT
     http://nidastore.herokuapp.com/api/v1/products/e13f2f5fca2b61a446d3354df14962d6
@@ -92,22 +92,22 @@ Todo debería funcionar bien
     "image":"http://nidastore.herokuapp.com/assets/logo-80b02a832b0460228f4b45fc3985ce5f804cd94c71857757cdeeb835f41e34ce.png"
     }
     ```
-    - Obtención del encabezado (HEAD) – se espera que haya cambiado
-    - Obtención del producto y comprobación del cambio efectuado
+    - Obtención del encabezado (HEAD) – se espera que haya cambiado
+    - Obtención del producto y comprobación del cambio efectuado
     ```
     GET
     http://nidastore.herokuapp.com/api/v1/products/e13f2f5fca2b61a446d3354df14962d6
     ```
 
 - [Prueba 5: Eliminación](../../issues/46)
-    - Eliminación del producto.
+    - Eliminación del producto.
     ```
     DELETE
     http://nidastore.herokuapp.com/api/v1/products/e13f2f5fca2b61a446d3354df14962d5
     ```
-    - Listado de productos (ya no debe aparecer el producto, pero si los demás K productos).
-    - Eliminación del mismo producto (chequeo de idempotencia).
-    - Listado de productos (aún no aparece el producto, pero si los mismos otros K productos).
+    - Listado de productos (ya no debe aparecer el producto, pero si los demás K productos).
+    - Eliminación del mismo producto (chequeo de idempotencia).
+    - Listado de productos (aún no aparece el producto, pero si los mismos otros K productos).
 
 - [Prueba 6: Errores](../../issues/58)
     - Ver el issue referenciado ^
