@@ -107,7 +107,7 @@ Todo debería funcionar bien
     - Eliminación del mismo producto (chequeo de idempotencia).
     - Listado de productos (aún no aparece el producto, pero si los mismos otros K productos).
 
-- [Prueba 6: Errores]("negebauer/nidastore#58")
+- [Prueba 6: Errores](negebauer/nidastore#58)
     - Listado de productos, GET de cada producto y selección de uno al azar.
     - Listado, creación, obtención (GET), obtención (HEAD), actualización (PATCH), eliminación (DELETE) sin autenticación – todos debieran fallar por autenticación, con respuesta y encabezado correspondiente.
     - GET del producto usado para la prueba anterior – chequeo que nada haya cambiado.
