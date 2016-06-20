@@ -15,7 +15,7 @@ También para hacer deploy automático del branch [`dev`](https://github.com/neg
 ### [E7](/A%20Docs%20tareas/E7.pdf)
 El commit corriendo en heroku es [7e7ab75](https://github.com/negebauer/nidastore/commit/7e7ab75981c6bb3ac4b00eeb3ebc678a61de89f6)
 
-Para poder hacer requests se tiene que estar autentificado
+Para poder hacer requests se tiene que estar autentificado  
 Unas cuentas para utilizar son las siguientes
 
 | username  | password | admin |
