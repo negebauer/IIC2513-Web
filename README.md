@@ -61,9 +61,66 @@ Todo debería funcionar bien
     ```
     - Actualización (PUT) sin cambios (es decir, mismo request de creación)
     Obtención del encabezado (HEAD) – se espera que no haya cambiado
-    
+
 - Prueba 3: Actualizacion 1
-    - En construcción...
+    - Actualización (PATCH) de un campo del producto
+    ```
+    PATCH
+    http://nidastore.herokuapp.com/api/v1/products/e13f2f5fca2b61a446d3354df14962d6
+    {
+    "description": "un patch desde postman"
+    }
+    ```
+    - Obtención del encabezado (HEAD) – se espera que haya cambiado
+    - Obtención del producto y comprobación del cambio efectuado
+    ```
+    GET
+    http://nidastore.herokuapp.com/api/v1/products/e13f2f5fca2b61a446d3354df14962d6
+    ```
+
+- Prueba 4: Actualizacion 2
+    - Actualización (PUT) de uno o más campos del producto
+    ```
+    PUT
+    http://nidastore.herokuapp.com/api/v1/products/e13f2f5fca2b61a446d3354df14962d6
+    {
+    "name": "test actualizacion PUT",
+    "price": 140,
+    "stock": 15,
+    "description": "un test haciendo PUT"
+    }
+    ```
+    - Obtención del encabezado (HEAD) – se espera que haya cambiado
+    - Obtención del producto y comprobación del cambio efectuado
+    ```
+    GET
+    http://nidastore.herokuapp.com/api/v1/products/e13f2f5fca2b61a446d3354df14962d6
+    ```
+
+- Prueba 5: Eliminación
+    - Eliminación del producto.
+    ```
+    DELETE
+    http://nidastore.herokuapp.com/api/v1/products/e13f2f5fca2b61a446d3354df14962d5
+    ```
+    - Listado de productos (ya no debe aparecer el producto, pero si los demás K productos).
+    - Eliminación del mismo producto (chequeo de idempotencia).
+    - Listado de productos (aún no aparece el producto, pero si los mismos otros K productos).
+
+- [Prueba 6: Errores]("negebauer/nidastore#58")
+    - Listado de productos, GET de cada producto y selección de uno al azar.
+    - Listado, creación, obtención (GET), obtención (HEAD), actualización (PATCH), eliminación (DELETE) sin autenticación – todos debieran fallar por autenticación, con respuesta y encabezado correspondiente.
+    - GET del producto usado para la prueba anterior – chequeo que nada haya cambiado.
+    - Listado, creación, ..., eliminación (DELETE) con autenticación, pero errónea.
+    - Obtención (GET), actualización (PATCH) y eliminación (DELETE) a urls inexistentes sin autenticación – debiera primar el error de autenticación.
+    - Intento de creación con producto incompleto.
+    - Intento de creación donde el id del producto no corresponde con la URL del PUT.
+    - Intento de actualización (PATCH) tratando de cambiar el id.
+    - Intento de actualización (PUT) con datos parciales.
+    - Intento de obtención de recurso inexistente.
+    - Intento de actualización de recurso inexistente.
+    - Intento de eliminación de recurso inexistente.
+    - Listado de producto y GET de cada producto – comprobación que nada ha cambiado desde el inicio.
 
 ***
 
