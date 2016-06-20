@@ -87,7 +87,9 @@ Todo debería funcionar bien
     "name": "test actualizacion PUT",
     "price": 140,
     "stock": 15,
-    "description": "un test haciendo PUT"
+    "family": "3",
+    "description": "un test haciendo PUT",
+    "image":"http://nidastore.herokuapp.com/assets/logo-80b02a832b0460228f4b45fc3985ce5f804cd94c71857757cdeeb835f41e34ce.png"
     }
     ```
     - Obtención del encabezado (HEAD) – se espera que haya cambiado
@@ -97,7 +99,7 @@ Todo debería funcionar bien
     http://nidastore.herokuapp.com/api/v1/products/e13f2f5fca2b61a446d3354df14962d6
     ```
 
-- Prueba 5: Eliminación
+- [Prueba 5: Eliminación](../../issues/46)
     - Eliminación del producto.
     ```
     DELETE
