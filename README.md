@@ -108,19 +108,7 @@ Todo debería funcionar bien
     - Listado de productos (aún no aparece el producto, pero si los mismos otros K productos).
 
 - [Prueba 6: Errores](../../issues/58)
-    - Listado de productos, GET de cada producto y selección de uno al azar.
-    - Listado, creación, obtención (GET), obtención (HEAD), actualización (PATCH), eliminación (DELETE) sin autenticación – todos debieran fallar por autenticación, con respuesta y encabezado correspondiente.
-    - GET del producto usado para la prueba anterior – chequeo que nada haya cambiado.
-    - Listado, creación, ..., eliminación (DELETE) con autenticación, pero errónea.
-    - Obtención (GET), actualización (PATCH) y eliminación (DELETE) a urls inexistentes sin autenticación – debiera primar el error de autenticación.
-    - Intento de creación con producto incompleto.
-    - Intento de creación donde el id del producto no corresponde con la URL del PUT.
-    - Intento de actualización (PATCH) tratando de cambiar el id.
-    - Intento de actualización (PUT) con datos parciales.
-    - Intento de obtención de recurso inexistente.
-    - Intento de actualización de recurso inexistente.
-    - Intento de eliminación de recurso inexistente.
-    - Listado de producto y GET de cada producto – comprobación que nada ha cambiado desde el inicio.
+    - Ver el issue referenciado ^
 
 ***
 
