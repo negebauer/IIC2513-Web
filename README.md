@@ -13,7 +13,7 @@ También para hacer deploy automático del branch [`dev`](https://github.com/neg
 ***
 
 ### [E7](/A%20Docs%20tareas/E7.pdf)
-En construcción...
+El commit corriendo en heroku es [37488d5](https://github.com/negebauer/nidastore/commit/37488d5a0c90ff5ed38ca028010b5f753de4ac15)
 
 ##### Ayuda corrección - ¿Que tan cumplida fue la tarea?
 En construcción...
