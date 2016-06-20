@@ -13,13 +13,55 @@ También para hacer deploy automático del branch [`dev`](https://github.com/neg
 ***
 
 ### [E7](/A%20Docs%20tareas/E7.pdf)
-El commit corriendo en heroku es [37488d5](https://github.com/negebauer/nidastore/commit/37488d5a0c90ff5ed38ca028010b5f753de4ac15)
+El commit corriendo en heroku es [7e7ab75](https://github.com/negebauer/nidastore/commit/7e7ab75981c6bb3ac4b00eeb3ebc678a61de89f6)
 
-##### Ayuda corrección - ¿Que tan cumplida fue la tarea?
-En construcción...
+Para poder hacer requests se tiene que estar autentificado
+Unas cuentas para utilizar son las siguientes
 
-##### Requests
-En construcción...
+| username  | password | admin |
+|:----------|:---------|:------|
+|admin      |admin     |si     |
+|admin2     |admin2    |si     |
+|nico       |123456    |no     |
+
+Solo las cuentas de admin pueden modificar datos (`PUT`, `PATCH`, `DELETE`)
+Los usuarios normales solo pueden obtener datos (`GET`)
+
+##### Ayuda corrección - ¿Que tan cumplida fue la tarea? - Requests
+Para facilitar lectura se omiten llamados repetidos
+
+- Prueba 1: Obtención
+    - Listado de productos. Retorna la lista de los `uuids` de los productos. Solo uno tiene uuid actualmente. Funciona :+1:
+    ```
+    GET
+    http://nidastore.herokuapp.com/api/v1/products
+    ```
+    - Obtención de un producto al azar del listado. En el link provisto hay un producto sugerido. Funciona :+1:
+    ```
+    GET
+    http://nidastore.herokuapp.com/api/v1/products/e13f2f5fca2b61a446d3354df14962d6
+    ```
+    - Obtención del encabezado (HEAD). Funciona :+1:
+
+- Prueba 2: Creación
+    - Creación de un nuevo producto. Funciona :+1:
+    ```
+    PUT
+    http://nidastore.herokuapp.com/api/v1/products/e13f2f5fca2b61a446d3354df14962d5
+    {
+        "name": "test correccion",
+        "price": "140",
+        "stock": "10",
+        "description": "un test para el 7",
+        "family": "3",
+        "promotion": "false",
+        "image":"http://nidastore.herokuapp.com/assets/logo-80b02a832b0460228f4b45fc3985ce5f804cd94c71857757cdeeb835f41e34ce.png"
+    }
+    ```
+    - Actualización (PUT) sin cambios (es decir, mismo request de creación). Funciona :+1:
+    Obtención del encabezado (HEAD) – se espera que no haya cambiado. Funciona :+1:
+ - Prueba 3: Actualizacion 1
+    - En construcción...
 
 ***
 
