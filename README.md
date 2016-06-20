@@ -24,7 +24,7 @@ Unas cuentas para utilizar son las siguientes
 |admin2     |admin2    |si     |
 |nico       |123456    |no     |
 
-Solo las cuentas de admin pueden modificar datos (`PUT`, `PATCH`, `DELETE`)
+Solo las cuentas de admin pueden modificar datos (`PUT`, `PATCH`, `DELETE`)  
 Los usuarios normales solo pueden obtener datos (`GET`)
 
 ##### Ayuda corrección - ¿Que tan cumplida fue la tarea? - Requests
@@ -36,12 +36,12 @@ Para facilitar lectura se omiten llamados repetidos
     GET
     http://nidastore.herokuapp.com/api/v1/products
     ```
-    - Obtención de un producto al azar del listado. En el link provisto hay un producto sugerido. Funciona :+1:
+    - Obtención de un producto al azar del listado. En el link provisto hay un producto sugerido. Funciona :+1:
     ```
     GET
     http://nidastore.herokuapp.com/api/v1/products/e13f2f5fca2b61a446d3354df14962d6
     ```
-    - Obtención del encabezado (HEAD). Funciona :+1:
+    - Obtención del encabezado (HEAD). Funciona :+1:
 
 - Prueba 2: Creación
     - Creación de un nuevo producto. Funciona :+1:
@@ -58,8 +58,8 @@ Para facilitar lectura se omiten llamados repetidos
         "image":"http://nidastore.herokuapp.com/assets/logo-80b02a832b0460228f4b45fc3985ce5f804cd94c71857757cdeeb835f41e34ce.png"
     }
     ```
-    - Actualización (PUT) sin cambios (es decir, mismo request de creación). Funciona :+1:
-    Obtención del encabezado (HEAD) – se espera que no haya cambiado. Funciona :+1:
+    - Actualización (PUT) sin cambios (es decir, mismo request de creación). Funciona :+1:
+    Obtención del encabezado (HEAD) – se espera que no haya cambiado. Funciona :+1:
  - Prueba 3: Actualizacion 1
     - En construcción...
 
