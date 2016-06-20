@@ -15,6 +15,10 @@ class Api::V1::ProductsController < Api::V1::BaseController
     end
 
     def update
+        # First make sure all params are there if it's a PUT
+        if request.put? && !Product.validate_params(product_params)
+            return render json: { message: 'Faltan datos', params: product_params, expected_params: Product.required_params }, status: 400
+        end
         if product = Product.where(uuid: @uuid).first
             # We have a product with this uuid
             if product.update(product_params)

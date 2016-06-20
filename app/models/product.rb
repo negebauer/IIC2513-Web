@@ -16,4 +16,17 @@ class Product < ActiveRecord::Base
         products = products.as_json(only: [:uuid])
         return products
     end
+
+    def self.required_params
+        [:name, :price, :stock, :description, :family, :image, :uuid, :promotion]
+    end
+
+    def self.validate_params(params)
+        for key in self.required_params
+            if !params.key?(key)
+                return false
+            end
+        end
+        return true
+    end
 end
