@@ -8,6 +8,7 @@ class Product < ActiveRecord::Base
     validates :uuid, uniqueness: true
 
     def as_json(options={})
+        super(uuid: "http://nidastore.herokuapp.com/api/v1/products/"+[:uuid])
         super(options.merge(except: [:id]))
     end
 
