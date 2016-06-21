@@ -8,13 +8,17 @@ class Product < ActiveRecord::Base
     validates :uuid, uniqueness: true
 
     def as_json(options={})
-        super(uuid: "http://nidastore.herokuapp.com/api/v1/products/"+[:uuid])
-        super(options.merge(except: [:id]))
+        result = super(options.merge(except: [:uuid]))
+        result[:id] = "http://nidastore.herokuapp.com/api/v1/products/"
+        if !uuid.nil?
+            result[:id] += uuid
+        end
+        result
     end
 
     def self.uuids
         products = Product.all
-        products = products.as_json(only: [:uuid])
+        products = products.as_json(only: [:id])
         return products
     end
 
