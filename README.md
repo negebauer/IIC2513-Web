@@ -13,7 +13,9 @@ También para hacer deploy automático del branch [`dev`](https://github.com/neg
 ***
 
 ### [E7](/A%20Docs%20tareas/E7.pdf)
-El commit corriendo en heroku es [4362ae9](https://github.com/negebauer/nidastore/commit/4362ae9e5751b8cb6e4eedb5cab3182360ad80e0)
+**IMPORTANTE** El commit [40c873e](https://github.com/negebauer/nidastore/commit/40c873e) aparece en github como si hubiera sido efectuado a las 00:26:01 del 21 pero en realidad fue hecho a las _Mon, 20 Jun 2016 23:26:01 -0400_  
+
+El commit corriendo en heroku es [558c262](https://github.com/negebauer/nidastore/commit/558c262)
 
 Para poder hacer requests se tiene que estar autentificado  
 Unas cuentas para utilizar son las siguientes
