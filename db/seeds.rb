@@ -16,7 +16,7 @@ if User.first.nil?
 end
 
 # Si descomentas la linea siguiente puedes resetear la base de datos de productos en heroku
-# Product.all.each { |e| Product.delete(e)  }
+Product.all.each { |e| Product.delete(e)  }
 if Product.first.nil?
     # Computadores
     Product.create(name: 'Macbook Pro', price: 2000000, stock: 2, description: 'Computador bonito y elegante que toda persona quiere tener', family: 1, promotion: false, uuid: SecureRandom.uuid, image: "http://bit.ly/28Yt987")
