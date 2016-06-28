@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Lista de productos</h1>
+<div class="link_edit">
+  <%= link_to 'Nuevo producto', new_admin_product_path %>
+</div>
+<br>
 
 <table>
   <thead>
@@ -31,7 +35,3 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'Nuevo producto', new_admin_product_path %>

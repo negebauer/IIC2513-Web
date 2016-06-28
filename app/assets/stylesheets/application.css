@@ -3,6 +3,11 @@ body {
     width: 100%;
     margin: 0 auto;
 }
+
+div.link_edit{
+  text-align: center;
+}
+
 header {
     display: inline-block;
     height: 100px;
@@ -96,7 +101,9 @@ h1 {
 }
 
 /* Formulario login */
-
+form{
+  text-align: center;
+}
 #name_ask {
     text-align: center;
 }
