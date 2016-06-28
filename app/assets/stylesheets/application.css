@@ -169,20 +169,20 @@ div.info {
 #window {
     background-color: #E8950C;
     border: solid #FFF 10px;
-    width: 300px;
-    height: 300px;
+    width: auto;
+    height: auto;
     top: 50%;
     left: 50%;
     position: absolute;
-    margin-top: -120px;
+    margin-top: -300px;
     margin-left: -200px;
 }
 
 #window_img {
     background-color: #E8950C;
     border: solid #FFF 10px;
-    width: 600px;
-    height: 80%;
+    width: auto;
+    height: auto;
     left: 25%;
     position: absolute;
 
@@ -191,7 +191,7 @@ div.info {
 }
 
 #imagen_zoom{
-  width: 100%;
+  width: 80%;
   height: 80%;
 }
 

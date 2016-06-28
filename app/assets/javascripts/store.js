@@ -3,20 +3,20 @@ $(function() {
   $("button[name=Next]").on('click', toogle_hidden_cells_next);
   //$('.celda_p').css('cursor', 'pointer').click(function(){ show_model("visible");});
   $('.cerrar').css('cursor', 'pointer').click(function(){ close_models();});
-  set_modals_actions();
+
 })
 
 function set_modals_actions(){
-  $('.nombre').css('cursor', 'pointer').click(function(){ use_informatin($(".nombre").attr("data_item_name"), $(".nombre").attr("data_item_description"), $(".nombre").attr("data_item_link"));});
-  $('.imagen').css('cursor', 'pointer').click(function(){ show_model_image($('.imagen').attr("data_image_zoom"));});
+  $('.nombre').css('cursor', 'pointer').click(function(){ use_informatin($(".nombre").attr("data_item_name"), $(".nombre").attr("data_item_description"), $(".nombre").attr("data_item_link"),$(".nombre").attr("data_image_zoom"));});
   $('.mas_opciones').css('cursor', 'pointer').click(function(){ show_model_detalle(  $('.mas_opciones').attr("data_item_family"));});
 }
 
-function use_informatin(nombre, info, link){
+function use_informatin(nombre, info, link, imagen){
 
   document.getElementById('titulosss').innerHTML = nombre;
   document.getElementById('informacion').innerHTML = info;
   document.getElementById('go_product').href = link;
+  document.getElementById('imagen_zoom').src = imagen;
   show_model();
 }
 
