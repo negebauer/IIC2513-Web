@@ -1,6 +1,7 @@
 <h1>Editando usuario</h1>
 
 <%= render 'form', hide_password: true, url: admin_user_path(@user) %>
-
-<%= link_to 'Ver', admin_user_path(@user) %> |
-<%= link_to 'Atras', admin_users_path %>
+<div class="link_edit">
+  <%= link_to 'Ver', admin_user_path(@user) %> |
+  <%= link_to 'Atras', admin_users_path %>
+</div>
