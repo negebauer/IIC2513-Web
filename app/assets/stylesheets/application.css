@@ -6,7 +6,7 @@ body {
 
 div.link_edit{
   text-align: center;
-  
+
 }
 
 header {
@@ -177,7 +177,7 @@ div.info {
 #window {
     background-color: #E8950C;
     border: solid #FFF 10px;
-    width: auto;
+    width: 400px;
     height: auto;
     top: 50%;
     left: 50%;
@@ -188,7 +188,7 @@ div.info {
 
 #imagen_zoom{
   width: 80%;
-  height: 80%;
+  height: 300px;
   margin-left: 10%;
   margin-right: 10%;
 }
