@@ -5,12 +5,16 @@ Configurado para hacer deploy automático del branch [`master`](https://github.c
 También para hacer deploy automático del branch [`dev`](https://github.com/negebauer/nidastore/tree/dev) en la [aplicación de prueba](http://devnidastore.herokuapp.com)
 
 ## Entregas
+- [EF](#ef)
 - [E7](#e7)
 - [E6](#e6)
 - [E5](#e5)
 - [E4](#e4)
 
 ***
+
+### [EF](/A%20Docs%20tareas/EF.pdf)
+En construcción...
 
 ### [E7](/A%20Docs%20tareas/E7.pdf)
 **IMPORTANTE** El commit [40c873e](https://github.com/negebauer/nidastore/commit/40c873e) aparece en github como si hubiera sido efectuado a las 00:26:01 del 21 pero en realidad fue hecho a las _Mon, 20 Jun 2016 23:26:01 -0400_  
