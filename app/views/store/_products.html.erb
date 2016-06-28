@@ -1,3 +1,11 @@
+<% if @products[0].family == 0 %>
+    <h1>Promociones</h1>
+<% elsif @products[0].family == 1 %>
+    <h1>Computadores</h1>
+<% elsif @products[0].family == 2 %>
+    <h1>Desodorantes</h1>
+<% end %>
+
 <nav class="page_cycling">
 <% for i in 1..@pages %>
     <%= link_to i, store_products_path(family: @family, page: i-1), remote: true %>
