@@ -55,7 +55,6 @@ function toogle_hidden_cells(next) {
 
 
 function close_models(){
-  document.getElementById('bgwindow_image').style.display = "none";
   document.getElementById('bgwindow').style.display = "none";
   document.getElementById('bgwindow_detalles').style.display = "none";
 }
@@ -69,7 +68,7 @@ function show_model(){
 function show_model_image(valor){
 
   document.getElementById('imagen_zoom').src = valor;
-  document.getElementById('bgwindow_image').style.display = "inline-block";
+  document.getElementById('bgwindow').style.display = "inline-block";
 
 }
 function show_model_detalle(familia){
