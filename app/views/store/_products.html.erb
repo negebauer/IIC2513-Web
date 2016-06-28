@@ -7,12 +7,11 @@
 <% @products.each do |product| %>
 <div class="celda_p">
     <div class="nombre" data_item_name="<%= product.name %>" data_item_description="<%= product.description %>" data_item_link="<%= store_product_path(product) %>"
-      data_image_zoom="http://bit.ly/28Yt987">
-        <%= product.name %>
-        $<%= product.price %>
+      data_image_zoom="<%= product.image %>">
+        <%= product.name %><br/>
+        $<%= product.price %><br/>
         <img class="little" src="<%= product.image %>" />
     </div>
-    
     <div class="mas_opciones" data_item_family="<%= product.family %>">
         Ver más opciones
     </div>
