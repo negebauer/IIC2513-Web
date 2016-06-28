@@ -1,22 +1,27 @@
+<% if @products[0].family == 0 %>
+<h1>Promociones</h1>
+<% elsif @products[0].family == 1 %>
+<h1>Computadores</h1>
+<% elsif @products[0].family == 2 %>
+<h1>Desodorantes</h1>
+<% end %>
+
 <nav class="page_cycling">
-<% for i in 1..@pages %>
+    <% for i in 1..@pages %>
     <%= link_to i, store_products_path(family: @family, page: i-1), remote: true %>
     <%= "," if i < @pages %>
-<% end %>
+    <% end %>
 </nav>
 <% @products.each do |product| %>
 <div class="celda_p">
-    <div class="nombre" data_item_name="<%= product.name %>" data_item_description="<%= product.description %>" data_item_link="<%= store_product_path(product) %>"
-      data_image_zoom="<%= product.image %>">
+    <div class="nombre" data_item_name="<%= product.name %>" data_item_description="<%= product.description %>" data_item_link="<%= store_product_path(product) %>" data_image_zoom="<%= product.image %>">
         <%= product.name %><br/>
         $<%= product.price %><br/>
-        <img class="little" src="<%= product.image %>" />
+        <img class="little" src="<%= product.image %>"/>
     </div>
     <div class="mas_opciones" data_item_family="<%= product.family %>">
         Ver más opciones
     </div>
-    <!-- <div class="descripcion"><%= product.description %></div> -->
-    <!-- <div class="info_prod"><%= link_to 'Detalle..', store_product_path(product) %></div> -->
 </div>
 <% end %>
 
