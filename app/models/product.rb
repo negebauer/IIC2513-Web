@@ -18,7 +18,7 @@ class Product < ActiveRecord::Base
 
     def self.uuids
         products = Product.all
-        products = products.as_json(only: [:id])
+        products = products.map{ |p| "http://nidastore.herokuapp.com/api/v1/products/" + p.uuid }
         return products
     end
 
