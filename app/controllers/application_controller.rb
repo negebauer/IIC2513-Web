@@ -18,6 +18,7 @@ class ApplicationController < ActionController::Base
   def user_session_required
     user_session_set
     if !@current_user || !@current_user.active
+      session[:user_id] = nil
       @current_user = nil
       redirect_to login_path
       return
