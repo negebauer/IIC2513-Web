@@ -19,7 +19,7 @@ En construcción...
 ***
 
 ### [E7](/A%20Docs%20tareas/E7.pdf)
-**IMPORTANTE** **CORRECCION** __01/07/16__ Esta parte esta desactualizada. Se hicieron cambios que invalidan lo descrito en este README para que las pruebas automatizadas funcionen.
+**IMPORTANTE** **CORRECCION** __01/07/16__ `5bda7df79071e7d307d7e67ee532ce533da30178` Esta parte esta desactualizada. Se hicieron cambios que invalidan lo descrito en este README para que las pruebas automatizadas funcionen.
 
 ***
 
