@@ -52,9 +52,9 @@ class Api::V1::ProductsController < Api::V1::BaseController
     private
 
     def set_uuid
-        unless params[:id].nil?
-            @uuid = params[:id]
-            params[:uuid] = @uuid
+        unless params[:product][:id].nil?
+            @uuid = params[:product][:id]
+            params[:product][:uuid] = @uuid
         end
         params.delete(:controller)
         params.delete(:id)
