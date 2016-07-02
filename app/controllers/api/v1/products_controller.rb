@@ -62,6 +62,6 @@ class Api::V1::ProductsController < Api::V1::BaseController
     end
 
     def product_params
-        params.permit(:name, :price, :stock, :description, :family, :promotion, :image, :uuid)
+        params.require(:product).permit(:name, :price, :stock, :description, :family, :promotion, :image, :uuid)
     end
 end
