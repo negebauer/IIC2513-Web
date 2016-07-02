@@ -56,13 +56,13 @@ class Api::V1::ProductsController < Api::V1::BaseController
         unless request.get?
             params_to_edit[:product]
         else
-        unless params[:id].nil?
-            @uuid = params[:id]
-            params[:uuid] = @uuid
+        unless params_to_edit[:id].nil?
+            @uuid = params_to_edit[:id]
+            params_to_edit[:uuid] = @uuid
         end
-        params.delete(:controller)
-        params.delete(:id)
-        params.delete(:action)
+        params_to_edit.delete(:controller)
+        params_to_edit.delete(:id)
+        params_to_edit.delete(:action)
         end
     end
 
