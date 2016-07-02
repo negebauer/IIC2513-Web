@@ -8,7 +8,7 @@ class Api::V1::ProductsController < Api::V1::BaseController
 
     def show
         if product = Product.where(uuid: @uuid).first
-            render json: product, status: 200 if stale?(product)
+            render json: { product: product }, status: 200 if stale?(product)
         else
             render json: { message: 'Producto no existe' }, status: 404
         end
@@ -22,7 +22,7 @@ class Api::V1::ProductsController < Api::V1::BaseController
         if product = Product.where(uuid: @uuid).first
             # We have a product with this uuid
             if product.update(product_params)
-                render json: product, status: 200
+                render json: { product: product }, status: 200
             else
                 render json: { message: 'Falló actualización', params: product_params }, status: 500
             end
@@ -33,7 +33,7 @@ class Api::V1::ProductsController < Api::V1::BaseController
             end
             product = Product.new(product_params)
             if product.save
-                render json: product, status: 201
+                render json: { product: product }, status: 201
             else
                 render json: { message: 'Falló creacion', product: product, params: product_params }, status: 500
             end

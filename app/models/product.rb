@@ -1,10 +1,10 @@
 class Product < ActiveRecord::Base
-    validates :name, presence: true
-    validates :price, presence: true
-    validates :stock, presence: true
-    validates :description, presence: true
-    validates :family, presence: true
-    validates :image, presence: true
+    # validates :name, presence: true
+    # validates :price, presence: true
+    # validates :stock, presence: true
+    # validates :description, presence: true
+    # validates :family, presence: true
+    # validates :image, presence: true
     validates :uuid, uniqueness: true
 
     def as_json(options={})
@@ -23,7 +23,7 @@ class Product < ActiveRecord::Base
     end
 
     def self.required_params
-        [:name, :price, :stock, :description, :family, :image, :uuid, :promotion]
+        [:name, :price, :description, :image, :uuid]
     end
 
     def self.validate_params(params)
