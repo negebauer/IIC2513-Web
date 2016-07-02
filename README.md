@@ -19,7 +19,9 @@ En construcción...
 ***
 
 ### [E7](/A%20Docs%20tareas/E7.pdf)
-**IMPORTANTE** **CORRECCION** __01/07/16__ Esta parte esta desactualizada. Se hicieron cambios que invalidan lo descrito en este README para que las pruebas automatizadas funcionen.
+**IMPORTANTE** **CORRECCION** [__01/07/16 - 21:41__](https://github.com/negebauer/nidastore/commit/5bda7df79071e7d307d7e67ee532ce533da30178) Esta parte esta desactualizada. Se hicieron cambios que invalidan lo descrito en este README para que las pruebas automatizadas funcionen.
+
+__01/07/16 - 22:00__ Se actualizó el README para que refleje los cambios a la API para la corrección automatizada.
 
 ***
 
@@ -65,13 +67,12 @@ Todo debería funcionar bien
     PUT
     http://nidastore.herokuapp.com/api/v1/products/e13f2f5fca2b61a446d3354df14962d5
     {
-        "name": "test correccion",
-        "price": "140",
-        "stock": "10",
-        "description": "un test para el 7",
-        "family": "3",
-        "promotion": "false",
-        "image":"http://nidastore.herokuapp.com/assets/logo-80b02a832b0460228f4b45fc3985ce5f804cd94c71857757cdeeb835f41e34ce.png"
+        "product": {
+            "name": "test correccion",
+            "price": "140",
+            "description": "un test para el 7",
+            "image":"http://nidastore.herokuapp.com/assets/logo-80b02a832b0460228f4b45fc3985ce5f804cd94c71857757cdeeb835f41e34ce.png"
+        }
     }
     ```
     - Listado de productos (ahora debe aparecer el nuevo producto)
@@ -89,7 +90,9 @@ Todo debería funcionar bien
     PATCH
     http://nidastore.herokuapp.com/api/v1/products/e13f2f5fca2b61a446d3354df14962d6
     {
-    "description": "un patch desde postman"
+        "product": {
+            "description": "un patch desde postman"
+        }
     }
     ```
     - Obtención del encabezado (HEAD) – se espera que haya cambiado
@@ -108,12 +111,12 @@ Todo debería funcionar bien
     PUT
     http://nidastore.herokuapp.com/api/v1/products/e13f2f5fca2b61a446d3354df14962d6
     {
-    "name": "test actualizacion PUT",
-    "price": 140,
-    "stock": 15,
-    "family": "3",
-    "description": "un test haciendo PUT",
-    "image":"http://nidastore.herokuapp.com/assets/logo-80b02a832b0460228f4b45fc3985ce5f804cd94c71857757cdeeb835f41e34ce.png"
+        "product": {
+            "name": "test actualizacion PUT",
+            "price": 140,
+            "description": "un test haciendo PUT",
+            "image":"http://nidastore.herokuapp.com/assets/logo-80b02a832b0460228f4b45fc3985ce5f804cd94c71857757cdeeb835f41e34ce.png"
+        }
     }
     ```
     - Obtención del encabezado (HEAD) – se espera que haya cambiado
