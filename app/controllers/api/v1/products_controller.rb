@@ -52,7 +52,7 @@ class Api::V1::ProductsController < Api::V1::BaseController
     private
 
     def set_uuid
-        if request.get? || request.head?
+        if request.get? || request.head? || request.delete?
             @uuid = params[:id]
         else
             @uuid = params[:product][:id]
