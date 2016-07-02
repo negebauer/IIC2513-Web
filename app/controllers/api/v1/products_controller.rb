@@ -56,9 +56,9 @@ class Api::V1::ProductsController < Api::V1::BaseController
             @uuid = params[:product][:id]
             params[:product][:uuid] = @uuid
         end
-        params.delete(:controller)
-        params.delete(:id)
-        params.delete(:action)
+        params[:product].delete(:controller)
+        params[:product].delete(:id)
+        params[:product].delete(:action)
     end
 
     def product_params
