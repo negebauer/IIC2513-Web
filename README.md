@@ -16,7 +16,13 @@ También para hacer deploy automático del branch [`dev`](https://github.com/neg
 ### [EF](/A%20Docs%20tareas/EF.pdf)
 En construcción...
 
+***
+
 ### [E7](/A%20Docs%20tareas/E7.pdf)
+**IMPORTANTE** **CORRECCION** __01/07/16__ Esta parte esta desactualizada. Se hicieron cambios que invalidan lo descrito en este README para que las pruebas automatizadas funcionen.
+
+***
+
 **IMPORTANTE** El commit [40c873e](https://github.com/negebauer/nidastore/commit/40c873e) aparece en github como si hubiera sido efectuado a las 00:26:01 del 21 pero en realidad fue hecho a las _Mon, 20 Jun 2016 23:26:01 -0400_  
 
 El commit corriendo en heroku es [558c262](https://github.com/negebauer/nidastore/commit/558c262)
