@@ -241,3 +241,6 @@ Los usuarios de prueba para esta entrega son los siguientes (las claves son fác
 - La recuperación de clave no se alcanzo a implementar
 - Manejo seguro de claves tampoco
 - Usuario regular no puede cambiar sus datos
+
+
+so much lova for you <3, pasalo kawaii
